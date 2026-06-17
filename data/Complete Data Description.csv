@@ -1,0 +1,179 @@
+ID,Dataset Name,Domain,Size,# Features,N-class,P-class,"Pos,Neg (IMB ratio)",Source
+Med01,Adult Depression (LGHC),Medical,161,11,142,19,01:07.5,https://www.kaggle.com/datasets/sonawanelalitsunil/adult-depression-lghc-indicator
+Med02,Adult Autism Screening,Medical,704,96,515,189, 1 : 2.72,https://archive.ics.uci.edu/dataset/426/autism+screening+adult
+Med03,Autistic Spectrum Disorder,Medical,292,80,151,141,01:01.1,https://archive.ics.uci.edu/dataset/419/autistic+spectrum+disorder+screening+data+for+children
+Med04,Blood Transfusion Service,Medical,748,4,570,178,01:03,https://archive.ics.uci.edu/dataset/176/blood+transfusion+service+center
+Med05,Bone Marrow Transplant Children,Medical,142,39,117,25,01:04.7,https://archive.ics.uci.edu/dataset/565/bone+marrow+transplant+children 
+Med06,Breast Cancer Prediction,Medical,"4,024",15,"3,408",616,01:05.5,https://www.kaggle.com/datasets/marshalpatel3558/breast-cancer-prediction
+Med07,Cardiotocography Dataset,Medical,"2,126",40,"1,655",471,01:03.5,https://archive.ics.uci.edu/dataset/193/cardiotocography  
+Med08,Cervical Cancer Risk,Medical,835,30,781,54,01:14.5,https://archive.ics.uci.edu/dataset/383/cervical+cancer+risk+factors
+Med09,Chronic kidney disease EHRs Abu Dhabi,Medical,491,21,435,56,01:07.8,https://www.kaggle.com/datasets/davidechicco/chronic-kidney-disease-ehrs-abu-dhabi
+Med10,Chronic Kidney Disease,Medical,390,764,242,148,01:01.6,https://archive.ics.uci.edu/dataset/336/chronic+kidney+disease
+Med11,Cirrhosis Patient Survival Prediction Dataset,Medical,276,19,165,111,01:01.5,https://archive.ics.uci.edu/dataset/878/cirrhosis+patient+survival+prediction+dataset-1
+Med12,Diabetes Health Indicators,Medical,"20,000",21,"18,000","2,000",01:09.2,https://www.kaggle.com/datasets/alexteboul/diabetes-health-indicators-dataset
+Med13,Thyroid Cancer Recurrence,Medical,383,40,275,108,01:02.5,https://archive.ics.uci.edu/dataset/915/differentiated+thyroid+cancer+recurrence
+Med14,Disease Diagnosis Dataset,Medical,"2,000",10,"1,167",833,01:01.4,https://www.kaggle.com/datasets/s3programmer/disease-diagnosis-dataset
+Med15,Drug Induced Autoimmunity,Medical,597,196,449,148, 1 : 3.03,https://archive.ics.uci.edu/dataset/1104/drug_induced_autoimmunity_prediction
+Med16,Haberman Survival,Medical,306,3,225,81, 1 : 2.78,https://archive.ics.uci.edu/dataset/43/haberman+s+survival
+Med17,Health Metrics Diabetes Dataset,Medical,720,11,520,200,01:02.6,https://www.kaggle.com/datasets/abhayayare/health-metrics-dataset
+Med18,HealthCare Dataset  Adherence,Medical,1218,92,977,241,01:04.0,https://www.kaggle.com/datasets/aranyogeshm/healthcare-dataset
+Med19,Healthy Lifestyle,Medical,"11,544",45,"9,620","1,924", 1 : 5.0,https://www.kaggle.com/datasets/aditibabu/healthy-lifestyle
+Med20,Heart Disease Dataset,Medical,704,13,554,150,01:03.7,https://www.kaggle.com/datasets/sintariosatya/heart-disease-dataset
+Med21,Hepatitis,Medical,80,19,67,13,01:05.2,https://archive.ics.uci.edu/dataset/46/hepatitis 
+Med22,Hepatitis C  for Egyptian Patients,Medical,"1,385",28,"1,049",336,01:03.1,https://archive.ics.uci.edu/dataset/503/hepatitis+c+virus+hcv+for+egyptian+patients
+Med23,Hospital Length of Stay Dataset Microsoft,Medical,50000,24,"42,500","7,500",01:05.7,https://www.kaggle.com/datasets/aayushchou/hospital-length-of-stay-dataset-microsoft
+Med24,ICU Patient Outcome Prediction,Medical,"3,600",119,"3,097",503, 1 : 6.16,https://www.kaggle.com/datasets/fdemoribajolin/death-classification-icu
+Med25,Indian Healthcare Symptom Disease,Medical,597,196,449,148,01:03.0,https://www.kaggle.com/datasets/bytesets/indian-healthcare-symptom-disease-mapping-dataset
+Med26,Infrared Thermography Temperature Dataset,Medical,"1,020",33,988,32, 1 : 30.88,https://www.kaggle.com/datasets/adilshamim8/the-infrared-thermography-temperature-dataset
+Med27,NHS Admissions Data 2011 2020,Medical,"6,902",10,"6,702",200,01:33.5,https://www.kaggle.com/datasets/tomfarnell/nhs-admissions-data-2011-2020
+Med28,Ovarian Cancer Risk and Progression Data,Medical,"45,000",32,"40,000","5,000",01:08.0,https://www.kaggle.com/datasets/datasetengineer/ovarian-cancer-risk-and-progression-data
+Med29,Parkinson Disease,Medical,"3,564",753,"3,000",564,01:05.3,https://www.kaggle.com/datasets/porinitahoque/parkinsons-disease-pd-data-analysis
+Med30,PCOS 2023 Dataset,Medical,465,13,363,102,01:03.6,https://www.kaggle.com/datasets/sahilkoli04/pcos2023
+Med31,Primary Tumor,Medical,339,17,255,84,01:03.0,https://archive.ics.uci.edu/dataset/83/primary+tumor
+Med32,Imbalanced Depression Dataset,Medical,433,6,366,67,01:05.5,https://www.kaggle.com/datasets/nikitamanaenkov/psychiatric-motor-activity-dataset 
+Med33,Schizophrenia Dataset,Medical,432,6,366,66, 1 : 5.55,https://www.kaggle.com/datasets/nikitamanaenkov/psychiatric-motor-activity-dataset 
+Med34,Regensburg Pediatric Appendicitis Dataset,Medical,781,57,662,119,01:05.6, https://zenodo.org/records/7669442
+Med35,Stunting Wasting Dataset,Medical,10000,4,7803,2197,01:03.6,https://www.kaggle.com/datasets/jabirmuktabir/stunting-wasting-dataset
+Med36,Support Health Data for Death Prediction,Medical,9105,43,6745,2360,01:02.9,https://archive.ics.uci.edu/dataset/880/support2
+Med37,Thoracic Surgery Data,Medical,470,24,400,70,01:05.7,https://archive.ics.uci.edu/dataset/277/thoracic+surgery+data
+Med38,Type 2 Diabetes Dataset,Medical,600,8,500,100, 1 : 5.0,https://www.kaggle.com/datasets/shahnawaj9/diabetes-database
+Med39,Typhoid Case Dataset – India,Medical,600,8,500,100,01:05.0,https://www.kaggle.com/datasets/khushikyad001/typhoid-case-dataset-india
+Med40,Alzheimers,Medical,2149,34,1389,760,01:01.8,https://www.kaggle.com/datasets/rabieelkharoua/alzheimers-disease-dataset
+Med41,Anxiety Depression,Medical,1200,20,879,321,01:02.7,https://www.kaggle.com/datasets/ak0212/anxiety-and-depression-mental-health-factors
+Med42,Cancer Prediction,Medical,1131,8,943,188,01:05.0,https://www.kaggle.com/datasets/rabieelkharoua/cancer-prediction-dataset
+Med43,Disease Symptoms and Patient Profile Dataset,Medical,249,9,163,86,01:01.9,https://www.kaggle.com/datasets/uom190346a/disease-symptoms-and-patient-profile-dataset
+Med44,Lung Cancer,Medical,3290,17,2961,329,01:09.0,https://www.kaggle.com/datasets/shantanugarg274/lung-cancer-prediction-dataset
+Med45,Ovarian Cancer,Medical,16000,33,12799,3201,01:04.0,https://www.kaggle.com/datasets/datasetengineer/ovarian-cancer-risk-and-progression-data
+Med46,Stroke Risk,Medical,27056,17,24556,2500,01:09.8,https://www.kaggle.com/datasets/mahatiratusher/stroke-risk-prediction-dataset
+Medi47,PIMA Indian,Medica,768,8,500,264,01:02.0,https://www.kaggle.com/datasets/uciml/pima-indians-diabetes-database
+FR01,Fraud Detection Bank Transction ,Fraud Detection,"2,512",54,"2,386",126,01:18.9,https://www.kaggle.com/datasets/valakhorasani/bank-transaction-dataset-for-fraud-detection
+FR02,Credit Card Fraud Data,Fraud Detection,"50,492",30,"50,000",492, 1 : 101.63,https://www.kaggle.com/datasets/mlg-ulb/creditcardfraud/data
+FR03,Fraud Detection Dataset,Fraud Detection,"1,000","1,917",950,50,01:19.0,https://www.kaggle.com/datasets/goyaladi/fraud-detection-dataset
+FR04,Credit Card Fraud,Fraud Detection,"10,359","1,187",10311,48,"1, 214",https://www.kaggle.com/datasets/kartik2112/fraud-detection
+FR05,Healthcare Fraud Detection,Fraud Detection,"1,00,000",164,"93,802","6,198",01:15.1,https://www.kaggle.com/datasets/tamilsel/healthcare-providers-data
+FR06,Shill Bidding Dataset,Fraud Detection,"6,321",9,"5,646",675,01:08.4,https://archive.ics.uci.edu/dataset/562/shill+bidding+dataset
+FR07,Airbnb for Boston with Fraud Detection,Fraud Detection,"3,585",20,"2,818",767,01:03.7,https://www.kaggle.com/datasets/hawkingcr/airbnb-for-boston-with-fraud-detection
+FR08,Fraud Detection Bank Dataset,Fraud Detection,"20,468",112,"15,030","5,438",01:02.8,https://www.kaggle.com/datasets/volodymyrgavrysh/fraud-detection-bank-dataset-20k-records-binary
+FR09,Fraud Detection Insights,Fraud Detection,"7,840",30,"7,471",369,01:20.3,https://www.kaggle.com/datasets/pkdarabi/fraud-detection
+FR10,Fraudulent Claim on Cars Physical Damage,Fraud Detection,"17,998",22,"15,182","2,816",01:05.4,https://www.kaggle.com/datasets/surekharamireddy/fraudulent-claim-on-cars-physical-damage
+FR11,Insurance Fraud Detection,Fraud Detection,"1,000","1,093",753,247,01:03.0,https://www.kaggle.com/datasets/arpan129/insurance-fraud-detection
+FR12,Insuranec Fraud Claimed,Fraud Detection,"20,632",10,"17,309","3,323",01:05.2,https://www.kaggle.com/datasets/arashnic/imbalanced-data-practice
+FR13,Loan Application & Transaction Fraud Detection,Fraud Detection,"50,000",31,"48,974","1,026",01:47.7,https://www.kaggle.com/datasets/prajwaldongre/loan-application-and-transaction-fraud-detection
+CS01,Android Malware Detection,Cyber Security,"28,620",80,"23,708","4,912",01:05.0,https://www.kaggle.com/datasets/subhajournal/android-malware-detection
+CS02,Malwares,Cyber Security,"3,032",69,"2,488",544, 1 : 4.57,https://www.kaggle.com/datasets/saurabhshahane/classification-of-malwares
+CS03,Android Malware Detection,Cyber Security,"5,392",86,"4,867",525,01:09.3,https://www.kaggle.com/datasets/ankit1743/android-malware-detection-dataset
+CS04,Malware Detection Dataset2,Cyber Security,"55,000",33,"50,000",5000,01:10.0,https://www.kaggle.com/datasets/nsaravana/malware-detection
+CS05,Network Anomaly Detection,Cyber Security,810,34,600,210,01:02.9,https://www.kaggle.com/datasets/malkasasbeh/network-anomaly-detection-dataset
+CS06,Network Intrusion Dataset,Cyber Security,"29,957",78,"29,539",418,"1,70",https://www.kaggle.com/datasets/chethuhn/network-intrusion-dataset
+CS07,Phiusiil Phishing Url Dataset,Cyber Security,"40,000",50,"4,000","36,000",01:09.0,https://archive.ics.uci.edu/dataset/967/phiusiil+phishing+url+dataset
+CS08,Network Traffic Samples,Cyber Security,"50,000",79,"49,963",37,"1 : 1,350.35",https://archive.ics.uci.edu/dataset/942/rt-iot2022
+CS09,Tezpur University Android Malware ,Cyber Security,"4,465",241,"3,565",900,"1,0.25",https://archive.ics.uci.edu/dataset/855/tuandromd+(tezpur+university+android+malware+dataset)
+CS10,Cyber Security Classification Dataset,Cyber Security,"13,719",21,"10,519","3,200",01:03.3,https://github.com/incribo-inc/cybersecurity_attacks
+CS11,Cybersecurity Data for Anomaly Detection Research,Cyber Security,"25,462",8,"25,189",273,"1, 92.27",https://www.kaggle.com/datasets/katehighnam/beth-dataset
+CS12,Dataset for Link Phishing Detection,Cyber Security,"10,861",86,"9,716","1,145",01:08.5,https://www.kaggle.com/datasets/winson13/dataset-for-link-phishing-detection/data
+CS13,Healthcare Ransomware Dataset,Cyber Security,"5,000",15,"3,852","1,148",01:03.4,https://www.kaggle.com/datasets/rivalytics/healthcare-ransomware-dataset/data
+CS14,Phishing Website Dataset,Cyber Security,"7,407",30,"6,157","1,250",01:04.9,https://www.kaggle.com/datasets/sai10py/phishing-websites-data/data
+CS15,Phising Dataset,Cyber Security,"52,663",10,"44,241","8,422",01:05.3,Kaggel
+CS16,Dataset Ready for Malicious URL Detection,Cyber Security,"4,206",56,895,"3,311",01:03.6,https://www.kaggle.com/datasets/pilarpieiro/tabular-dataset-ready-for-malicious-url-detection/data
+CS17,Teenage Online Behavior and Cybersecurity Risks,Cyber Security,"16,500",49,"15,000","15,00",01:10.0,https://www.kaggle.com/datasets/datasetengineer/teenage-online-behavior-and-cybersecurity-risks
+SC01,Adult High Salary,Socio,"32,561",14,"24,720","7,841",01:03.2,https://archive.ics.uci.edu/dataset/2/adult
+SC02,Respiratory-death-rate,Socio,"11,014",17,"10,514",500,01:21.0,https://www.kaggle.com/datasets/jsmith51/aqi-relation-to-respiratory-death-rate
+SC03,Buzz in Social Media,Socio,15118,96,14090,1028,01:13.7,https://archive.ics.uci.edu/dataset/248/buzz+in+social+media
+SC04,Communities and Crime,Socio,"1,994",100,"1,506",488,01:03.1,https://archive.ics.uci.edu/dataset/183/communities+and+crime
+SC05,Communities and Crime,Socio,143,140,113,30,01:04,https://archive.ics.uci.edu/dataset/211/communities+and+crime+unnormalized
+SC06,Contraceptive Method Choice,Socio,"1,473",17,"1,140",333,01:03.4,https://archive.ics.uci.edu/dataset/30/contraceptive+method+choice
+SC07,Drug Addiction,Socio,"1,221",12,"1,021",200,01:05.1,https://archive.ics.uci.edu/dataset/373/drug+consumption+quantified
+SC08,Earthquake Indian Subcontinent,Socio,"14,698",15,"13,143","1,555",01:08.5,https://www.kaggle.com/datasets/nksingh673/earthquake-indian-subcontinent/data
+SC09,Drug Overdose,Socio,"6,228",3,"5,841",387,01:15.1,https://www.kaggle.com/datasets/zeesolver/drug-overdose
+SC10,Healthcare Workforce Mental,Socio,"2,165",31,"1,665",500,01:03.3,https://www.kaggle.com/datasets/rivalytics/healthcare-workforce-mental-health-dataset/data
+SC11,Himalayan Expeditions,Socio,"89,000",48,"87,842","1,158",1:075.88,https://www.kaggle.com/datasets/siddharth0935/himalayan-expeditions
+SC12,Income Classification,Socio,"32,561",14,"24,720","7,841",01:03.2,https://www.kaggle.com/datasets/lodetomasi1995/income-classification
+SC13,Indian Startup Funding,Socio,"3,044",6,"2,616",428,01:06.1,https://www.kaggle.com/datasets/sudalairajkumar/indian-startup-funding
+SC14,Lifespan Calorie Burn Dynamics,Socio,"20,100",15,"16,413","3,687",01:04.4,https://www.kaggle.com/datasets/sudipde25/lifespan-calorie-burn-dynamics
+SC15,Mentl Health and Digital Behavior,Socio,500,8,366,134,01:02.5,https://www.kaggle.com/datasets/atharvasoundankar/mental-health-and-digital-behavior-20202024
+SC16,News Aggregator,Socio,"10,000",200,"7,238","2,762",01:02.6,https://archive.ics.uci.edu/dataset/359/news+aggregator
+SC17,Open University Learning,Socio,"20,208",32,"18,015","2,193",01:08.2,https://archive.ics.uci.edu/dataset/349/open+university+learning+analytics+dataset
+SC18,overstimulation-behavior,Socio,"2,000",19,"1,275",725,01:01.7,https://www.kaggle.com/datasets/miadul/overstimulation-behavior-and-lifestyle-dataset
+SC19,Ozone Level Detection,Socio,"2,534",72,"2,374",160, 1 : 14.84,https://archive.ics.uci.edu/dataset/172/ozone+level+detection
+SC20,Page Block Classify,Socio,"5,473",10,"4,913",560,01:08.8,https://archive.ics.uci.edu/dataset/78/page+blocks+classification
+SC21,Rice Cammeo and Osmancik,Socio,"2,506",7,"2,180",326,01:06.7, https://archive.ics.uci.edu/dataset/545/rice+cammeo+and+osmancik
+SC22,Smoking and Cancer Risk,Socio,"3,000",19,"2,076",924,01:02.2,https://www.kaggle.com/datasets/khushikyad001/smoking-and-cancer-risk-analysis
+SC23,Smokingand Other Risk Factors,Socio,"3,000",20,"2,402",598,01:04.0,https://www.kaggle.com/datasets/khushikyad001/smoking-and-other-risk-factors-dataset
+SC24,Social Media Engagement,Socio,"12,000",16,"7,187","4,813",01:01.5,https://www.kaggle.com/datasets/subashmaster0411/social-media-engagement-dataset
+SC25,Stress Level Prediction,Socio,572,219,421,151,01:02.8,https://www.kaggle.com/datasets/shijo96john/stress-level-prediction
+SC26,Traffic Flow Forecasting,Socio,"1,261",100,"1,248",13,01:096.00,https://archive.ics.uci.edu/dataset/734/traffic+flow+forecasting-1
+SC27,Urban Tree Health Monitoring,Socio,"3,000",39,"2,408",592,01:04.1,https://www.kaggle.com/datasets/khushikyad001/urban-tree-health-monitoring-dataset
+SC28,US Census Demographic Data,Socio,"46,300",34,"36,300","10,000",01:03.6,https://www.kaggle.com/datasets/muonneutrino/us-census-demographic-data
+SC29,Users vs Bots Classification,Socio,"1,136",59,"1,083",53,01:20.4,https://www.kaggle.com/datasets/juice0lover/users-vs-bots-classification
+SC30,Indian American Drug Addiction,Socio,"13,714",200,"11,036","2,678",01:04.1,https://www.icpsr.umich.edu/web/NAHDAP/studies/35062
+SC31,Company Bankruptcy Prediction,Socio,"6,819",95,"6,599",220,01:30.0,https://www.kaggle.com/datasets/fedesoriano/company-bankruptcy-prediction
+SC32,Extrovert vs. Introvert Behavior Data,Socio,"1,947",7,"1,491",456,01:03.3,https://www.kaggle.com/datasets/rakeshkapilavai/extrovert-vs-introvert-behavior-data
+SC33,Flood Prediction Dataset,Socio,"30,029",20,"26,505","3,524",01:07.5,https://www.kaggle.com/datasets/naiyakhalid/flood-prediction-dataset
+SC34,Flood Risk in India,Socio,"6,188",11,"4,943","1,245",01:04.0,https://www.kaggle.com/datasets/s3programmer/flood-risk-in-india
+SC35,Hotel Bookings,Socio,"40,925",28,"35,325","5,600",01:06.3,https://www.kaggle.com/datasets/jessemostipak/hotel-booking-demand
+SC36,"Introvert, Extrovert & Ambivert Classification",Socio,"20,000",29,"13,430","6,570",01:02.0,https://www.kaggle.com/datasets/miadul/introvert-extrovert-and-ambivert-classification
+SC37,Reproductive Child-Healthcare Classification,Socio,"1,281",21,"1,158",123,01:09.4,https://www.kaggle.com/datasets/gauravduttakiit/reproductive-childhealthcare-classification/data?select=train_dataset.csv
+PM01,Predictive Maintenance Dataset,Predictive Maintenance,"10,000",11,"9,661",339,01:28.5,https://archive.ics.uci.edu/dataset/601/ai4i+2020+predictive+maintenance+dataset
+PM02,Annealing,Predictive Maintenance,798,84,608,190,01:03.2,https://archive.ics.uci.edu/dataset/3/annealing
+PM03,Anomaly Detection in Helicopter,Predictive Maintenance,161,"16,383",99,62,01:01.6,https://www.kaggle.com/datasets/nagasai524/anomaly-detection-in-helicopter/data
+PM04,Aps Failure,Predictive Maintenance,"30,000",170,"29,500",500,01:59.0,https://archive.ics.uci.edu/dataset/421/aps+failure+at+scania+trucks
+PM05,Climate Model Simulation Crashes,Predictive Maintenance,540,18,494,46,01:10.8,https://archive.ics.uci.edu/dataset/252/climate+model+simulation+crashes
+PM06,Electrical Grid Stability Simulated,Predictive Maintenance,"5,620",12,"3,620",2000,01:01.8,https://archive.ics.uci.edu/dataset/471/electrical+grid+stability+simulated+data
+PM07,Htru2,Predictive Maintenance,"17,898",9,"16,259",1639,01:09.9,https://archive.ics.uci.edu/dataset/372/htru2
+PM08,Ionosphere,Predictive Maintenance,351,34,225,126,01:01.8,https://archive.ics.uci.edu/dataset/52/ionosphere 
+PM09,Anomaly Detection with CNN Autoencoders,Predictive Maintenance,"21,892",187,"18,118","3,774",01:04.8,https://www.kaggle.com/code/redpen12/anomaly-detection-with-cnn-autoencoders/input
+PM10,High-Speed Train Bogie Vibration & Fault Diagnosis,Predictive Maintenance,"1,215",487,"1,000",215,01:04.7,https://www.kaggle.com/datasets/ziya07/high-speed-train-bogie-vibration-and-fault-diagnosis
+PM11,Machine Failure Prediction using Sensor data,Predictive Maintenance,674,9,551,123,01:04.5,http://kaggle.com/datasets/umerrtx/machine-failure-prediction-using-sensor-data
+PM12,MAINTENANCE PREDICTIVE FOR INDUSTRIAL MACHINES,Predictive Maintenance,5000,11,"4,490",510,01:08.8,https://www.kaggle.com/datasets/kilanisikiru/maintenance-predictive-for-industrial-machines
+PM13,Operational Conveyor Fault Dataset,Predictive Maintenance,1209,5,"1,005",204, 1 : 4.93,https://www.kaggle.com/datasets/ziya07/operational-conveyor-fault-dataset
+FM01,Australian Credit Card ,Finance and Marketing,444,14,383,61, 1 : 6.28,https://github.com/JLZml/Credit-Scoring-Data-Sets/blob/master/1.%20UCI%20Repository/Australian/australian.dat
+FM02,Credit Card Approval Dataset,Finance and Marketing,"1,047",12,565,19,01:29.7,Kaggel
+FM03,Credit Card Approval Prediction,Finance and Marketing,"36,457",47,"36,283",174,0,https://github.com/semasuka/Credit-card-approval-prediction-classification/blob/main/dataset/train.csv
+FM04,Credit Card Customer Data,Finance and Marketing,660,5,520,140,01:03.7,https://www.kaggle.com/datasets/aryashah2k/credit-card-customer-data
+FM05,Statlog German Credit Data,Finance and Marketing,820,48,700,120,01:05.8,https://www.kaggle.com/datasets/prena0808/statlog-german-credit-data
+FM06,Credit Score Classification,Finance and Marketing,"40,000",54,"29,691","10,309",01:02.9,https://www.kaggle.com/datasets/parisrohan/credit-score-classification/data
+FM07,Credit Card Approval Prediction,Finance and Marketing,422,13,307,115, 1 : 2.67,https://github.com/tahsinjahinkhalid/Credit_Card_Approval_Classification/blob/main/data/cc_approval_cleaned.csv
+FM08,Credit Approval,Finance and Marketing,487,37,442,45,01:09.8,https://archive.ics.uci.edu/dataset/27/credit+approval
+FM09,Credit card transactions - India,Finance and Marketing,"26,052",13,"23,446","2,606",01:09.0,https://www.kaggle.com/datasets/thedevastator/analyzing-credit-card-spending-habits-in-india/code
+FM10,Loan Approval,Finance and Marketing,598,11,411,187,01:02.2,https://www.geeksforgeeks.org/loan-approval-prediction-using-machine-learning/
+FM11,Loan Default Dataset,Finance and Marketing,"45,000",32,"33,910","11,090",01:03.1,https://www.kaggle.com/datasets/yasserh/loan-default-dataset
+FM12,Loan Default Prediction Data,Finance and Marketing,"4,376",12,"3,423",953,01:03.6,https://zindi.africa/competitions/data-science-nigeria-challenge-1-loan-default-prediction/data
+FM13,LoanApproval Classification Data,Finance and Marketing,"45,000",13,"35,000","10,000",01:03.5,https://www.kaggle.com/datasets/taweilo/loan-approval-classification-data
+FM14,Loan Approval,Finance and Marketing,"4,269",11,"2,656","1,613",01:01.7,https://www.kaggle.com/datasets/architsharma01/loan-approval-prediction-dataset
+FM15,Loan Approval Prediction,Finance and Marketing,614,11,422,192,01:02.2,https://github.com/prasertcbs/basic-dataset/blob/master/Loan-Approval-Prediction.csv
+FM16,Loan Default Prediction Data,Finance and Marketing,"10,000",3,"9,667",333,01:29.0,https://www.kaggle.com/datasets/kmldas/loan-default-prediction
+FM17,Insurance Claim Prediction,Finance and Marketing,883,7,783,100,01:07.8,https://www.kaggle.com/code/yasserh/insurance-claim-prediction-top-ml-models/input
+FM18,Insurance Claim Fraud Prediction,Finance and Marketing,"1,000",33,753,247,01:03.0,https://data.mendeley.com/datasets/992mh7dk9y/2
+FM19,Insurance Purchased Prediction,Finance and Marketing,"9,822",85,"9,236",586,01:15.8,https://archive.ics.uci.edu/dataset/125/insurance+company+benchmark+coil+2000
+FM20,Insurance Claim Prediction,Finance and Marketing,585,7,555,33,01:18.5,https://github.com/sharmaroshan/Insurance-Claim-Prediction/blob/master/insurance.csv
+FM21,Bank Marketing,Finance and Marketing,"41,188",46,"39,815","1,373",01:29.0,https://archive.ics.uci.edu/dataset/222/bank+marketing
+FM22,Clickstream Data For Online Shopping,Finance and Marketing,"13,000",1,"10,000","3,000",01:03.3,https://archive.ics.uci.edu/dataset/553/clickstream+data+for+online+shopping
+FM23,Customer Churn Prediction,Finance and Marketing,"7,032",30,"5,163","1,869",01:02.8,https://www.kaggle.com/code/bhartiprasad17/customer-churn-prediction/input
+FM24,Customer Churn Analysis,Finance and Marketing,"3,150",68,"2,655",495,01:05.4,https://github.com/rohit-chandra/Customer_Churn_Analysis/blob/main/data/Customer_churn_raw.csv
+FM25,Iranian Churn Dataset,Finance and Marketing,"3,150",13,"2,655",495,01:05.4,https://archive.ics.uci.edu/dataset/563/iranian+churn+dataset
+FM26,Online Shoppers Purchasing Intention Dataset,Finance and Marketing,"12,330",17,"10,422","1,908",01:05.5,https://archive.ics.uci.edu/dataset/468/online+shoppers+purchasing+intention+dataset.
+FM27,Audit Risk Prediction Data,Finance and Marketing,776,25,471,305,01:01.5,https://archive.ics.uci.edu/dataset/475/audit+data
+FM28,Cryptocurrency Price History,Finance and Marketing,"1,442",6,960,482,01:02.0,https://www.kaggle.com/datasets/sudalairajkumar/cryptocurrencypricehistory
+FM29,Internet Advertisements,Finance and Marketing,"3,279","1,558","2,820",459, 1 : 6.14,https://archive.ics.uci.edu/dataset/51/internet+advertisements
+FM30,Nifty Indices Dataset,Finance and Marketing,"2,967",9,"2,370",597,01:04.0,https://www.kaggle.com/datasets/sudalairajkumar/nifty-indices-dataset
+FM31,Online Retail,Finance and Marketing,"1,043",26,903,140,01:06.5,https://archive.ics.uci.edu/dataset/352/online+retail
+FM32,Taiwanese Bankruptcy Prediction,Finance and Marketing,"6,819",95,"6,599",220,01:30.0,https://archive.ics.uci.edu/dataset/572/taiwanese+bankruptcy+prediction
+FM33,Trade and Investment,Finance and Marketing,"1,000",11,700,300,01:02.3,https://www.kaggle.com/datasets/willianoliveiragibin/trade-and-investment
+FM34,Turkish Crowdfunding Startups ,Finance and Marketing,"1,628",120,833,795,01:01.0,https://archive.ics.uci.edu/dataset/1025/turkish+crowdfunding+startups 
+FM35,Financial Distress Prediction,Finance and Marketing,"3,672",83,"3,255",417,01:07.8,https://www.kaggle.com/datasets/shebrahimi/financial-distress
+FM36,Financial Habits Dataset,Finance and Marketing,"1,045",11,724,321,01:02.2,https://www.kaggle.com/datasets/mokshithvmok/financial-habits-dataset?select=financial_habits_survey01.csv
+FM37,Income Survey_Finance Analysis,Finance and Marketing,"28,939",36,"25,489","3,450",01:07.4,https://www.kaggle.com/datasets/aradhanahirapara/income-survey-finance-analysis/discussion?sort=hotness
+FM38,Student Spending Habits Dataset,Finance and Marketing,999,20,865,134,01:06.4,https://www.kaggle.com/datasets/sumanthnimmagadda/student-spending-dataset
+FM39,Top Global 2000 Largest Companies 2024,Finance and Marketing,"2,001",4,"1,846",155,01:11.9,https://www.kaggle.com/datasets/soumyodippal000/top-2000-companies-financial-data-2024-dataset
+RC01,Drug Review Dataset,Recommendation,"1,200",304,200,"1,000",01:05.0,https://archive.ics.uci.edu/dataset/461/drug+review+dataset+druglib+com
+RC02,Movies Dataset Recommendation Engine,Recommendation,250,20,213,37,01:05.8,https://www.kaggle.com/code/jillanisofttech/imdb-movies-dataset-recommendation-engine/input
+RC03,Travel Reviews ,Recommendation,980,10,890,90,01:09.9,https://archive.ics.uci.edu/dataset/484/travel+reviews 
+RC04,Airline Reviews Dataset,Recommendation,5512,16,4287,1225,01:03.5,https://www.kaggle.com/datasets/sujalsuthar/airlines-reviews
+RC05,Amazon Electronic Items reviews,Recommendation,22090,23,1891,20199,01:10.6,https://www.kaggle.com/datasets/muhammedabdulazeem/amazon-electronics-items-reviews
+RC06,British Airways Review Dataset(2012-2023),Recommendation,724,4,572,152,01:03.8,https://www.kaggle.com/datasets/girishchowdary22/british-airways-review-dataset2012-2023
+RC07,Consumer Sentiments and Ratings,Recommendation,14281,505,11952,2329, 1 : 5.13,https://www.kaggle.com/datasets/kapturovalexander/consumer-sentiments-and-ratings
+RC08,Fuzzy Logic Netflix Movie Recommendation,Recommendation,16706,4,13159,3547,01:03.7,https://www.kaggle.com/datasets/ireddragonicy/netflix-clean
+RC09,"Google Play Store - 6,000 Reviews",Recommendation,4230,11,3245,985,01:03.3,https://www.kaggle.com/datasets/trainingdatapro/6000-messengers-reviews-google-play
+RC10,Letterbox Movie Classification Dataset,Recommendation,9000,11,7315,1685,01:04.3,https://www.kaggle.com/datasets/sahilislam007/letterbox-movie-classification-dataset
+RC11,Spotify Songs Recommendation,Recommendation,198,13,150,48,01:03.1,https://www.kaggle.com/datasets/corneliusjustin/spotify-songs-recommendationbinary-classification?select=train.csv
+RC12,Womens Clothing E-Commerce Reviews,Recommendation,23486,30,19314,4172,01:04.6,https://www.kaggle.com/datasets/nicapotato/womens-ecommerce-clothing-reviews

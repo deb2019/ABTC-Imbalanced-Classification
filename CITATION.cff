@@ -1,0 +1,8 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+title: "ABTC: Adaptive Bayesian Thresholding Classifier"
+version: "1.0.0"  # Updated from 0.x
+abstract: >-
+  ABTC is a model-agnostic framework combining Bayesian posterior 
+  recalibration with single-layer grid search for metric- or 
+  cost-optimal threshold selection.

@@ -1,0 +1,25 @@
+dataset_name,primary_metric,beta,cost_ratio,target_col
+Pima Indian,cost,,01:10,Outcome
+Heart Disease,F2,2,,Label
+Credit Card Fraud,F2,2,,Class
+Airbnb Boston Fraud,F2,2,,fraud
+Bank Transactions Fraud,F1,1,,IsFraud
+Android Malware Detection,F2,2,,Result
+Malicious URL,F2,2,,label
+Android Malware,F1,1,,Result
+American Indian Drug,PR-AUC,,,Q51C
+Himalaya Expedition,F2,2,,death
+Traffic Flow,MCC,,,target
+Social Media Engagement,F1,1,,engaged
+Communities Crime,Balance Accuracy,,,CrimeLevel
+HTRU2,F1,1,,Class
+APS Failure,F2,2,,class
+Climate Model Simulation Crashes,F2,2,,outcome
+Machine Failure,MCC,,,fail
+Financial Habits,F1,1,,HasBudget
+Loan Approval,MCC,,,Loan_Status
+Credit Card Approval,F2,2,,ApprovalStatus
+Telco Churn Prediction,F2,2,,Churn
+British Airways Review,F1,1,,Target
+Spotify Songs Recommendation,F2,2,,Target
+Travel Reviews,F2,2,,target
