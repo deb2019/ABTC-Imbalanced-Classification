@@ -1,394 +1,144 @@
 # ABTC: Adaptive Bayesian Thresholding Classifier
 
-**Threshold-Optimized Classification with Calibration + Prior/Cost-Aware Thresholding**
+Code, configuration and results for the paper *Adaptive Bayesian Thresholding for Metric and Cost Driven Decisions in Imbalanced Binary Classification* (Roy D., Roy A., Sahu B., Roy U.).
 
-ABTC is a lightweight, reproducible library for metric- or cost-optimal threshold selection with isotonic calibration and Bayesian posterior adjustment.
+- Repository: https://github.com/deb2019/ABTC-Imbalanced-Classification
+- Zenodo archive: each GitHub release is archived with its own DOI. The previous release (v1.1.0) is https://doi.org/10.5281/zenodo.20728733; the DOI of this release (v1.2.0) is listed under "Versions" on that Zenodo record.
 
-\---
+ABTC selects a decision threshold for a binary classifier in three steps: isotonic calibration of the predicted probabilities, a prior adjustment of the calibrated probability controlled by an exponent α, and a threshold τ chosen for a target metric (Path A) or set from misclassification costs (Path B).
 
-## Search Architecture: Single-Layer Grid Search (V1.0)
+---
 
-ABTC uses a **single-layer grid search** for optimal parameter selection:
+## Method in brief
 
-|Path|Objective|Method|Evaluations|
-|-|-|-|-|
-|**Path A**|Metric (F1, F2, G-Mean, MCC, BalancedAcc, PR-AUC)|Joint (α, τ) grid search|27 × 20 = **540**|
-|**Path B**|Cost minimization|α search with analytical τ\*|**27**|
-
-### Grid Configuration
-
-|Parameter|Range|Points|Step Size|
-|-|-|-|-|
-|α (adjustment)|\[0.1, 3.0]|27|Δα ≈ 0.11|
-|τ (threshold)|\[0.01, 0.99]|20|Δτ ≈ 0.05|
-
-### &#x20;
-
-**note:** ABTC uses a coarser threshold grid (20 τ-values) than the search-based baselines GHOST/OTLP/OECV (up to 99 τ-values). ABTC's competitive performance under a smaller search budget reflects the efficiency of its calibration-guided, analytically-anchored thresholding rather than exhaustive grid search.
-
-### 
-
-### Key Formulas
-
-**Posterior Adjustment:**
+**Prior adjustment.** With π the positive-class proportion in the training data and L = log((1 − π)/π),
 
 ```
-p\_adj = (p / π^α) / (p / π^α + (1-p) / (1-π)^α)
+p_adj = (p / π^α) / (p / π^α + (1 − p) / (1 − π)^α)      i.e.   logit(p_adj) = logit(p) + α·L
 ```
 
-**Analytical Threshold (Path B):**
+- α = 0 leaves p unchanged. If p is the true posterior of the training population, α = 1 gives the posterior under equal class priors (class-conditional distributions unchanged).
+- For a minority positive class (π < 0.5), a larger α raises p_adj, so the positive class is predicted more often.
 
-```
-τ\* = C\_FP / (C\_FP + C\_FN)
-```
+**Effective threshold.** p_adj ≥ τ is the same decision as p ≥ t(α, τ) = σ(logit τ − α·L). Every (α, τ) pair is therefore one threshold on the calibrated probability (`abtc.effective_threshold`; Supplementary Proposition S1).
 
-**Decision Rule:**
+**Path A (metric-driven).** Joint grid over 27 values of α in [0.1, 3.0] and 20 values of τ in [0.01, 0.99] (540 candidates), maximising F1, F2, G-mean, MCC or balanced accuracy on a validation split.
 
-```
-ŷ = 1 if p\_adj ≥ τ\*, else 0
-```
+**Path B (cost-driven).** τ* = C_FP / (C_FP + C_FN); α is searched over the same 27 values (27 candidates). If the calibrated probability equals the true posterior P(Y = 1 | x) and the deployment population differs from the training population at most in its class prior, then α = 0 gives the Bayes rule for the stated costs when the priors agree, and a non-zero α corresponds to assuming a different deployment prior (Supplementary Proposition S2). Isotonic calibration does not guarantee these assumptions; with a calibrated score the rule is optimal only among rules that use that score.
 
-\---
+**Search cost.** The original implementation builds one confusion matrix per candidate (median 5.5 s per fold over 20 datasets). `joint_alpha_tau_search_fast` evaluates the same 540 candidates with sorted scores and binary search (median 8 ms per fold). Supplementary Table S8 gives the full timing.
 
-## Two Levels of Reproducibility
+---
 
-### Fast CI Check (seconds–minutes)
-
-```bash
-python scripts/generate\_golden.py
-```
-
-Produces a small JSON used by tests (single split). Not the paper tables.
-
-### Paper Reproduction (hours)
-
-```bash
-notebooks/02\_Reproduce\_Public\_Results.ipynb
-```
-
-* 10-fold CV, RANDOM\_STATE = 42
-* 3-fold isotonic calibration inside each training split
-* Single-layer search: 27α × 20τ (Path A) or 27α (Path B)
-* τ by primary metric or closed-form cost (per `metrics\_policy.csv`)
-
-\---
-
-## Repository Layout
+## Repository layout
 
 ```
 ABTC/
-├─ env/abtc\_env.yml              # pinned Conda env
-├─ pyproject.toml                # installable package (src/abtc)
-├─ src/abtc/                     # ABTC library
-│  ├─ \_\_init\_\_.py
-│  ├─ calibration.py             # Isotonic calibration
-│  ├─ prior\_adjust.py            # Posterior adjustment with α
-│  ├─ thresholding.py            # Single-layer grid search
-│  └─ metrics.py                 # Evaluation metrics
+├─ src/abtc/                    ABTC library (pip install -e .)
+│  ├─ calibration.py            isotonic calibration
+│  ├─ prior_adjust.py           alpha_adjust_posterior, effective_threshold
+│  ├─ thresholding.py           Path A / Path B searches, vectorised Path A
+│  ├─ metrics.py                F-beta, G-mean, MCC, balanced accuracy, PR-AUC
+│  └─ ci.py                     single-split pipeline used only by the regression tests
 ├─ experiments/
-│  └─ final\_abtc\_comparison.py   # Main experiment (ABTCClassifier + Wilcoxon + Friedman)
-├─ notebooks/
-│  ├─ 01\_ABTC\_Quickstart.ipynb   # Quick start guide
-│  └─ 02\_Reproduce\_Public\_Results.ipynb  # Full reproduction
+│  ├─ ABTC_V2_Final.py          main experiment of the paper (Tables 4–6, Figs. 5–7)
+│  └─ base_learner_experiment.py
+├─ ablation/                    revision experiments (Supplementary S1–S5)
+│  ├─ ABTC_Ablation_Final.ipynb
+│  ├─ abtc_ablation_final.py    same code as the notebook, as a script
+│  └─ ABTC_ablation_summary.xlsx
+├─ leakage/                     single-feature leakage sensitivity (Supplementary S7)
+│  ├─ leakage_sensitivity.py
+│  ├─ main_results_long.csv
+│  └─ leakage_sensitivity_results.xlsx
 ├─ config/
-│  ├─ test\_datasets.csv          # Dataset configurations for tests
-│  ├─ metrics\_policy.csv         # Per-dataset primary metric/cost policy
-│  ├─ metrics\_defaults.yml       # Default primary metric by domain
-│  └─ search\_config.yml          # ABTC search grid configuration (NEW)
+│  ├─ search_config.yml         ABTC grid
+│  ├─ cost_datasets.csv         the 17 Path B datasets and their cost ratios
+│  ├─ metrics_policy.csv        primary metric per dataset for the regression tests
+│  ├─ metrics_defaults.yml
+│  └─ test_datasets.csv         target columns for the regression tests
 ├─ data/
-│  ├─ dataset\_sources.csv        # Public-source links + licenses
-│  └─ Complete Data Description.csv
-├─ tests/
-│  ├─ data/                      # 24 small CSVs for CI tests
-│  ├─ golden/expected.json       # Generated by scripts/generate\_golden.py
-│  ├─ test\_policy\_and\_end\_to\_end.py
-│  ├─ test\_metrics.py
-│  └─ test\_thresholding.py       # Single-layer search tests (NEW)
-├─ scripts/
-│  ├─ generate\_golden.py         # Fast CI generator (single split)
-│  ├─ nb\_normalize.py            # Normalize notebook cell IDs
-│  └─ reproduce\_all.py           # Batch reproduction script
-├─ results/
-│  ├─ README.md                  # Output file descriptions
-│  ├─ CI/                        # Contains expected\_ci.json
-│  ├─ result\_metricwise/         # Per-metric classifier results
-│  └─ statistical\_result/        # Wilcoxon.csv and Friedman.csv
-├─ figures/                      # Output images
-├─ CITATION.cff
-├─ LICENSE
-└─ README.md                     # (this file)
+│  └─ dataset_catalogue.csv     all datasets: data file, N, d, class counts, source, licence
+├─ results/                     main-experiment results (per metric family, cost-driven, statistics)
+├─ figures/                     figures of the paper
+├─ notebooks/                   quick start and a synthetic pipeline demonstration
+├─ scripts/                     generate_golden.py, run_main_experiment.py, nb_normalize.py
+├─ tests/                       unit tests and the end-to-end regression test
+├─ env/abtc_env.yml             Conda environment
+├─ CHANGELOG.md
+└─ CITATION.cff
 ```
 
-\---
+---
 
 ## Installation
 
-### 1\) Create and activate the Conda environment
-
 ```bash
-conda env create -f env/abtc\_env.yml
+conda env create -f env/abtc_env.yml
 conda activate abtc
-```
-
-### 2\) Install the package (editable)
-
-```bash
-python -m pip install --upgrade pip setuptools wheel
 python -m pip install -e .
-
-# Sanity check
-python -c "import abtc; print('ABTC version:', abtc.\_\_version\_\_)"
+python -c "import abtc; print(abtc.__version__)"
 ```
 
-\---
+---
 
-## Quickstart (Library)
-
-### Basic Usage
+## Quick start
 
 ```python
 import numpy as np
-from abtc.metrics import fbeta
-from abtc.thresholding import sweep\_metric\_threshold, tau\_cost
+from abtc import alpha_adjust_posterior, joint_alpha_tau_search, joint_alpha_tau_search_fast, effective_threshold, fbeta
 
-# Example: choose τ to maximize F2 on (y\_true, p\_hat)
-y = np.array(\[0, 1, 0, 1, 0, 1])
-p = np.array(\[0.1, 0.8, 0.2, 0.7, 0.3, 0.9])
-tau, best = sweep\_metric\_threshold(y, p, lambda yt, yp: fbeta(yt, yp, 2.0))
-print(f"τ\* = {tau:.3f}, best F2 = {best:.3f}")
+# p_val: calibrated validation probabilities, y_val: labels, pi: positive-class proportion in training
+alpha, tau, score, n_eval = joint_alpha_tau_search(
+    y_val, p_val, pi, adjust_fn=alpha_adjust_posterior,
+    metric_fn=lambda yt, yp: fbeta(yt, yp, beta=2.0))          # 540 candidates
 
-# Cost-based threshold (C\_FN / C\_FP = 10)
-print(f"τ\_cost = {tau\_cost(10.0, 1.0):.4f}")
+alpha, tau, score, n_eval = joint_alpha_tau_search_fast(y_val, p_val, pi, metric="F2")   # same candidates, vectorised
+t = effective_threshold(alpha, tau, pi)                          # equivalent threshold on p
+y_hat = (p_test >= t).astype(int)
 ```
 
-### Single-Layer Search (Path A)
+Path B:
 
 ```python
-from abtc import (
-    alpha\_adjust\_posterior,
-    joint\_alpha\_tau\_search,
-    fbeta
-)
-
-# Joint (α, τ) grid search for F2 optimization
-alpha, tau, score, n\_eval = joint\_alpha\_tau\_search(
-    y\_val=y\_val,
-    p\_raw=p\_calibrated,
-    pi=pi\_train,
-    adjust\_fn=alpha\_adjust\_posterior,
-    metric\_fn=lambda yt, yp: fbeta(yt, yp, beta=2.0),
-    n\_alpha=27,
-    n\_tau=20,
-    alpha\_range=(0.1, 3.0),
-    tau\_range=(0.01, 0.99)
-)
-print(f"α\* = {alpha:.4f}, τ\* = {tau:.4f}")
-print(f"Evaluations: {n\_eval}")  # 540
+from abtc import alpha_search_analytical_tau
+alpha, tau_star, neg_cost, n_eval = alpha_search_analytical_tau(
+    y_val, p_val, pi, adjust_fn=alpha_adjust_posterior, cost_fn=10.0, cost_fp=1.0,
+    metric_fn=lambda yt, yp: -(1.0 * ((yt == 0) & (yp == 1)).sum() + 10.0 * ((yt == 1) & (yp == 0)).sum()))
 ```
 
-### Single-Layer Search (Path B)
+---
 
-```python
-from abtc import (
-    alpha\_adjust\_posterior,
-    alpha\_search\_analytical\_tau
-)
+## Reproducing the paper
 
-# α search with analytical τ\* for cost minimization
-alpha, tau, score, n\_eval = alpha\_search\_analytical\_tau(
-    y\_val=y\_val,
-    p\_raw=p\_calibrated,
-    pi=pi\_train,
-    adjust\_fn=alpha\_adjust\_posterior,
-    cost\_fn=10.0,
-    cost\_fp=1.0,
-    metric\_fn=lambda yt, yp: -cost\_metric(yt, yp),
-    n\_alpha=27,
-    alpha\_range=(0.1, 3.0)
-)
-print(f"α\* = {alpha:.4f}, τ\* = {tau:.4f} (analytical)")
-print(f"Evaluations: {n\_eval}")  # 27
-```
+**Main experiment** (Tables 4–6): `experiments/ABTC_V2_Final.py` runs one dataset per call. Set the data file in `load_dataset()`, the target column and `PRIMARY_METRIC` (or `COST_FP` / `COST_FN` for a cost dataset) at the top of the script, then run it (`python scripts/run_main_experiment.py` runs it and stops with an error if the run fails). The primary metric of each dataset is given by the per-metric result files in `results/result_metricwise/`; the cost datasets and ratios are in `config/cost_datasets.csv`. Protocol: 10-fold stratified CV (`random_state = 42`), a stratified 20 % validation split inside each training fold (`random_state = 42 + fold`), `CalibratedClassifierCV(LogisticRegression(liblinear, max_iter = 1000), cv = 3, method = 'isotonic')`. In this script the features are standardised once on the whole dataset before the CV split. GHOST, OTLP and OECV are simplified re-implementations on a common base model; their settings are listed in Supplementary Table S9.
 
-\---
+**Ablation and revision experiments** (Supplementary S1–S5): open `ablation/ABTC_Ablation_Final.ipynb`, set the data folder in the configuration cell and run all cells. Finished datasets are cached, so an interrupted run can be restarted. The published output is `ablation/ABTC_ablation_summary.xlsx` (configuration hash b1ed3987). Unlike the main experiment, this code fits imputation and scaling inside each training subset (`SCALE_WITHIN_FOLD = True`). The ablation results are not a re-run of the main experiment and do not replace its numbers.
 
-## Reproducibility
+**Leakage sensitivity** (Supplementary Tables S12–S14): `cd leakage && python leakage_sensitivity.py`. It reads `main_results_long.csv` and needs no data files.
 
-### A) Fast CI Check (for tests)
+**Synthetic demonstration:** `notebooks/02_Synthetic_Pipeline_Demo.ipynb` runs the pipeline on synthetic data generated with `make_classification`; it does not reproduce the paper's tables.
 
-1. Put your 24 test CSVs into `tests/data/`
-2. Set label columns in `config/test\_datasets.csv` if needed
-3. Set per-dataset metric/cost policy in `config/metrics\_policy.csv`
+---
 
-Generate the CI reference JSON:
+## Data
 
-```bash
-python scripts/generate\_golden.py
-```
+`data/dataset_catalogue.csv` lists every dataset with its source, licence and the data file used in the experiments. N, d, target and class counts are those of the files used, after preprocessing. For 19 datasets (`resampled_from_source = True`) the files are resampled versions of the source data with a different class ratio. The columns `single_feature_auc_1`, `wider_leakage_set` and `duplicate_pair` mark the datasets discussed in Supplementary S7. Three catalogue entries were not among the 175 data files of the ablation runs (`in_ablation_runs = False`).
 
-This writes `tests/golden/expected.json`.
+The source datasets are available from the repositories listed in the catalogue (UCI, Kaggle, Zenodo, Mendeley Data, GitHub, Zindi, GeeksforGeeks, ICPSR). Data obtained under a restricted-use agreement (ICPSR/NAHDAP) cannot be redistributed.
 
-Run tests:
-
-```bash
-pytest -q
-```
-
-> \*\*Note:\*\* CI JSON uses a single split for speed; it's for regression tests, not for matching paper tables.
-
-### B) Paper Reproduction (exact protocol)
-
-Open and run:
-
-```bash
-notebooks/02\_Reproduce\_Public\_Results.ipynb
-```
-
-This implements:
-
-* `KFOLD = 10`, `RANDOM\_STATE = 42`
-* Isotonic calibration with 3-fold CV inside each training split
-* **Single-layer search:** 27α × 20τ (Path A) or 27α (Path B)
-* τ by primary metric or closed-form cost (per `metrics\_policy.csv`)
-* Optional: `N\_BOOTSTRAP = 1000` for confidence intervals
-
-\---
-
-## Configuration Files
-
-### `config/search\_config.yml` (NEW)
-
-ABTC search grid configuration:
-
-```yaml
-search:
-  architecture: "single-layer"
-  
-path\_a:
-  n\_alpha: 27
-  n\_tau: 20
-  alpha\_range: \[0.1, 3.0]
-  tau\_range: \[0.01, 0.99]
-  total\_evaluations: 540
-
-path\_b:
-  n\_alpha: 27
-  alpha\_range: \[0.1, 3.0]
-  tau\_formula: "τ\* = C\_FP / (C\_FP + C\_FN)"
-  total\_evaluations: 27
-```
-
-### `config/test\_datasets.csv`
-
-|Column|Description|
-|-|-|
-|`dataset\_name`|Must match CSV stem (converting `\_`→space, `and`→`\&`)|
-|`target\_col`|Label column name (default: `y`)|
-|`csv\_file`|Optional: exact filename if non-standard|
-
-### `config/metrics\_policy.csv`
-
-|Column|Description|
-|-|-|
-|`dataset\_name`|Dataset identifier|
-|`primary\_metric`|F1, F2, G-Mean, MCC, BalancedAcc, PR-AUC, or cost|
-|`beta`|Beta value for F-beta (optional)|
-|`cost\_ratio`|C\_FN / C\_FP ratio for cost optimization|
-
-Example:
-
-```csv
-dataset\_name,primary\_metric,beta,cost\_ratio
-Medical Dataset,F2,2,
-Fraud Dataset,cost,,10.0
-Social Dataset,BalancedAcc,,
-```
-
-\---
+---
 
 ## Tests
 
 ```bash
-# Run all tests
 pytest -q
-
-# With coverage
-pytest -q --cov=src/abtc --cov-report=term-missing
 ```
 
-The test suite includes:
+Unit tests cover the threshold rules, the prior adjustment (including the effective-threshold identity) and the vectorised search. The end-to-end regression test runs only when CSV files are placed in `tests/data/`: create the reference file once with `python scripts/generate_golden.py`, then run `pytest`. This test uses a single split (`src/abtc/ci.py`) and does not reproduce the paper tables.
 
-* **Unit tests:** Threshold math, prior adjustment, metrics
-* **Search tests:** Single-layer grid search verification
-* **End-to-end (CI):** Compares metrics to `tests/golden/expected.json`
+---
 
-\---
+## Licence and citation
 
-## Results \& Figures
-
-See `results/README.md` for output file descriptions.
-
-By default, `results/` and `figures/` are mostly empty; your runs will populate them.
-
-\---
-
-## Tips \& Troubleshooting
-
-### Module not found: abtc
-
-```bash
-# Install from repo root
-python -m pip install -e .
-
-# Or temporarily (Windows)
-set PYTHONPATH=%CD%\\src
-```
-
-### Target column assertion
-
-Set `target\_col` for that dataset in `config/test\_datasets.csv`.
-
-### Why CI JSON differs from paper?
-
-CI uses a single split for speed. Paper uses 10-fold + inner isotonic.
-
-### Strip notebook outputs (for submissions)
-
-```bash
-pip install nbstripout
-nbstripout --install
-```
-
-\---
-
-## Computational Complexity
-
-|Path|Evaluations|Time Estimate|
-|-|-|-|
-|Path A|O(n\_α × n\_τ) = 540|< 1 sec/fold|
-|Path B|O(n\_α) = 27|< 0.1 sec/fold|
-
-\---
-
-## Version History
-
-|Version|Date|Changes|
-|-|-|-|
-|**1.0**|2025-01|Single-layer grid search (27α × 20τ)|
-|0.x|2024|Two-layer search (deprecated)|
-
-\---
-
-## License \& Citation
-
-* **License:** MIT (see `LICENSE`)
-* **How to cite:** see `CITATION.cff`
-
-\---
-
-## Code \& Data Availability
-
-* **Code:** Repository will be public at acceptance
-* **Data:** `data/dataset\_sources.csv` lists public sources and licenses
-* **Reproduction:** Follow the "Paper reproduction" instructions above
-
+MIT licence (see `LICENSE`). Please cite the paper and this software as described in `CITATION.cff`.

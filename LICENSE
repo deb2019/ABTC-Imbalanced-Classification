@@ -15,7 +15,7 @@ copies or substantial portions of the Software.
 **Dataset clause:**  
 This repository references publicly available datasets. Redistribution of any
 dataset must comply with its original license terms as listed in
-`data/dataset_sources.csv`. The authors make no claim of ownership over these
+`data/dataset_catalogue.csv`. The authors make no claim of ownership over these
 datasets.
 
 THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
