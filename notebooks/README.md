@@ -1,15 +1,7 @@
 # Notebooks
 
-- `01_ABTC_Quickstart.ipynb`
-- `02_Reproduce_Public_Results.ipynb`
-- `03_Build_Figures.ipynb`
+- `01_ABTC_Quickstart.ipynb`: library usage on a small example.
+- `02_Synthetic_Pipeline_Demo.ipynb`: the full ABTC pipeline on synthetic data (demonstration only; it does not reproduce the paper's tables).
+- `03_Build_Figures.ipynb`: figure helpers.
 
-
-### Reproducibility levels
-- **Fast CI check (seconds–minutes):** `python scripts/generate_golden.py`
-  Produces `tests/golden/expected_ci.json` on small single-split runs. Purpose: catch regressions. 
-  Not intended to match paper tables.
-- **Paper reproduction (hours):** run `notebooks/02_Reproduce_Public_Results.ipynb`
-  Implements KFOLD=10, RANDOM_STATE=42, 3-fold isotonic calibration in-train, and the exact 
-  τ-selection policy (metric vs cost). Outputs match the paper within tolerance.
-
+The paper's main results come from `experiments/ABTC_V2_Final.py`; the revision experiments from `ablation/ABTC_Ablation_Final.ipynb`. See the repository README.
