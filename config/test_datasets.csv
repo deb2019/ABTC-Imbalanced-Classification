@@ -7,7 +7,7 @@ Bank Transactions Fraud,F1,1,,IsFraud
 Android Malware Detection,F2,2,,Result
 Malicious URL,F2,2,,label
 Android Malware,F1,1,,Result
-American Indian Drug,PR-AUC,,,Q51C
+American Indian Drug,F2,2,,Q51C
 Himalaya Expedition,F2,2,,death
 Traffic Flow,MCC,,,target
 Social Media Engagement,F1,1,,engaged
