@@ -5,6 +5,10 @@ dependencies:
   - numpy
   - pandas
   - scikit-learn
+  - scipy
+  - openpyxl
+  - pytest
+  - jupyterlab
   - matplotlib
   - pip:
       - scikit-posthocs
