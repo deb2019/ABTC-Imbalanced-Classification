@@ -7,7 +7,20 @@ Search Configuration:
 - Path A (Metric-Driven): 27α × 20τ = 540 evaluations
 - Path B (Cost-Sensitive): 27α = 27 evaluations (τ is analytical)
 
-Author: ABTC Research Team
+This is the script that produced the main results of the paper (Tables 4-6, Figs. 5-7);
+it is kept unchanged so that those results can be reproduced. It runs one dataset per call:
+set the data file in load_dataset(), the target column (default 'Outcome') and
+PRIMARY_METRIC / COST_FP / COST_FN, then run it.
+Preprocessing note: features are standardised once on the whole dataset before the CV
+split (StandardScaler().fit_transform(X) in main()). The ablation code (ablation/) fits
+imputation and scaling inside each training subset instead.
+
+Baselines: GHOST, OTLP and OECV below are simplified re-implementations that share ABTC's
+base model (LogisticRegression, liblinear) and validation split; their exact settings are
+listed in Supplementary Table S9. 'PR-AUC' and 'G-Mean' are accepted as objectives by the
+code but were not used as primary metrics in the paper (F2, F1, MCC, Balanced accuracy, cost).
+
+Authors: Debashis Roy, Anandarup Roy, Bibhuprasad Sahu, Utpal Roy
 """
 
 import re
