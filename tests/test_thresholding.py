@@ -22,9 +22,10 @@ from abtc.thresholding import (
     sweep_metric_threshold,
     joint_alpha_tau_search,
     alpha_search_analytical_tau,
-    get_search_config
+    get_search_config,
+    joint_alpha_tau_search_fast,
 )
-from abtc.prior_adjust import alpha_adjust_posterior
+from abtc.prior_adjust import alpha_adjust_posterior, effective_threshold
 from abtc.metrics import fbeta, gmean
 
 
@@ -202,15 +203,18 @@ class TestSweepMetricThreshold:
 class TestAlphaAdjustPosterior:
     """Tests for posterior adjustment with α."""
     
-    def test_alpha_one_no_change(self):
-        """α = 1 should approximately preserve probabilities."""
+    def test_alpha_zero_no_change(self):
+        """α = 0 leaves the probabilities unchanged."""
         p = np.array([0.2, 0.5, 0.8])
-        pi = 0.5
-        p_adj = alpha_adjust_posterior(p, alpha=1.0, pi=pi)
-        
-        # With pi=0.5 and alpha=1, adjustment should be minimal
-        np.testing.assert_array_almost_equal(p_adj, p, decimal=2)
-    
+        p_adj = alpha_adjust_posterior(p, alpha=0.0, pi=0.1)
+        np.testing.assert_array_almost_equal(p_adj, p, decimal=9)
+
+    def test_balanced_prior_no_change(self):
+        """With π = 0.5, α has no effect."""
+        p = np.array([0.2, 0.5, 0.8])
+        for alpha in [0.1, 1.0, 3.0]:
+            np.testing.assert_array_almost_equal(alpha_adjust_posterior(p, alpha, 0.5), p, decimal=9)
+
     def test_alpha_range_preserved(self):
         """Adjusted probabilities should stay in [0, 1]."""
         np.random.seed(42)
@@ -221,16 +225,27 @@ class TestAlphaAdjustPosterior:
             p_adj = alpha_adjust_posterior(p, alpha, pi)
             assert np.all(p_adj >= 0) and np.all(p_adj <= 1), f"Failed for α={alpha}"
     
-    def test_alpha_low_boosts_minority(self):
-        """Low α should boost minority class probabilities."""
+    def test_higher_alpha_raises_minority(self):
+        """For a minority positive class (π < 0.5), a larger α raises the adjusted probability."""
         p = np.array([0.3, 0.5, 0.7])
-        pi = 0.1  # Low prior (minority class)
-        
+        pi = 0.1
         p_low = alpha_adjust_posterior(p, alpha=0.5, pi=pi)
         p_high = alpha_adjust_posterior(p, alpha=2.0, pi=pi)
-        
-        # Lower α should give higher adjusted probabilities
-        assert np.all(p_low > p_high)
+        assert np.all(p_high > p_low)
+
+    def test_effective_threshold_identity(self):
+        """p_adj(α) >= τ  <=>  p >= t(α, τ)  (Supplementary Proposition S1)."""
+        rng = np.random.default_rng(0)
+        p = rng.uniform(0.001, 0.999, 2000)
+        for pi in [0.05, 0.2, 0.4]:
+            for alpha in [0.1, 1.0, 3.0]:
+                for tau in [0.01, 0.3, 0.7, 0.99]:
+                    t = effective_threshold(alpha, tau, pi)
+                    lhs = alpha_adjust_posterior(p, alpha, pi) >= tau
+                    rhs = p >= t
+                    # decisions may differ only for scores within rounding distance of t
+                    near = np.abs(p - t) < 1e-9
+                    assert np.array_equal(lhs[~near], rhs[~near])
 
 
 # =============================================================================
@@ -481,38 +496,43 @@ class TestIntegration:
         
         assert f2_final >= f2_baseline, f"Path A should improve: {f2_final} >= {f2_baseline}"
     
-    def test_path_b_reduces_cost(self, sample_data):
-        """Path B should reduce cost over default threshold."""
+    def test_path_b_minimises_validation_cost_over_alpha_grid(self, sample_data):
+        """Path B returns the α of its grid with the lowest validation cost at τ*."""
         y_val, p_raw, pi = sample_data
         cost_fn, cost_fp = 10.0, 1.0
-        
+
         def calc_cost(y_true, y_pred):
             fp = np.sum((y_true == 0) & (y_pred == 1))
             fn = np.sum((y_true == 1) & (y_pred == 0))
             return cost_fp * fp + cost_fn * fn
-        
-        # Baseline cost
-        y_baseline = (p_raw >= 0.5).astype(int)
-        cost_baseline = calc_cost(y_val, y_baseline)
-        
-        # Path B optimization
-        alpha, tau, _, _ = alpha_search_analytical_tau(
-            y_val=y_val,
-            p_raw=p_raw,
-            pi=pi,
-            adjust_fn=alpha_adjust_posterior,
-            cost_fn=cost_fn,
-            cost_fp=cost_fp,
-            metric_fn=lambda yt, yp: -calc_cost(yt, yp)
-        )
-        
-        # Apply optimal parameters
-        p_adj = alpha_adjust_posterior(p_raw, alpha, pi)
-        y_opt = (p_adj >= tau).astype(int)
-        cost_final = calc_cost(y_val, y_opt)
-        
-        assert cost_final <= cost_baseline, f"Path B should reduce cost: {cost_final} <= {cost_baseline}"
+
+        alpha, tau, score, n_eval = alpha_search_analytical_tau(
+            y_val=y_val, p_raw=p_raw, pi=pi, adjust_fn=alpha_adjust_posterior,
+            cost_fn=cost_fn, cost_fp=cost_fp, metric_fn=lambda yt, yp: -calc_cost(yt, yp))
+
+        grid_costs = [calc_cost(y_val, (alpha_adjust_posterior(p_raw, a, pi) >= tau).astype(int))
+                      for a in np.linspace(0.1, 3.0, 27)]
+        assert tau == pytest.approx(cost_fp / (cost_fp + cost_fn))
+        assert -score == min(grid_costs)
+        assert n_eval == 27
 
 
 if __name__ == "__main__":
     pytest.main([__file__, "-v"])
+
+
+class TestFastSearch:
+    """The vectorised Path A search reaches the same best validation score."""
+
+    def test_fast_equals_loop_score(self):
+        rng = np.random.default_rng(1)
+        for _ in range(50):
+            n = int(rng.integers(40, 300))
+            y = (rng.random(n) < 0.2).astype(int); y[0] = 1; y[1] = 0
+            p = np.clip(0.3 * y + rng.normal(0.3, 0.2, n), 0.001, 0.999)
+            pi = float(y.mean())
+            _, _, s_loop, n1 = joint_alpha_tau_search(y, p, pi, alpha_adjust_posterior,
+                                                      lambda yt, yp: fbeta(yt, yp, 2.0))
+            _, _, s_fast, n2 = joint_alpha_tau_search_fast(y, p, pi, "F2")
+            assert n1 == n2 == 540
+            assert abs(s_loop - s_fast) < 1e-12

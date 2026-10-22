@@ -1,42 +1,30 @@
-import json, pathlib, pytest, pandas as pd
-from sklearn.model_selection import train_test_split
-from sklearn.preprocessing import StandardScaler
-from sklearn.linear_model import LogisticRegression
-from sklearn.isotonic import IsotonicRegression
-from abtc.metrics import fbeta, gmean, mcc, balanced_acc, pr_auc
+"""End-to-end regression test: recompute the single-split pipeline (src/abtc/ci.py) for every CSV in
+tests/data and compare with tests/golden/expected.json written by scripts/generate_golden.py."""
+import json, pathlib, sys
+import pandas as pd
+import pytest
 
 ROOT = pathlib.Path(__file__).resolve().parents[1]
+sys.path.insert(0, str(ROOT / "scripts"))
+from abtc.ci import run_case
+from generate_golden import resolve_policy, resolve_target  # same policy and target resolution
+
 DATA = ROOT / "tests" / "data"
 GOLD = ROOT / "tests" / "golden" / "expected.json"
+CSVS = sorted(DATA.glob("*.csv"))
 
-def calibrate_probs(Xtr, ytr, Xte, seed=42):
-    scaler = StandardScaler().fit(Xtr)
-    Xtr_s, Xte_s = scaler.transform(Xtr), scaler.transform(Xte)
-    base = LogisticRegression(max_iter=2000, random_state=seed).fit(Xtr_s, ytr)
-    s_tr = base.predict_proba(Xtr_s)[:,1]; s_te = base.predict_proba(Xte_s)[:,1]
-    ir = IsotonicRegression(out_of_bounds="clip").fit(s_tr, ytr)
-    return ir.transform(s_te)
 
-@pytest.mark.parametrize("csv_path", sorted(DATA.glob("*.csv")))
+@pytest.mark.skipif(not CSVS, reason="no CSVs in tests/data (see README, 'Fast CI check')")
+@pytest.mark.parametrize("csv_path", CSVS)
 def test_against_golden(csv_path):
-    with open(GOLD, "r", encoding="utf-8") as f:
-        gold = json.load(f)
-    name = csv_path.stem.replace("_"," ").replace("and","&")
+    assert GOLD.exists(), "Run: python scripts/generate_golden.py"
+    gold = json.loads(GOLD.read_text(encoding="utf-8"))
+    name = csv_path.stem.replace("_", " ").replace("and", "&")
     assert name in gold, f"Golden missing for {name}. Run: python scripts/generate_golden.py"
-    df = pd.read_csv(csv_path)
-    X = df.drop(columns=['y']).values; y = df['y'].values.astype(int)
-    Xtr, Xte, ytr, yte = train_test_split(X, y, test_size=0.3, stratify=y, random_state=42)
-    pte = calibrate_probs(Xtr, ytr, Xte, seed=42)
-    yhat = (pte >= 0.5).astype(int)  # metrics-only check
-    got = dict(
-        F1=float(fbeta(yte, yhat, 1.0)),
-        F2=float(fbeta(yte, yhat, 2.0)),
-        GMean=float(gmean(yte, yhat)),
-        MCC=float(mcc(yte, yhat)),
-        BalAcc=float(balanced_acc(yte, yhat)),
-        PRAUC=float(pr_auc(yte, pte)),
-    )
-    exp = gold[name]
-    rtol, atol = 5e-2, 1e-3
-    for k in ["F1","F2","GMean","MCC","BalAcc","PRAUC"]:
-        assert abs(got[k] - exp[k]) <= max(atol, rtol * max(1.0, abs(exp[k]))), f"{name}:{k} got={got[k]} exp={exp[k]}"
+    df = pd.read_csv(csv_path, encoding="utf-8-sig")
+    tgt = resolve_target(name, csv_path.name)
+    X = df.drop(columns=[tgt]).values; y = df[tgt].values.astype(int)
+    metric, _, cost_ratio = resolve_policy(name)
+    got = run_case(X, y, metric, cost_ratio)
+    for k in ["tau", "F1", "F2", "GMean", "MCC", "BalAcc", "PRAUC"]:
+        assert got[k] == pytest.approx(gold[name][k], rel=1e-6, abs=1e-9), f"{name}:{k}"
