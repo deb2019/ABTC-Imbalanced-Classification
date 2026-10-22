@@ -3,7 +3,7 @@ ABTC Prior Adjustment Module
 ============================
 Posterior probability adjustment with parameter α for class imbalance correction.
 
-Version: 1.0 (Single-Layer Search)
+Version: 1.2.0
 """
 
 import numpy as np
@@ -59,51 +59,76 @@ def prior_adjust_posteriors(p: np.ndarray, pi_train: float, pi_deploy: float | N
 
 def alpha_adjust_posterior(p: np.ndarray, alpha: float, pi: float) -> np.ndarray:
     """
-    Apply ABTC posterior adjustment with parameter α.
-    
-    This is the core ABTC transformation:
-    
+    Apply the ABTC posterior adjustment with parameter α.
+
         p_adj = (p / π^α) / (p / π^α + (1-p) / (1-π)^α)
-    
+
+    Equivalently, in log-odds form,
+
+        logit(p_adj) = logit(p) + α·L,   L = log((1-π)/π).
+
     Parameters
     ----------
     p : array-like
-        Calibrated probabilities P(Y=1|x)
+        Calibrated probabilities P(Y=1|x).
     alpha : float
-        Adjustment parameter α ∈ [0.1, 3.0]
-        - α < 1: Increases minority class predictions
-        - α = 1: No adjustment (equivalent to standard posterior)
-        - α > 1: Decreases minority class predictions
+        Adjustment exponent α ≥ 0 (the paper's grid uses [0.1, 3.0]).
+        - α = 0: no adjustment (p_adj = p).
+        - α = 1: if p is the true posterior of the training population, p_adj is the
+          posterior under equal class priors (same class-conditional distributions).
+        - For a minority positive class (π < 0.5, so L > 0), a larger α raises p_adj
+          and therefore predicts the positive class more often.
+        - If π = 0.5, α has no effect.
     pi : float
-        Minority class prior π = P(Y=1) from training data
-        
+        Positive-class proportion π = P(Y=1) estimated from the training data.
+
     Returns
     -------
     p_adj : ndarray
-        Adjusted posterior probabilities
-        
+        Adjusted probabilities.
+
     Notes
     -----
-    The adjustment is derived from Bayesian posterior recalibration:
-    
-    P(Y=1|x) ∝ P(x|Y=1) × P(Y=1)^α / P(x)
-    
-    where α controls the strength of prior influence.
-    
+    Thresholding p_adj at τ is the same decision as thresholding p at the effective
+    threshold t(α, τ) = σ(logit τ − α·L); see :func:`effective_threshold`.
+    Interpretation (Supplementary Proposition S2): if p is the true posterior P(Y=1|x) of
+    the training population and the deployment population differs only in its class prior
+    (class-conditional distributions unchanged), then applying τ* = C_FP / (C_FP + C_FN)
+    to p_adj is the Bayes rule for a deployment prior π' with logit π' = (1 − α)·logit π.
+    Isotonic calibration does not guarantee these assumptions; with a calibrated score the
+    rule is optimal only among rules that use that score.
+    The 1e-12 guards reproduce the implementation used in the paper's experiments.
+
     Examples
     --------
     >>> p = np.array([0.3, 0.5, 0.7])
-    >>> pi = 0.2
-    >>> alpha_adjust_posterior(p, alpha=1.5, pi=pi)
-    array([0.182, 0.357, 0.583])
+    >>> np.round(alpha_adjust_posterior(p, alpha=1.5, pi=0.2), 3)
+    array([0.774, 0.889, 0.949])
+    >>> np.round(alpha_adjust_posterior(p, alpha=0.0, pi=0.2), 3)
+    array([0.3, 0.5, 0.7])
     """
     eps = 1e-12
     p = np.clip(np.asarray(p, dtype=float), eps, 1 - eps)
-    
+
     numerator = p / (pi**alpha + eps)
     denominator = numerator + ((1 - p) / ((1 - pi)**alpha + eps))
-    
+
     return numerator / (denominator + eps)
+
+
+def effective_threshold(alpha: float, tau: float, pi: float) -> float:
+    """
+    Threshold on the unadjusted probability that gives the same decisions as
+    ``alpha_adjust_posterior(p, alpha, pi) >= tau``:
+
+        t(α, τ) = σ(logit τ − α·log((1-π)/π))
+
+    Every (α, τ) pair of ABTC is therefore one threshold on the calibrated
+    probability (Supplementary Proposition S1).
+    """
+    tau = np.clip(np.asarray(tau, dtype=float), 1e-15, 1 - 1e-15)
+    z = np.log(tau / (1 - tau)) - np.asarray(alpha, dtype=float) * np.log((1 - pi) / pi)
+    return 1.0 / (1.0 + np.exp(-z))
 
 
 def compute_adjustment_strength(alpha: float, pi: float) -> dict:
@@ -129,7 +154,8 @@ def compute_adjustment_strength(alpha: float, pi: float) -> dict:
     return {
         'alpha': alpha,
         'pi': pi,
-        'effect': 'boost_minority' if alpha < 1 else ('neutral' if alpha == 1 else 'suppress_minority'),
+        # For pi < 0.5 a larger alpha raises the adjusted probability of the positive class.
+        'effect': 'none' if alpha == 0 or pi == 0.5 else ('raises_positive' if pi < 0.5 else 'lowers_positive'),
         'avg_shift': float(np.mean(p_adj - p_test)),
         'max_shift': float(np.max(np.abs(p_adj - p_test)))
     }

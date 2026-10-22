@@ -3,11 +3,14 @@ ABTC Thresholding Module
 ========================
 Single-layer grid search for optimal (α, τ) parameter selection.
 
-Version: 1.0 (Single-Layer Search Architecture)
-
 Search Configuration:
 - Path A (Metric-Driven): Joint (α, τ) grid search, 27×20 = 540 evaluations
 - Path B (Cost-Sensitive): α search with analytical τ*, 27 evaluations
+
+Every (α, τ) pair is equivalent to one threshold on the calibrated probability
+(see prior_adjust.effective_threshold), so Path A is a search over 540 candidate
+thresholds. ``joint_alpha_tau_search_fast`` evaluates the same 540 candidates with
+sorted scores and binary search instead of one confusion matrix per candidate.
 """
 
 from typing import Callable, Tuple, Optional
@@ -391,3 +394,68 @@ def get_search_config(
             'delta_alpha': delta_alpha,
             'total_evaluations': n_alpha
         }
+
+
+# =============================================================================
+# FAST (VECTORISED) PATH A SEARCH
+# =============================================================================
+
+def _counts_at(p: np.ndarray, y: np.ndarray, thr: np.ndarray):
+    """TP, FP, FN, TN for predictions (p >= t), for every t in thr."""
+    pos = np.sort(p[y == 1]); neg = np.sort(p[y == 0]); thr = np.atleast_1d(thr)
+    TP = len(pos) - np.searchsorted(pos, thr, side="left")
+    FP = len(neg) - np.searchsorted(neg, thr, side="left")
+    return (TP.astype(float), FP.astype(float),
+            (len(pos) - TP).astype(float), (len(neg) - FP).astype(float))
+
+
+def metric_from_counts(TP, FP, FN, TN, metric: str, cost_fp: float = 1.0, cost_fn: float = 10.0):
+    """Vectorised metrics from confusion counts (higher is better; cost is returned negated)."""
+    with np.errstate(divide="ignore", invalid="ignore"):
+        prec = np.where(TP + FP > 0, TP / (TP + FP), 0.0)
+        rec = np.where(TP + FN > 0, TP / (TP + FN), 0.0)
+        spec = np.where(TN + FP > 0, TN / (TN + FP), 0.0)
+        if metric == "F1":
+            d = 2 * TP + FP + FN
+            return np.where(d > 0, 2 * TP / np.where(d > 0, d, 1), 0.0)
+        if metric == "F2":
+            d = 4 * prec + rec
+            return np.where(prec + rec > 0, 5 * prec * rec / np.where(d > 0, d, 1), 0.0)
+        if metric == "G-Mean":
+            return np.sqrt(rec * spec)
+        if metric == "MCC":
+            d = np.sqrt((TP + FP) * (TP + FN) * (TN + FP) * (TN + FN))
+            return np.where(d > 0, (TP * TN - FP * FN) / np.where(d > 0, d, 1), 0.0)
+        if metric == "BalancedAcc":
+            return 0.5 * (rec + spec)
+        if metric == "cost":
+            return -(cost_fp * FP + cost_fn * FN)
+    raise ValueError(f"unknown metric {metric!r}")
+
+
+def joint_alpha_tau_search_fast(
+    y_val: np.ndarray,
+    p_raw: np.ndarray,
+    pi: float,
+    metric: str = "F2",
+    n_alpha: int = 27,
+    n_tau: int = 20,
+    alpha_range: Tuple[float, float] = (0.1, 3.0),
+    tau_range: Tuple[float, float] = (0.01, 0.99),
+) -> Tuple[float, float, float, int]:
+    """
+    Path A with the same 540 candidates and the same order (α outer, τ inner, first
+    maximum kept) as :func:`joint_alpha_tau_search`, computed in O(A·n log n + A·T log n).
+    ``metric`` is one of 'F1', 'F2', 'G-Mean', 'MCC', 'BalancedAcc'.
+    When two candidates tie on the validation set, floating-point rounding can make the
+    two implementations keep different (but equally scored) candidates.
+    """
+    from .prior_adjust import alpha_adjust_posterior
+    y_val = np.asarray(y_val).astype(int)
+    p_raw = np.asarray(p_raw, dtype=float)
+    alpha_list = np.linspace(alpha_range[0], alpha_range[1], n_alpha)
+    tau_list = np.linspace(tau_range[0], tau_range[1], n_tau)
+    scores = np.vstack([metric_from_counts(*_counts_at(alpha_adjust_posterior(p_raw, a, pi), y_val, tau_list), metric)
+                        for a in alpha_list])
+    k = int(np.argmax(scores.ravel()))
+    return float(alpha_list[k // n_tau]), float(tau_list[k % n_tau]), float(scores.ravel()[k]), n_alpha * n_tau

@@ -4,7 +4,7 @@ ABTC - Adaptive Bayesian Thresholding Classifier
 Core library for metric- or cost-optimal threshold selection with 
 isotonic calibration and Bayesian posterior adjustment.
 
-Version: 1.0 (Single-Layer Search Architecture)
+Version: 1.2.0
 
 Search Configuration:
 - Path A (Metric-Driven): 27α × 20τ = 540 evaluations
@@ -29,8 +29,8 @@ Quick Start
 ... )
 """
 
-__version__ = "1.0.0"
-__author__ = "ABTC Research Team"
+__version__ = "1.2.0"
+__author__ = "Debashis Roy, Anandarup Roy, Bibhuprasad Sahu, Utpal Roy"
 
 # Calibration
 from .calibration import isotonic_calibrator
@@ -40,7 +40,8 @@ from .prior_adjust import (
     odds_correction,
     prior_adjust_posteriors,
     alpha_adjust_posterior,      # NEW: Core ABTC adjustment
-    compute_adjustment_strength  # NEW: Diagnostic utility
+    compute_adjustment_strength,  # Diagnostic utility
+    effective_threshold           # (alpha, tau) -> threshold on the calibrated probability
 )
 
 # Thresholding (UPDATED for single-layer)
@@ -51,7 +52,9 @@ from .thresholding import (
     operating_point,
     joint_alpha_tau_search,       # NEW: Path A search
     alpha_search_analytical_tau,  # NEW: Path B search
-    get_search_config            # NEW: Configuration utility
+    get_search_config,           # Configuration utility
+    joint_alpha_tau_search_fast,  # Vectorised Path A (same candidates)
+    metric_from_counts
 )
 
 # Metrics
@@ -75,6 +78,7 @@ __all__ = [
     "prior_adjust_posteriors",
     "alpha_adjust_posterior",
     "compute_adjustment_strength",
+    "effective_threshold",
     
     # Thresholding
     "tau_cost",
@@ -84,6 +88,8 @@ __all__ = [
     "joint_alpha_tau_search",
     "alpha_search_analytical_tau",
     "get_search_config",
+    "joint_alpha_tau_search_fast",
+    "metric_from_counts",
     
     # Metrics
     "fbeta",
