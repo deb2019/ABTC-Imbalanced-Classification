@@ -1,16 +1,12 @@
 # scripts/generate_golden.py
+# Writes tests/golden/expected.json from the CSVs in tests/data (single split, see src/abtc/ci.py).
 import sys, json, pathlib, numpy as np, pandas as pd
-from sklearn.model_selection import train_test_split
-from sklearn.preprocessing import StandardScaler
-from sklearn.linear_model import LogisticRegression
-from sklearn.isotonic import IsotonicRegression
 
 ROOT = pathlib.Path(__file__).resolve().parents[1]
 # ensure local package is importable even if -e . not installed yet
 sys.path.insert(0, str(ROOT / "src"))
 
-from abtc.metrics import fbeta, gmean, mcc, balanced_acc, pr_auc
-from abtc.thresholding import tau_cost, sweep_metric_threshold
+from abtc.ci import run_case
 
 DATA = ROOT / "tests" / "data"
 GOLD = ROOT / "tests" / "golden" / "expected.json"
@@ -52,23 +48,6 @@ def resolve_target(name, csv_filename):
             if t: return t
     return target
 
-def calibrate_probs(Xtr, ytr, Xte, seed=SEED):
-    scaler = StandardScaler().fit(Xtr)
-    Xtr_s, Xte_s = scaler.transform(Xtr), scaler.transform(Xte)
-    base = LogisticRegression(max_iter=2000, random_state=seed).fit(Xtr_s, ytr)
-    s_tr = base.predict_proba(Xtr_s)[:,1]; s_te = base.predict_proba(Xte_s)[:,1]
-    ir = IsotonicRegression(out_of_bounds="clip").fit(s_tr, ytr)
-    return ir.transform(s_te)
-
-def metric_fn_from_name(metric):
-    nm = metric.lower()
-    if nm=="f2": return lambda yt, yp: fbeta(yt, yp, 2.0)
-    if nm=="f1": return lambda yt, yp: fbeta(yt, yp, 1.0)
-    if nm in ("g-mean","gmean"): return gmean
-    if nm=="mcc": return mcc
-    if nm in ("balancedacc","balanced accuracy","balacc"): return balanced_acc
-    return lambda yt, yp: fbeta(yt, yp, 2.0)
-
 def main():
     out = {}
     for csv in sorted(DATA.glob("*.csv")):
@@ -79,25 +58,8 @@ def main():
         X = df.drop(columns=[tgt]).values
         y = df[tgt].values.astype(int)
 
-        Xtr, Xte, ytr, yte = train_test_split(X, y, test_size=0.3, stratify=y, random_state=SEED)
-        pte = calibrate_probs(Xtr, ytr, Xte, seed=SEED)
-
         metric, beta, cost_ratio = resolve_policy(name)
-        if metric.lower() == "cost":
-            tau = tau_cost(float(cost_ratio or 10.0), 1.0, float(ytr.mean()))
-        else:
-            tau, _ = sweep_metric_threshold(yte, pte, metric_fn_from_name(metric))
-
-        yhat = (pte >= tau).astype(int)
-        rec = dict(
-            tau=float(tau),
-            F1=float(fbeta(yte, yhat, 1.0)),
-            F2=float(fbeta(yte, yhat, 2.0)),
-            GMean=float(gmean(yte, yhat)),
-            MCC=float(mcc(yte, yhat)),
-            BalAcc=float(balanced_acc(yte, yhat)),
-            PRAUC=float(pr_auc(yte, pte)),
-        )
+        rec = run_case(X, y, metric, cost_ratio, seed=SEED)
         out[name] = rec
         print(f"[golden] {name} (tgt={tgt}, metric={metric})")
 
