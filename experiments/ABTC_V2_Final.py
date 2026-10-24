@@ -17,7 +17,7 @@ imputation and scaling inside each training subset instead.
 
 Baselines: GHOST, OTLP and OECV below are simplified re-implementations that share ABTC's
 base model (LogisticRegression, liblinear) and validation split; their exact settings are
-listed in Supplementary Table S9. 'PR-AUC' and 'G-Mean' are accepted as objectives by the
+listed in Supplementary Table S11. 'PR-AUC' and 'G-Mean' are accepted as objectives by the
 code but were not used as primary metrics in the paper (F2, F1, MCC, Balanced accuracy, cost).
 
 Authors: Debashis Roy, Anandarup Roy, Bibhuprasad Sahu, Utpal Roy
