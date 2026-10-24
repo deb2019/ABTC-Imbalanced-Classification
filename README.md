@@ -3,7 +3,7 @@
 Code, configuration and results for the paper *Adaptive Bayesian Thresholding for Metric and Cost Driven Decisions in Imbalanced Binary Classification* (Roy D., Roy A., Sahu B., Roy U.).
 
 - Repository: https://github.com/deb2019/ABTC-Imbalanced-Classification
-- Archived release v1.2.0 (this version): https://doi.org/10.5281/zenodo.23610933
+- Zenodo archive: the DOI of this release (v1.2.1) is listed under "Versions" on the Zenodo record. Previous release v1.2.0: https://doi.org/10.5281/zenodo.23610933
 - Earlier release v1.1.0: https://doi.org/10.5281/zenodo.20728733
 
 ABTC selects a decision threshold for a binary classifier in three steps: isotonic calibration of the predicted probabilities, a prior adjustment of the calibrated probability controlled by an exponent α, and a threshold τ chosen for a target metric (Path A) or set from misclassification costs (Path B).
@@ -27,7 +27,7 @@ p_adj = (p / π^α) / (p / π^α + (1 − p) / (1 − π)^α)      i.e.   logit(
 
 **Path B (cost-driven).** τ* = C_FP / (C_FP + C_FN); α is searched over the same 27 values (27 candidates). If the calibrated probability equals the true posterior P(Y = 1 | x) and the deployment population differs from the training population at most in its class prior, then α = 0 gives the Bayes rule for the stated costs when the priors agree, and a non-zero α corresponds to assuming a different deployment prior (Supplementary Proposition S2). Isotonic calibration does not guarantee these assumptions; with a calibrated score the rule is optimal only among rules that use that score.
 
-**Search cost.** The original implementation builds one confusion matrix per candidate (median 5.5 s per fold over 20 datasets). `joint_alpha_tau_search_fast` evaluates the same 540 candidates with sorted scores and binary search (median 8 ms per fold). Supplementary Table S8 gives the full timing.
+**Search cost.** The original implementation builds one confusion matrix per candidate (median 5.5 s per fold over 20 datasets). `joint_alpha_tau_search_fast` evaluates the same 540 candidates with sorted scores and binary search (median 8 ms per fold). Supplementary Table S10 gives the full timing.
 
 ---
 
@@ -44,11 +44,15 @@ ABTC/
 ├─ experiments/
 │  ├─ ABTC_V2_Final.py          main experiment of the paper (Tables 4–6, Figs. 5–7)
 │  └─ base_learner_experiment.py
-├─ ablation/                    revision experiments (Supplementary S1–S5)
+├─ ablation/                    revision experiments (Supplementary S1–S4, S6)
 │  ├─ ABTC_Ablation_Final.ipynb
 │  ├─ abtc_ablation_final.py    same code as the notebook, as a script
 │  └─ ABTC_ablation_summary.xlsx
-├─ leakage/                     single-feature leakage sensitivity (Supplementary S7)
+├─ priorshift/                  known change of class prior (Supplementary S5)
+│  ├─ ABTC_PriorShift.ipynb
+│  ├─ abtc_priorshift.py
+│  └─ ABTC_priorshift_summary.xlsx
+├─ leakage/                     single-feature leakage sensitivity (Supplementary S8)
 │  ├─ leakage_sensitivity.py
 │  ├─ main_results_long.csv
 │  └─ leakage_sensitivity_results.xlsx
@@ -112,11 +116,13 @@ alpha, tau_star, neg_cost, n_eval = alpha_search_analytical_tau(
 
 ## Reproducing the paper
 
-**Main experiment** (Tables 4–6): `experiments/ABTC_V2_Final.py` runs one dataset per call. Set the data file in `load_dataset()`, the target column and `PRIMARY_METRIC` (or `COST_FP` / `COST_FN` for a cost dataset) at the top of the script, then run it (`python scripts/run_main_experiment.py` runs it and stops with an error if the run fails). The primary metric of each dataset is given by the per-metric result files in `results/result_metricwise/`; the cost datasets and ratios are in `config/cost_datasets.csv`. Protocol: 10-fold stratified CV (`random_state = 42`), a stratified 20 % validation split inside each training fold (`random_state = 42 + fold`), `CalibratedClassifierCV(LogisticRegression(liblinear, max_iter = 1000), cv = 3, method = 'isotonic')`. In this script the features are standardised once on the whole dataset before the CV split. GHOST, OTLP and OECV are simplified re-implementations on a common base model; their settings are listed in Supplementary Table S9.
+**Main experiment** (Tables 4–6): `experiments/ABTC_V2_Final.py` runs one dataset per call. Set the data file in `load_dataset()`, the target column and `PRIMARY_METRIC` (or `COST_FP` / `COST_FN` for a cost dataset) at the top of the script, then run it (`python scripts/run_main_experiment.py` runs it and stops with an error if the run fails). The primary metric of each dataset is given by the per-metric result files in `results/result_metricwise/`; the cost datasets and ratios are in `config/cost_datasets.csv`. Protocol: 10-fold stratified CV (`random_state = 42`), a stratified 20 % validation split inside each training fold (`random_state = 42 + fold`), `CalibratedClassifierCV(LogisticRegression(liblinear, max_iter = 1000), cv = 3, method = 'isotonic')`. In this script the features are standardised once on the whole dataset before the CV split. GHOST, OTLP and OECV are simplified re-implementations on a common base model; their settings are listed in Supplementary Table S11.
 
-**Ablation and revision experiments** (Supplementary S1–S5): open `ablation/ABTC_Ablation_Final.ipynb`, set the data folder in the configuration cell and run all cells. Finished datasets are cached, so an interrupted run can be restarted. The published output is `ablation/ABTC_ablation_summary.xlsx` (configuration hash b1ed3987). Unlike the main experiment, this code fits imputation and scaling inside each training subset (`SCALE_WITHIN_FOLD = True`). The ablation results are not a re-run of the main experiment and do not replace its numbers.
+**Ablation and revision experiments** (Supplementary S1–S4, S6): open `ablation/ABTC_Ablation_Final.ipynb`, set the data folder in the configuration cell and run all cells. Finished datasets are cached, so an interrupted run can be restarted. The published output is `ablation/ABTC_ablation_summary.xlsx` (configuration hash b1ed3987). Unlike the main experiment, this code fits imputation and scaling inside each training subset (`SCALE_WITHIN_FOLD = True`). The ablation results are not a re-run of the main experiment and do not replace its numbers.
 
-**Leakage sensitivity** (Supplementary Tables S12–S14): `cd leakage && python leakage_sensitivity.py`. It reads `main_results_long.csv` and needs no data files.
+**Known change of class prior** (Supplementary S5, Tables S8–S9): open `priorshift/ABTC_PriorShift.ipynb` in the same folder as the ablation notebook and run all cells. Test folds are resampled by class to a new positive rate, and the cost of ABTC with α set from the known prior is compared with four other rules. The published output is `priorshift/ABTC_priorshift_summary.xlsx`.
+
+**Leakage sensitivity** (Supplementary Tables S14–S16): `cd leakage && python leakage_sensitivity.py`. It reads `main_results_long.csv` and needs no data files.
 
 **Synthetic demonstration:** `notebooks/02_Synthetic_Pipeline_Demo.ipynb` runs the pipeline on synthetic data generated with `make_classification`; it does not reproduce the paper's tables.
 
@@ -124,7 +130,7 @@ alpha, tau_star, neg_cost, n_eval = alpha_search_analytical_tau(
 
 ## Data
 
-`data/dataset_catalogue.csv` lists every dataset with its source, licence and the data file used in the experiments. N, d, target and class counts are those of the files used, after preprocessing. For 19 datasets (`resampled_from_source = True`) the files are resampled versions of the source data with a different class ratio. The columns `single_feature_auc_1`, `wider_leakage_set` and `duplicate_pair` mark the datasets discussed in Supplementary S7. Three catalogue entries were not among the 175 data files of the ablation runs (`in_ablation_runs = False`).
+`data/dataset_catalogue.csv` lists every dataset with its source, licence and the data file used in the experiments. N, d, target and class counts are those of the files used, after preprocessing. For 19 datasets (`resampled_from_source = True`) the files are resampled versions of the source data with a different class ratio. The columns `single_feature_auc_1`, `wider_leakage_set` and `duplicate_pair` mark the datasets discussed in Supplementary S8. Three catalogue entries were not among the 175 data files of the ablation runs (`in_ablation_runs = False`).
 
 The source datasets are available from the repositories listed in the catalogue (UCI, Kaggle, Zenodo, Mendeley Data, GitHub, Zindi, GeeksforGeeks, ICPSR). Data obtained under a restricted-use agreement (ICPSR/NAHDAP) cannot be redistributed.
 

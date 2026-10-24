@@ -1,9 +1,10 @@
 cff-version: 1.2.0
 message: "If you use this software, please cite it as below."
 title: "ABTC: Adaptive Bayesian Thresholding Classifier"
-version: "1.2.0"
-date-released: "2026-10-23"
-doi: "10.5281/zenodo.23610933"
+version: "1.2.1"
+date-released: "2026-10-25"
+# The DOI of this release is assigned by Zenodo when the GitHub release is published;
+# add it here as  doi: "10.5281/zenodo.XXXXXXXX"  once it is known. Previous release v1.2.0: 10.5281/zenodo.23610933
 repository-code: "https://github.com/deb2019/ABTC-Imbalanced-Classification"
 license: MIT
 authors:

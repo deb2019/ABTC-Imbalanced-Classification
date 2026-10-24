@@ -1,5 +1,16 @@
 # Changelog
 
+## 1.2.1 (2026-10-25)
+
+**Corrected**
+- Cost dataset "Malicious URL Detection" (Predicting Malicious URL): the main experiment used `Phishing_Imb_Pre.csv`, not `pre_phishing_imb.csv`. Corrected in `config/cost_datasets.csv`, in `COST_DATASETS` of the ablation notebook and in `results/cost_sensitive/cost_sensitive_results.csv`. The ablation summary was re-run (only the affected files; all others from cache); Path B on this dataset gives 122.3, against 122.7 in the main experiment.
+
+**Added**
+- `priorshift/`: experiment for a known change of class prior (Supplementary S5, Tables S8–S9): notebook, script and summary workbook.
+
+**Changed**
+- Supplementary section and table numbers in the documentation follow the revised supplement (timing S6/Table S10, baselines S7/Table S11, datasets and leakage S8/Tables S12–S16).
+
 ## 1.2.0 (2026-10-23)
 
 Release accompanying the revised manuscript. The main-experiment code and results are unchanged. Changes are listed relative to the 1.0.0 code base.
