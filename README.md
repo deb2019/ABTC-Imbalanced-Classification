@@ -3,7 +3,8 @@
 Code, configuration and results for the paper *Adaptive Bayesian Thresholding for Metric and Cost Driven Decisions in Imbalanced Binary Classification* (Roy D., Roy A., Sahu B., Roy U.).
 
 - Repository: https://github.com/deb2019/ABTC-Imbalanced-Classification
-- Zenodo archive: each GitHub release is archived with its own DOI. The previous release (v1.1.0) is https://doi.org/10.5281/zenodo.20728733; the DOI of this release (v1.2.0) is listed under "Versions" on that Zenodo record.
+- Archived release v1.2.0 (this version): https://doi.org/10.5281/zenodo.23610933
+- Earlier release v1.1.0: https://doi.org/10.5281/zenodo.20728733
 
 ABTC selects a decision threshold for a binary classifier in three steps: isotonic calibration of the predicted probabilities, a prior adjustment of the calibrated probability controlled by an exponent α, and a threshold τ chosen for a target metric (Path A) or set from misclassification costs (Path B).
 
