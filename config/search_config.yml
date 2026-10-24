@@ -1,7 +1,7 @@
 # =============================================================================
 # ABTC Search Configuration
 # =============================================================================
-# Version: 1.2.0
+# Version: 1.2.1
 # 
 # This file defines the search grid parameters for ABTC's threshold optimization.
 # Two optimization paths are supported:
@@ -14,7 +14,7 @@
 # -----------------------------------------------------------------------------
 search:
   architecture: "single-layer"
-  version: "1.2.0"
+  version: "1.2.1"
   description: >
     ABTC uses a single-layer grid search for optimal parameter selection.
     This replaces the previous two-layer (coarse + fine-grained) approach.
@@ -134,7 +134,7 @@ complexity:
     evaluations: "O(n_alpha × n_tau)"
     default: "27 × 20 = 540"
     time_estimate: >
-      Measured on 20 datasets (Supplementary Table S8): median 5.5 s per fold for the
+      Measured on 20 datasets (Supplementary Table S10): median 5.5 s per fold for the
       original loop (540 scikit-learn metric calls), 8 ms per fold for the vectorised
       implementation (joint_alpha_tau_search_fast) with the same 540 candidates.
   path_b:
