@@ -1,0 +1,18 @@
+data_file,dataset,cost_fp,cost_fn
+pima_diabetes.csv,PIMA Indian,1,5
+HCV_data_imb.csv,Hepatitis C,1,10
+cirrhosis_preprocessed_binary.csv,Cirrhosis Patient,1,25
+preprocessed_airbnb_fraud.csv,Airbnb Fraud Detection,1,5
+CreditCard_50000_492.csv,Credit Card Fraud,1,10
+Preprocessed_Fraud_Insurance.csv,Insurance Fraud,1,15
+AndroidMalware_Imbalanced.csv,Android Malware,1,5
+Phishing_Imb_Pre.csv,Malicious URL Detection (Predicting Malicious URL),1,5
+rt_iot_binary_preprocessed_5037.csv,Network Traffic Samples,1,3
+rice_binary_more_imbalanced.csv,Rice Cammeo and Osmancik,1,3
+cannabis_preprocessed.csv,Cannabis Addiction,1,5
+DrugOverdose_Preprocessed.csv,Drug Overdose,1,10
+SmokingCancer_Preprocessed.csv,Smoking and Cancer Risk,1,25
+aps_failure_reduced_30k.csv,Air Pressure System Failure,1,2
+HTRU_2_preprocessed.csv,Anomaly Pulser System (HTRU2),1,3
+ai4i2020_preprocessed.csv,Machine Failure (CNC),1,5
+prep_airlines_reviews.csv,Airline Reviews,1,3
