@@ -1,0 +1,1801 @@
+ds,clf,mean,std,metric
+PIMA Indian,NBC (0.5),0.600009,0.092427,F2
+PIMA Indian,q*-Classifier,0.661202,0.07252,F2
+PIMA Indian,Cost-Sens. SVM,0.591617,0.061635,F2
+PIMA Indian,Balanced RF,0.711042,0.088233,F2
+PIMA Indian,PAN,0.697798,0.07862,F2
+PIMA Indian,GHOST,0.654968,0.056152,F2
+PIMA Indian,OTLP,0.790589,0.029563,F2
+PIMA Indian,OECV,0.790117,0.031048,F2
+PIMA Indian,ABTC,0.801816,0.032483,F2
+Parkinson,NBC (0.5),0.681351,0.121832,F2
+Parkinson,q*-Classifier,0.681351,0.121832,F2
+Parkinson,Cost-Sens. SVM,0.922514,0.054322,F2
+Parkinson,Balanced RF,0.890108,0.071991,F2
+Parkinson,PAN,0.774803,0.086257,F2
+Parkinson,GHOST,0.923284,0.052159,F2
+Parkinson,OTLP,0.96323,0.010001,F2
+Parkinson,OECV,0.960143,0.024152,F2
+Parkinson,ABTC,0.955518,0.028375,F2
+Cervical Cancer,NBC (0.5),0.258513,0.017552,F2
+Cervical Cancer,q*-Classifier,0.650265,0.204772,F2
+Cervical Cancer,Cost-Sens. SVM,0.503567,0.18742,F2
+Cervical Cancer,Balanced RF,0.781007,0.095756,F2
+Cervical Cancer,PAN,0.771058,0.159073,F2
+Cervical Cancer,GHOST,0.782957,0.143194,F2
+Cervical Cancer,OTLP,0.777354,0.140563,F2
+Cervical Cancer,OECV,0.766482,0.172273,F2
+Cervical Cancer,ABTC,0.786285,0.161811,F2
+Cirosis of Liver,NBC (0.5),0.53428,0.164368,F2
+Cirosis of Liver,q*-Classifier,0.711876,0.130001,F2
+Cirosis of Liver,Cost-Sens. SVM,0.745194,0.112934,F2
+Cirosis of Liver,Balanced RF,0.742629,0.087967,F2
+Cirosis of Liver,PAN,0.739618,0.105275,F2
+Cirosis of Liver,GHOST,0.669671,0.184904,F2
+Cirosis of Liver,OTLP,0.770273,0.071787,F2
+Cirosis of Liver,OECV,0.777071,0.072764,F2
+Cirosis of Liver,ABTC,0.789705,0.058524,F2
+Chronic Kidney Disease,NBC (0.5),0.953893,0.025463,F2
+Chronic Kidney Disease,q*-Classifier,0.99158,0.020387,F2
+Chronic Kidney Disease,Cost-Sens. SVM,0.978434,0.017125,F2
+Chronic Kidney Disease,Balanced RF,0.996639,0.010084,F2
+Chronic Kidney Disease,PAN,0.873576,0.035485,F2
+Chronic Kidney Disease,GHOST,0.989346,0.011772,F2
+Chronic Kidney Disease,OTLP,0.990261,0.007947,F2
+Chronic Kidney Disease,OECV,0.976721,0.024362,F2
+Chronic Kidney Disease,ABTC,0.993494,0.007089,F2
+Bon Marrow,NBC (0.5),0.157303,0.171948,F2
+Bon Marrow,q*-Classifier,0.889606,0.12238,F2
+Bon Marrow,Cost-Sens. SVM,0.717182,0.136736,F2
+Bon Marrow,Balanced RF,0.904961,0.130113,F2
+Bon Marrow,PAN,0.856688,0.122745,F2
+Bon Marrow,GHOST,0.84554,0.138048,F2
+Bon Marrow,OTLP,0.828228,0.128684,F2
+Bon Marrow,OECV,0.813148,0.140272,F2
+Bon Marrow,ABTC,0.852181,0.113157,F2
+(CTG) dataset : Fetal Health Monitoring During Pregnancy,NBC (0.5),0.961011,0.015575,F2
+(CTG) dataset : Fetal Health Monitoring During Pregnancy,q*-Classifier,0.972396,0.021347,F2
+(CTG) dataset : Fetal Health Monitoring During Pregnancy,Cost-Sens. SVM,0.979243,0.01815,F2
+(CTG) dataset : Fetal Health Monitoring During Pregnancy,Balanced RF,0.973632,0.013186,F2
+(CTG) dataset : Fetal Health Monitoring During Pregnancy,PAN,0.975101,0.012153,F2
+(CTG) dataset : Fetal Health Monitoring During Pregnancy,GHOST,0.97621,0.016214,F2
+(CTG) dataset : Fetal Health Monitoring During Pregnancy,OTLP,0.977246,0.01484,F2
+(CTG) dataset : Fetal Health Monitoring During Pregnancy,OECV,0.977222,0.01576,F2
+(CTG) dataset : Fetal Health Monitoring During Pregnancy,ABTC,0.975411,0.015735,F2
+Hypothyroid Prediction,NBC (0.5),0.227985,0.018131,F2
+Hypothyroid Prediction,q*-Classifier,0.7865,0.03672,F2
+Hypothyroid Prediction,Cost-Sens. SVM,0.698366,0.071677,F2
+Hypothyroid Prediction,Balanced RF,0.8896,0.054746,F2
+Hypothyroid Prediction,PAN,0.732806,0.048002,F2
+Hypothyroid Prediction,GHOST,0.826493,0.068372,F2
+Hypothyroid Prediction,OTLP,0.82243,0.081275,F2
+Hypothyroid Prediction,OECV,0.812442,0.089579,F2
+Hypothyroid Prediction,ABTC,0.825057,0.074168,F2
+Blood Transfusion Blood Donor Prediction,NBC (0.5),0.207218,0.122328,F2
+Blood Transfusion Blood Donor Prediction,q*-Classifier,0.391347,0.114626,F2
+Blood Transfusion Blood Donor Prediction,Cost-Sens. SVM,0.265316,0.098048,F2
+Blood Transfusion Blood Donor Prediction,Balanced RF,0.485798,0.095173,F2
+Blood Transfusion Blood Donor Prediction,PAN,0.602059,0.080433,F2
+Blood Transfusion Blood Donor Prediction,GHOST,0.498774,0.103722,F2
+Blood Transfusion Blood Donor Prediction,OTLP,0.605662,0.07541,F2
+Blood Transfusion Blood Donor Prediction,OECV,0.603491,0.081784,F2
+Blood Transfusion Blood Donor Prediction,ABTC,0.609867,0.07308,F2
+Adult Autism Prediction,NBC (0.5),0.628429,0.022813,F2
+Adult Autism Prediction,q*-Classifier,0.946464,0.133092,F2
+Adult Autism Prediction,Cost-Sens. SVM,0.858764,0.081752,F2
+Adult Autism Prediction,Balanced RF,0.998901,0.003297,F2
+Adult Autism Prediction,PAN,0.93624,0.030609,F2
+Adult Autism Prediction,GHOST,0.944507,0.043564,F2
+Adult Autism Prediction,OTLP,0.941429,0.037655,F2
+Adult Autism Prediction,OECV,0.936708,0.043174,F2
+Adult Autism Prediction,ABTC,0.941821,0.044409,F2
+Thyroid prediction,NBC (0.5),0.734774,0.123846,F2
+Thyroid prediction,q*-Classifier,0.927485,0.085695,F2
+Thyroid prediction,Cost-Sens. SVM,0.909099,0.061197,F2
+Thyroid prediction,Balanced RF,0.913439,0.113831,F2
+Thyroid prediction,PAN,0.890867,0.084134,F2
+Thyroid prediction,GHOST,0.885535,0.099511,F2
+Thyroid prediction,OTLP,0.889449,0.083483,F2
+Thyroid prediction,OECV,0.891825,0.083069,F2
+Thyroid prediction,ABTC,0.89832,0.062954,F2
+Predict patient survival status after breast cancer surgery,NBC (0.5),0.210545,0.187793,F2
+Predict patient survival status after breast cancer surgery,q*-Classifier,0.355412,0.143895,F2
+Predict patient survival status after breast cancer surgery,Cost-Sens. SVM,0.247218,0.157772,F2
+Predict patient survival status after breast cancer surgery,Balanced RF,0.487109,0.132111,F2
+Predict patient survival status after breast cancer surgery,PAN,0.520092,0.17608,F2
+Predict patient survival status after breast cancer surgery,GHOST,0.51799,0.216133,F2
+Predict patient survival status after breast cancer surgery,OTLP,0.571519,0.087995,F2
+Predict patient survival status after breast cancer surgery,OECV,0.588712,0.115718,F2
+Predict patient survival status after breast cancer surgery,ABTC,0.64653,0.08642,F2
+Hepatitis Prediction,NBC (0.5),0.518193,0.274943,F2
+Hepatitis Prediction,q*-Classifier,0.540115,0.37756,F2
+Hepatitis Prediction,Cost-Sens. SVM,0.433333,0.379083,F2
+Hepatitis Prediction,Balanced RF,0.67619,0.276204,F2
+Hepatitis Prediction,PAN,0.694841,0.145808,F2
+Hepatitis Prediction,GHOST,0.556999,0.309381,F2
+Hepatitis Prediction,OTLP,0.625848,0.256712,F2
+Hepatitis Prediction,OECV,0.663348,0.280167,F2
+Hepatitis Prediction,ABTC,0.622655,0.349707,F2
+HCV Prediction,NBC (0.5),0.007273,0.014546,F2
+HCV Prediction,q*-Classifier,0.851104,0.05648,F2
+HCV Prediction,Cost-Sens. SVM,0.168741,0.064302,F2
+HCV Prediction,Balanced RF,0.535379,0.078679,F2
+HCV Prediction,PAN,0.392028,0.080969,F2
+HCV Prediction,GHOST,0.318594,0.130621,F2
+HCV Prediction,OTLP,0.605497,0.017424,F2
+HCV Prediction,OECV,0.602445,0.02105,F2
+HCV Prediction,ABTC,0.612511,0.007845,F2
+Appendicitis Complicacy Prediction,NBC (0.5),0.681691,0.11396,F2
+Appendicitis Complicacy Prediction,q*-Classifier,0.812481,0.080742,F2
+Appendicitis Complicacy Prediction,Cost-Sens. SVM,0.595796,0.190858,F2
+Appendicitis Complicacy Prediction,Balanced RF,0.846583,0.065914,F2
+Appendicitis Complicacy Prediction,PAN,0.769511,0.070863,F2
+Appendicitis Complicacy Prediction,GHOST,0.75348,0.102059,F2
+Appendicitis Complicacy Prediction,OTLP,0.778483,0.062043,F2
+Appendicitis Complicacy Prediction,OECV,0.76012,0.068203,F2
+Appendicitis Complicacy Prediction,ABTC,0.776304,0.072537,F2
+Death Prediction from Support dataset,NBC (0.5),0.743402,0.017683,F2
+Death Prediction from Support dataset,q*-Classifier,0.819603,0.027073,F2
+Death Prediction from Support dataset,Cost-Sens. SVM,0.778765,0.021711,F2
+Death Prediction from Support dataset,Balanced RF,0.842067,0.02372,F2
+Death Prediction from Support dataset,PAN,0.838765,0.014502,F2
+Death Prediction from Support dataset,GHOST,0.786322,0.02786,F2
+Death Prediction from Support dataset,OTLP,0.842179,0.012177,F2
+Death Prediction from Support dataset,OECV,0.843798,0.010888,F2
+Death Prediction from Support dataset,ABTC,0.841599,0.011924,F2
+Depression Prediction,NBC (0.5),0.626623,0.228916,F2
+Depression Prediction,q*-Classifier,0.946464,0.13309,F2
+Depression Prediction,Cost-Sens. SVM,0.829798,0.307227,F2
+Depression Prediction,Balanced RF,0.957576,0.067692,F2
+Depression Prediction,PAN,0.776068,0.089646,F2
+Depression Prediction,GHOST,0.908802,0.145781,F2
+Depression Prediction,OTLP,0.908802,0.145781,F2
+Depression Prediction,OECV,0.894444,0.176471,F2
+Depression Prediction,ABTC,0.946465,0.133092,F2
+Breast Cancer Prediction,NBC (0.5),0.460895,0.052056,F2
+Breast Cancer Prediction,q*-Classifier,0.603545,0.045479,F2
+Breast Cancer Prediction,Cost-Sens. SVM,0.444178,0.048225,F2
+Breast Cancer Prediction,Balanced RF,0.620001,0.039445,F2
+Breast Cancer Prediction,PAN,0.643374,0.040191,F2
+Breast Cancer Prediction,GHOST,0.600656,0.043465,F2
+Breast Cancer Prediction,OTLP,0.643008,0.044567,F2
+Breast Cancer Prediction,OECV,0.642471,0.043903,F2
+Breast Cancer Prediction,ABTC,0.640261,0.039506,F2
+Chronic Kedney Disease2 Prediction,NBC (0.5),0.569005,0.136254,F2
+Chronic Kedney Disease2 Prediction,q*-Classifier,0.64027,0.1453276,F2
+Chronic Kedney Disease2 Prediction,Cost-Sens. SVM,0.483488,0.207846,F2
+Chronic Kedney Disease2 Prediction,Balanced RF,0.666554,0.15958,F2
+Chronic Kedney Disease2 Prediction,PAN,0.678362,0.121197,F2
+Chronic Kedney Disease2 Prediction,GHOST,0.489271,0.252734,F2
+Chronic Kedney Disease2 Prediction,OTLP,0.606095,0.148069,F2
+Chronic Kedney Disease2 Prediction,OECV,0.609502,0.146508,F2
+Chronic Kedney Disease2 Prediction,ABTC,0.601746,0.121449,F2
+Diagnostic Pathology dataset Prediction of Has Disease,NBC (0.5),0.83695,0.024088,F2
+Diagnostic Pathology dataset Prediction of Has Disease,q*-Classifier,1.0,0,F2
+Diagnostic Pathology dataset Prediction of Has Disease,Cost-Sens. SVM,0.962731,0.013359,F2
+Diagnostic Pathology dataset Prediction of Has Disease,Balanced RF,1.0,0,F2
+Diagnostic Pathology dataset Prediction of Has Disease,PAN,0.96706,0.011899,F2
+Diagnostic Pathology dataset Prediction of Has Disease,GHOST,0.964016,0.007482,F2
+Diagnostic Pathology dataset Prediction of Has Disease,OTLP,0.967611,0.012818,F2
+Diagnostic Pathology dataset Prediction of Has Disease,OECV,0.966879,0.013807,F2
+Diagnostic Pathology dataset Prediction of Has Disease,ABTC,0.966888,0.013634,F2
+The Drug-Induced Autoimmunity Prediction dataset,NBC (0.5),0.608941,0.034373,F2
+The Drug-Induced Autoimmunity Prediction dataset,q*-Classifier,0.678514,0.125812,F2
+The Drug-Induced Autoimmunity Prediction dataset,Cost-Sens. SVM,0.443501,0.124369,F2
+The Drug-Induced Autoimmunity Prediction dataset,Balanced RF,0.614257,0.105046,F2
+The Drug-Induced Autoimmunity Prediction dataset,PAN,0.587629,0.11596,F2
+The Drug-Induced Autoimmunity Prediction dataset,GHOST,0.515205,0.104259,F2
+The Drug-Induced Autoimmunity Prediction dataset,OTLP,0.606077,0.070061,F2
+The Drug-Induced Autoimmunity Prediction dataset,OECV,0.607793,0.063418,F2
+The Drug-Induced Autoimmunity Prediction dataset,ABTC,0.621855,0.065552,F2
+Healthcare dataset Prediction of Adherence,NBC (0.5),0.944897,0.030969,F2
+Healthcare dataset Prediction of Adherence,q*-Classifier,1.0,0,F2
+Healthcare dataset Prediction of Adherence,Cost-Sens. SVM,0.879284,0.04004,F2
+Healthcare dataset Prediction of Adherence,Balanced RF,1.0,0,F2
+Healthcare dataset Prediction of Adherence,PAN,0.989436,0.010901,F2
+Healthcare dataset Prediction of Adherence,GHOST,0.985928,0.014444,F2
+Healthcare dataset Prediction of Adherence,OTLP,0.982928,0.014444,F2
+Healthcare dataset Prediction of Adherence,OECV,0.982141,0.01518,F2
+Healthcare dataset Prediction of Adherence,ABTC,0.981773,0.021148,F2
+Lifestyle dataset Prediction of Healthy or Not,NBC (0.5),0.201756,0.041092,F2
+Lifestyle dataset Prediction of Healthy or Not,q*-Classifier,0.644397,0.026554,F2
+Lifestyle dataset Prediction of Healthy or Not,Cost-Sens. SVM,0.359863,0.030269,F2
+Lifestyle dataset Prediction of Healthy or Not,Balanced RF,0.66644,0.021821,F2
+Lifestyle dataset Prediction of Healthy or Not,PAN,0.573035,0.026927,F2
+Lifestyle dataset Prediction of Healthy or Not,GHOST,0.490098,0.030924,F2
+Lifestyle dataset Prediction of Healthy or Not,OTLP,0.586232,0.026208,F2
+Lifestyle dataset Prediction of Healthy or Not,OECV,0.581818,0.021287,F2
+Lifestyle dataset Prediction of Healthy or Not,ABTC,0.586058,0.024608,F2
+Heart Disease dataset2 Prediction,NBC (0.5),0.7932,0.067411,F2
+Heart Disease dataset2 Prediction,q*-Classifier,0.78271,0.097085,F2
+Heart Disease dataset2 Prediction,Cost-Sens. SVM,0.760216,0.077826,F2
+Heart Disease dataset2 Prediction,Balanced RF,0.792507,0.07093,F2
+Heart Disease dataset2 Prediction,PAN,0.799515,0.081485,F2
+Heart Disease dataset2 Prediction,GHOST,0.738129,0.112786,F2
+Heart Disease dataset2 Prediction,OTLP,0.78157,0.089407,F2
+Heart Disease dataset2 Prediction,OECV,0.791476,0.085854,F2
+Heart Disease dataset2 Prediction,ABTC,0.804049,0.075048,F2
+Prediction of Length Of  Stay at Hospital,NBC (0.5),0.492567,0.019829,F2
+Prediction of Length Of  Stay at Hospital,q*-Classifier,0.835166,0.0088483,F2
+Prediction of Length Of  Stay at Hospital,Cost-Sens. SVM,0.780429,0.008669,F2
+Prediction of Length Of  Stay at Hospital,Balanced RF,0.865915,0.006596,F2
+Prediction of Length Of  Stay at Hospital,PAN,0.765301,0.010627,F2
+Prediction of Length Of  Stay at Hospital,GHOST,0.714983,0.009772,F2
+Prediction of Length Of  Stay at Hospital,OTLP,0.76382,0.010045,F2
+Prediction of Length Of  Stay at Hospital,OECV,0.765527,0.009587,F2
+Prediction of Length Of  Stay at Hospital,ABTC,0.765248,0.009232,F2
+ICU Patients Death Prediction,NBC (0.5),0.467022,0.064902,F2
+ICU Patients Death Prediction,q*-Classifier,0.492844,0.0659545,F2
+ICU Patients Death Prediction,Cost-Sens. SVM,0.208802,0.047991,F2
+ICU Patients Death Prediction,Balanced RF,0.599091,0.025994,F2
+ICU Patients Death Prediction,PAN,0.609418,0.026248,F2
+ICU Patients Death Prediction,GHOST,0.521353,0.03797,F2
+ICU Patients Death Prediction,OTLP,0.601596,0.031184,F2
+ICU Patients Death Prediction,OECV,0.600458,0.036667,F2
+ICU Patients Death Prediction,ABTC,0.600502,0.03624,F2
+Malaria Disease Prediction,NBC (0.5),0.608941,0.034373,F2
+Malaria Disease Prediction,q*-Classifier,0.678514,0.125812,F2
+Malaria Disease Prediction,Cost-Sens. SVM,0.443501,0.124369,F2
+Malaria Disease Prediction,Balanced RF,0.614257,0.105046,F2
+Malaria Disease Prediction,PAN,0.587629,0.11596,F2
+Malaria Disease Prediction,GHOST,0.515205,0.104259,F2
+Malaria Disease Prediction,OTLP,0.606077,0.070061,F2
+Malaria Disease Prediction,OECV,0.581292,0.096688,F2
+Malaria Disease Prediction,ABTC,0.621855,0.065552,F2
+Infrared Temperature Prediction of Fever,NBC (0.5),0.681959,0.16241,F2
+Infrared Temperature Prediction of Fever,q*-Classifier,0.618373,0.21113,F2
+Infrared Temperature Prediction of Fever,Cost-Sens. SVM,0.533313,0.199851,F2
+Infrared Temperature Prediction of Fever,Balanced RF,0.712204,0.091745,F2
+Infrared Temperature Prediction of Fever,PAN,0.594467,0.08178,F2
+Infrared Temperature Prediction of Fever,GHOST,0.755858,0.159577,F2
+Infrared Temperature Prediction of Fever,OTLP,0.798803,0.139031,F2
+Infrared Temperature Prediction of Fever,OECV,0.79706,0.139962,F2
+Infrared Temperature Prediction of Fever,ABTC,0.799148,0.134322,F2
+Prediction of High Admission,NBC (0.5),0.727196,0.055001,F2
+Prediction of High Admission,q*-Classifier,0.999009,0.00297,F2
+Prediction of High Admission,Cost-Sens. SVM,0.973938,0.019198,F2
+Prediction of High Admission,Balanced RF,0.99596,0.012121,F2
+Prediction of High Admission,PAN,0.797999,0.048422,F2
+Prediction of High Admission,GHOST,0.968905,0.027638,F2
+Prediction of High Admission,OTLP,0.973245,0.024657,F2
+Prediction of High Admission,OECV,0.965948,0.021046,F2
+Prediction of High Admission,ABTC,0.967341,0.033497,F2
+Prediction the Risk of Ovarian Cancer,NBC (0.5),0.0,0,F2
+Prediction the Risk of Ovarian Cancer,q*-Classifier,0.081183,0.007629,F2
+Prediction the Risk of Ovarian Cancer,Cost-Sens. SVM,0.0,0,F2
+Prediction the Risk of Ovarian Cancer,Balanced RF,0.060857,0.009735,F2
+Prediction the Risk of Ovarian Cancer,PAN,0.282708,0.010935,F2
+Prediction the Risk of Ovarian Cancer,GHOST,0.156054,0.009451,F2
+Prediction the Risk of Ovarian Cancer,OTLP,0.384056,0.001109,F2
+Prediction the Risk of Ovarian Cancer,OECV,0.34472,0.114925,F2
+Prediction the Risk of Ovarian Cancer,ABTC,0.384692,0.000705,F2
+Prediction of Lung Tumer,NBC (0.5),0.605899,0.14389,F2
+Prediction of Lung Tumer,q*-Classifier,0.6351425,0.1436444,F2
+Prediction of Lung Tumer,Cost-Sens. SVM,0.62557,0.179285,F2
+Prediction of Lung Tumer,Balanced RF,0.678469,0.135254,F2
+Prediction of Lung Tumer,PAN,0.718289,0.082359,F2
+Prediction of Lung Tumer,GHOST,0.668012,0.135625,F2
+Prediction of Lung Tumer,OTLP,0.709954,0.108493,F2
+Prediction of Lung Tumer,OECV,0.704511,0.147197,F2
+Prediction of Lung Tumer,ABTC,0.716617,0.109514,F2
+EEG dataset prediction of Parkinsons Disease,NBC (0.5),0.661485,0.026377,F2
+EEG dataset prediction of Parkinsons Disease,q*-Classifier,1.0,0,F2
+EEG dataset prediction of Parkinsons Disease,Cost-Sens. SVM,0.984275,0.010015,F2
+EEG dataset prediction of Parkinsons Disease,Balanced RF,0.946695,0.017369,F2
+EEG dataset prediction of Parkinsons Disease,PAN,0.939266,0.029097,F2
+EEG dataset prediction of Parkinsons Disease,GHOST,0.955741,0.019839,F2
+EEG dataset prediction of Parkinsons Disease,OTLP,0.954499,0.021374,F2
+EEG dataset prediction of Parkinsons Disease,OECV,0.955504,0.020032,F2
+EEG dataset prediction of Parkinsons Disease,ABTC,0.961109,0.018704,F2
+Prediction of Depression dataset2,NBC (0.5),0.541757,0.144136,F2
+Prediction of Depression dataset2,q*-Classifier,0.405087,0.17887,F2
+Prediction of Depression dataset2,Cost-Sens. SVM,0.033908,0.067828,F2
+Prediction of Depression dataset2,Balanced RF,0.560932,0.086023,F2
+Prediction of Depression dataset2,PAN,0.564231,0.155848,F2
+Prediction of Depression dataset2,GHOST,0.443201,0.170282,F2
+Prediction of Depression dataset2,OTLP,0.579131,0.116779,F2
+Prediction of Depression dataset2,OECV,0.594327,0.117293,F2
+Prediction of Depression dataset2,ABTC,0.602554,0.126496,F2
+Prediction of Schizophrenia,NBC (0.5),0.671195,0.168445,F2
+Prediction of Schizophrenia,q*-Classifier,0.656892,0.205287,F2
+Prediction of Schizophrenia,Cost-Sens. SVM,0.72616,0.173793,F2
+Prediction of Schizophrenia,Balanced RF,0.712018,0.184626,F2
+Prediction of Schizophrenia,PAN,0.753443,0.127313,F2
+Prediction of Schizophrenia,GHOST,0.638522,0.185386,F2
+Prediction of Schizophrenia,OTLP,0.694915,0.150778,F2
+Prediction of Schizophrenia,OECV,0.702533,0.162224,F2
+Prediction of Schizophrenia,ABTC,0.726674,0.131529,F2
+Predicting Stunding (Malnutrition),NBC (0.5),0.001134,0.003401,F2
+Predicting Stunding (Malnutrition),q*-Classifier,0.984509,0.00501,F2
+Predicting Stunding (Malnutrition),Cost-Sens. SVM,0.969974,0.01067,F2
+Predicting Stunding (Malnutrition),Balanced RF,0.977568,0.005179,F2
+Predicting Stunding (Malnutrition),PAN,0.88763,0.008923,F2
+Predicting Stunding (Malnutrition),GHOST,0.830166,0.021203,F2
+Predicting Stunding (Malnutrition),OTLP,0.88626,0.006726,F2
+Predicting Stunding (Malnutrition),OECV,0.885149,0.007476,F2
+Predicting Stunding (Malnutrition),ABTC,0.887008,0.006189,F2
+Predicting whether the patient died within one year after Thoracic Surgery,NBC (0.5),0.467341,0.01438,F2
+Predicting whether the patient died within one year after Thoracic Surgery,q*-Classifier,0.228768,0.1117043,F2
+Predicting whether the patient died within one year after Thoracic Surgery,Cost-Sens. SVM,0.0,0,F2
+Predicting whether the patient died within one year after Thoracic Surgery,Balanced RF,0.277904,0.134864,F2
+Predicting whether the patient died within one year after Thoracic Surgery,PAN,0.398063,0.109509,F2
+Predicting whether the patient died within one year after Thoracic Surgery,GHOST,0.323782,0.088274,F2
+Predicting whether the patient died within one year after Thoracic Surgery,OTLP,0.456995,0.051793,F2
+Predicting whether the patient died within one year after Thoracic Surgery,OECV,0.459333,0.061685,F2
+Predicting whether the patient died within one year after Thoracic Surgery,ABTC,0.457711,0.085261,F2
+Predicting Type 2 Diabetes,NBC (0.5),0.449666,0.153333,F2
+Predicting Type 2 Diabetes,q*-Classifier,0.498767,0.148674,F2
+Predicting Type 2 Diabetes,Cost-Sens. SVM,0.179367,0.115118,F2
+Predicting Type 2 Diabetes,Balanced RF,0.560154,0.111358,F2
+Predicting Type 2 Diabetes,PAN,0.627738,0.095234,F2
+Predicting Type 2 Diabetes,GHOST,0.511928,0.165494,F2
+Predicting Type 2 Diabetes,OTLP,0.577736,0.108354,F2
+Predicting Type 2 Diabetes,OECV,0.543538,0.148526,F2
+Predicting Type 2 Diabetes,ABTC,0.58326,0.112829,F2
+Predicting Hospitalized or Not from Typhoid disease dataset,NBC (0.5),0.022096,0.013162,F2
+Predicting Hospitalized or Not from Typhoid disease dataset,q*-Classifier,0.201476,0.03672,F2
+Predicting Hospitalized or Not from Typhoid disease dataset,Cost-Sens. SVM,0.0,0,F2
+Predicting Hospitalized or Not from Typhoid disease dataset,Balanced RF,0.184298,0.036818,F2
+Predicting Hospitalized or Not from Typhoid disease dataset,PAN,0.416802,0.044039,F2
+Predicting Hospitalized or Not from Typhoid disease dataset,GHOST,0.328154,0.060083,F2
+Predicting Hospitalized or Not from Typhoid disease dataset,OTLP,0.631349,0.00626,F2
+Predicting Hospitalized or Not from Typhoid disease dataset,OECV,0.632651,0.007083,F2
+Predicting Hospitalized or Not from Typhoid disease dataset,ABTC,0.634619,0.014337,F2
+Predicting Polycystic Ovary Syndrome (PCOS) of women,NBC (0.5),0.601464,0.059016,F2
+Predicting Polycystic Ovary Syndrome (PCOS) of women,q*-Classifier,0.610657,0.099589,F2
+Predicting Polycystic Ovary Syndrome (PCOS) of women,Cost-Sens. SVM,0.489408,0.102376,F2
+Predicting Polycystic Ovary Syndrome (PCOS) of women,Balanced RF,0.600243,0.099117,F2
+Predicting Polycystic Ovary Syndrome (PCOS) of women,PAN,0.612949,0.06832,F2
+Predicting Polycystic Ovary Syndrome (PCOS) of women,GHOST,0.593427,0.068611,F2
+Predicting Polycystic Ovary Syndrome (PCOS) of women,OTLP,0.666386,0.043804,F2
+Predicting Polycystic Ovary Syndrome (PCOS) of women,OECV,0.655597,0.046413,F2
+Predicting Polycystic Ovary Syndrome (PCOS) of women,ABTC,0.674072,0.068734,F2
+Cancer Prediction,NBC (0.5),0.47974,0.104752,F2
+Cancer Prediction,q*-Classifier,0.827721,0.07319,F2
+Cancer Prediction,Cost-Sens. SVM,0.675262,0.106635,F2
+Cancer Prediction,Balanced RF,0.812123,0.057909,F2
+Cancer Prediction,PAN,0.734029,0.061865,F2
+Cancer Prediction,GHOST,0.626552,0.102724,F2
+Cancer Prediction,OTLP,0.721035,0.082934,F2
+Cancer Prediction,OECV,0.712613,0.083214,F2
+Cancer Prediction,ABTC,0.746477,0.057879,F2
+Ovarian Cancer Risk and Progression Data,NBC (0.5),0.005438,0.004319,F2
+Ovarian Cancer Risk and Progression Data,q*-Classifier,0.182199,0.019175,F2
+Ovarian Cancer Risk and Progression Data,Cost-Sens. SVM,0.0,0,F2
+Ovarian Cancer Risk and Progression Data,Balanced RF,0.12236,0.020604,F2
+Ovarian Cancer Risk and Progression Data,PAN,0.387231,0.018019,F2
+Ovarian Cancer Risk and Progression Data,GHOST,0.308293,0.023812,F2
+Ovarian Cancer Risk and Progression Data,OTLP,0.55485,0.001823,F2
+Ovarian Cancer Risk and Progression Data,OECV,0.554715,0.002086,F2
+Ovarian Cancer Risk and Progression Data,ABTC,0.55598,0.000447,F2
+Disease Symptoms and Patient Profile Dataset,NBC (0.5),0.36637,0.128718,F2
+Disease Symptoms and Patient Profile Dataset,q*-Classifier,0.685028,0.0952029,F2
+Disease Symptoms and Patient Profile Dataset,Cost-Sens. SVM,0.572696,0.132055,F2
+Disease Symptoms and Patient Profile Dataset,Balanced RF,0.640492,0.086356,F2
+Disease Symptoms and Patient Profile Dataset,PAN,0.600057,0.122363,F2
+Disease Symptoms and Patient Profile Dataset,GHOST,0.565046,0.169713,F2
+Disease Symptoms and Patient Profile Dataset,OTLP,0.7291,0.067403,F2
+Disease Symptoms and Patient Profile Dataset,OECV,0.746715,0.034953,F2
+Disease Symptoms and Patient Profile Dataset,ABTC,0.738542,0.038773,F2
+Lung Cancer,NBC (0.5),0.471395,0.072043,F2
+Lung Cancer,q*-Classifier,0.653835,0.029118,F2
+Lung Cancer,Cost-Sens. SVM,0.516906,0.063328,F2
+Lung Cancer,Balanced RF,0.762018,0.040798,F2
+Lung Cancer,PAN,0.73519,0.047319,F2
+Lung Cancer,GHOST,0.732463,0.06496,F2
+Lung Cancer,OTLP,0.773278,0.05408,F2
+Lung Cancer,OECV,0.771363,0.058968,F2
+Lung Cancer,ABTC,0.773817,0.056405,F2
+Stroke Risk,NBC (0.5),0.810528,0.030171,F2
+Stroke Risk,q*-Classifier,1.0,0,F2
+Stroke Risk,Cost-Sens. SVM,0.954022,0.015326,F2
+Stroke Risk,Balanced RF,1.0,0,F2
+Stroke Risk,PAN,0.96052,0.003875,F2
+Stroke Risk,GHOST,0.998959,0.001434,F2
+Stroke Risk,OTLP,0.99888,0.001568,F2
+Stroke Risk,OECV,0.998479,0.001452,F2
+Stroke Risk,ABTC,0.998237,0.002887,F2
+Alzheimers Disease,NBC (0.5),0.700414,0.03384,F2
+Alzheimers Disease,q*-Classifier,0.931782,0.014023,F2
+Alzheimers Disease,Cost-Sens. SVM,0.768583,0.036189,F2
+Alzheimers Disease,Balanced RF,0.912739,0.015825,F2
+Alzheimers Disease,PAN,0.795888,0.0326,F2
+Alzheimers Disease,GHOST,0.765665,0.036926,F2
+Alzheimers Disease,OTLP,0.829406,0.014254,F2
+Alzheimers Disease,OECV,0.832409,0.013302,F2
+Alzheimers Disease,ABTC,0.83429,0.016966,F2
+Stress Prediction,NBC (0.5),0.048863,0.037432,F2
+Stress Prediction,q*-Classifier,0.11898544,0.167781,F2
+Stress Prediction,Cost-Sens. SVM,0.0,0,F2
+Stress Prediction,Balanced RF,0.223732,0.066611,F2
+Stress Prediction,PAN,0.369389,0.066397,F2
+Stress Prediction,GHOST,0.279819,0.072331,F2
+Stress Prediction,OTLP,0.639422,0.008885,F2
+Stress Prediction,OECV,0.637626,0.011288,F2
+Stress Prediction,ABTC,0.641709,0.00904,F2
+Fraudulent credit card transaction prediction,NBC (0.5),0.573626,0.029762,F2
+Fraudulent credit card transaction prediction,q*-Classifier,0.857253,0.033321,F2
+Fraudulent credit card transaction prediction,Cost-Sens. SVM,0.672715,0.077467,F2
+Fraudulent credit card transaction prediction,Balanced RF,0.736421,0.037407,F2
+Fraudulent credit card transaction prediction,PAN,0.609959,0.035587,F2
+Fraudulent credit card transaction prediction,GHOST,0.842071,0.06518,F2
+Fraudulent credit card transaction prediction,OTLP,0.848251,0.051788,F2
+Fraudulent credit card transaction prediction,OECV,0.844972,0.049703,F2
+Fraudulent credit card transaction prediction,ABTC,0.850169,0.045228,F2
+Fraudulent Healthcare provider,NBC (0.5),0.10962,0.003503,F2
+Fraudulent Healthcare provider,q*-Classifier,0.673214,0.249544,F2
+Fraudulent Healthcare provider,Cost-Sens. SVM,0.934138,0.075755,F2
+Fraudulent Healthcare provider,Balanced RF,0.671013,0.207422,F2
+Fraudulent Healthcare provider,PAN,0.106067,0.003265,F2
+Fraudulent Healthcare provider,GHOST,0.540017,0.146789,F2
+Fraudulent Healthcare provider,OTLP,0.545446,0.12866,F2
+Fraudulent Healthcare provider,OECV,0.550663,0.12829,F2
+Fraudulent Healthcare provider,ABTC,0.594697,0.112945,F2
+Loan Fraud Prediction,NBC (0.5),1.0,0,F2
+Loan Fraud Prediction,q*-Classifier,0.9991701,0.00165975,F2
+Loan Fraud Prediction,Cost-Sens. SVM,0.998361,0.004918,F2
+Loan Fraud Prediction,Balanced RF,0.817674,0.018022,F2
+Loan Fraud Prediction,PAN,1.0,0,F2
+Loan Fraud Prediction,GHOST,1.0,0,F2
+Loan Fraud Prediction,OTLP,1.0,0,F2
+Loan Fraud Prediction,OECV,1.0,0,F2
+Loan Fraud Prediction,ABTC,1.0,0,F2
+Insurance Fraud Claim Prediction,NBC (0.5),0.621173,0.005845,F2
+Insurance Fraud Claim Prediction,q*-Classifier,0.6371949,0.075827,F2
+Insurance Fraud Claim Prediction,Cost-Sens. SVM,0.420455,0.073805,F2
+Insurance Fraud Claim Prediction,Balanced RF,0.487835,0.095639,F2
+Insurance Fraud Claim Prediction,PAN,0.65987,0.019081,F2
+Insurance Fraud Claim Prediction,GHOST,0.644267,0.063232,F2
+Insurance Fraud Claim Prediction,OTLP,0.696475,0.046364,F2
+Insurance Fraud Claim Prediction,OECV,0.69258,0.045675,F2
+Insurance Fraud Claim Prediction,ABTC,0.698398,0.030966,F2
+Airbnb Fraud Prediction,NBC (0.5),0.575723,0.059598,F2
+Airbnb Fraud Prediction,q*-Classifier,0.650197,0.048412,F2
+Airbnb Fraud Prediction,Cost-Sens. SVM,0.52025,0.037729,F2
+Airbnb Fraud Prediction,Balanced RF,0.728863,0.036615,F2
+Airbnb Fraud Prediction,PAN,0.722292,0.026488,F2
+Airbnb Fraud Prediction,GHOST,0.680939,0.033908,F2
+Airbnb Fraud Prediction,OTLP,0.743369,0.025771,F2
+Airbnb Fraud Prediction,OECV,0.743824,0.023833,F2
+Airbnb Fraud Prediction,ABTC,0.750807,0.02382,F2
+Fraudulent Claim on Cars Physical Damage,NBC (0.5),0.142777,0.022763,F2
+Fraudulent Claim on Cars Physical Damage,q*-Classifier,0.3154583,0.023597,F2
+Fraudulent Claim on Cars Physical Damage,Cost-Sens. SVM,0.003097,0.003977,F2
+Fraudulent Claim on Cars Physical Damage,Balanced RF,0.379133,0.025807,F2
+Fraudulent Claim on Cars Physical Damage,PAN,0.492443,0.024682,F2
+Fraudulent Claim on Cars Physical Damage,GHOST,0.402207,0.034957,F2
+Fraudulent Claim on Cars Physical Damage,OTLP,0.523822,0.005744,F2
+Fraudulent Claim on Cars Physical Damage,OECV,0.524058,0.007667,F2
+Fraudulent Claim on Cars Physical Damage,ABTC,0.524016,0.00869,F2
+Fraudulent Insurance Claim,NBC (0.5),0.721268,0.009893,F2
+Fraudulent Insurance Claim,q*-Classifier,0.4929344,0.0181171,F2
+Fraudulent Insurance Claim,Cost-Sens. SVM,0.053385,0.015132,F2
+Fraudulent Insurance Claim,Balanced RF,0.726359,0.014029,F2
+Fraudulent Insurance Claim,PAN,0.721238,0.010285,F2
+Fraudulent Insurance Claim,GHOST,0.557966,0.044025,F2
+Fraudulent Insurance Claim,OTLP,0.720708,0.010113,F2
+Fraudulent Insurance Claim,OECV,0.720531,0.010852,F2
+Fraudulent Insurance Claim,ABTC,0.724007,0.010789,F2
+Classifying Transactions as Genuine or Fake,NBC (0.5),0.906349,0.022991,F2
+Classifying Transactions as Genuine or Fake,q*-Classifier,0.996735,0.006522,F2
+Classifying Transactions as Genuine or Fake,Cost-Sens. SVM,0.976058,0.021763,F2
+Classifying Transactions as Genuine or Fake,Balanced RF,0.996227,0.003438,F2
+Classifying Transactions as Genuine or Fake,PAN,0.991351,0.008459,F2
+Classifying Transactions as Genuine or Fake,GHOST,0.993522,0.006316,F2
+Classifying Transactions as Genuine or Fake,OTLP,0.992438,0.006049,F2
+Classifying Transactions as Genuine or Fake,OECV,0.991298,0.014045,F2
+Classifying Transactions as Genuine or Fake,ABTC,0.994624,0.009986,F2
+Prediction Bank Transaction Fraud,NBC (0.5),0.647479,0.037623,F2
+Prediction Bank Transaction Fraud,q*-Classifier,0.8735308,0.009223,F2
+Prediction Bank Transaction Fraud,Cost-Sens. SVM,0.817462,0.021434,F2
+Prediction Bank Transaction Fraud,Balanced RF,0.874937,0.012101,F2
+Prediction Bank Transaction Fraud,PAN,0.83318,0.01011,F2
+Prediction Bank Transaction Fraud,GHOST,0.804253,0.019644,F2
+Prediction Bank Transaction Fraud,OTLP,0.832516,0.010137,F2
+Prediction Bank Transaction Fraud,OECV,0.832261,0.008826,F2
+Prediction Bank Transaction Fraud,ABTC,0.83528,0.010761,F2
+Cybersecurity WebAttack,NBC (0.5),0.918239,0.008633,F2
+Cybersecurity WebAttack,q*-Classifier,0.972676,0.022396,F2
+Cybersecurity WebAttack,Cost-Sens. SVM,0.929904,0.033526,F2
+Cybersecurity WebAttack,Balanced RF,0.93315,0.024696,F2
+Cybersecurity WebAttack,PAN,0.553564,0.020247,F2
+Cybersecurity WebAttack,GHOST,0.819291,0.039036,F2
+Cybersecurity WebAttack,OTLP,0.853644,0.043324,F2
+Cybersecurity WebAttack,OECV,0.82581,0.035829,F2
+Cybersecurity WebAttack,ABTC,0.867492,0.039997,F2
+Predicting Network Anomaly,NBC (0.5),0.941324,0.053683,F2
+Predicting Network Anomaly,q*-Classifier,1.0,0,F2
+Predicting Network Anomaly,Cost-Sens. SVM,0.992308,0.015385,F2
+Predicting Network Anomaly,Balanced RF,1.0,0,F2
+Predicting Network Anomaly,PAN,0.992308,0.015385,F2
+Predicting Network Anomaly,GHOST,0.991472,0.012409,F2
+Predicting Network Anomaly,OTLP,0.988746,0.015027,F2
+Predicting Network Anomaly,OECV,0.986592,0.01729,F2
+Predicting Network Anomaly,ABTC,0.996154,0.011538,F2
+Healthcare Ransomware Dataset,NBC (0.5),0.0,0,F2
+Healthcare Ransomware Dataset,q*-Classifier,0.20814,0.036202,F2
+Healthcare Ransomware Dataset,Cost-Sens. SVM,0.0,0,F2
+Healthcare Ransomware Dataset,Balanced RF,0.215315,0.04672,F2
+Healthcare Ransomware Dataset,PAN,0.402658,0.021118,F2
+Healthcare Ransomware Dataset,GHOST,0.320044,0.0281,F2
+Healthcare Ransomware Dataset,OTLP,0.573223,0.009256,F2
+Healthcare Ransomware Dataset,OECV,0.581209,0.012926,F2
+Healthcare Ransomware Dataset,ABTC,0.594967,0.005698,F2
+Phishing Website Dataset,NBC (0.5),0.607135,0.004278,F2
+Phishing Website Dataset,q*-Classifier,0.942217,0.0253885,F2
+Phishing Website Dataset,Cost-Sens. SVM,0.879838,0.02708,F2
+Phishing Website Dataset,Balanced RF,0.921913,0.024769,F2
+Phishing Website Dataset,PAN,0.873969,0.022795,F2
+Phishing Website Dataset,GHOST,0.846955,0.029306,F2
+Phishing Website Dataset,OTLP,0.860319,0.022003,F2
+Phishing Website Dataset,OECV,0.869505,0.019223,F2
+Phishing Website Dataset,ABTC,0.872,0.020853,F2
+Distinguishing between malicious and benign Windows Portable Executable (PE) files,NBC (0.5),0.623028,0.165641,F2
+Distinguishing between malicious and benign Windows Portable Executable (PE) files,q*-Classifier,0.9676082,0.018363,F2
+Distinguishing between malicious and benign Windows Portable Executable (PE) files,Cost-Sens. SVM,0.902273,0.040374,F2
+Distinguishing between malicious and benign Windows Portable Executable (PE) files,Balanced RF,0.97325,0.016818,F2
+Distinguishing between malicious and benign Windows Portable Executable (PE) files,PAN,0.910824,0.032572,F2
+Distinguishing between malicious and benign Windows Portable Executable (PE) files,GHOST,0.904683,0.03989,F2
+Distinguishing between malicious and benign Windows Portable Executable (PE) files,OTLP,0.913189,0.029179,F2
+Distinguishing between malicious and benign Windows Portable Executable (PE) files,OECV,0.913493,0.028661,F2
+Distinguishing between malicious and benign Windows Portable Executable (PE) files,ABTC,0.91136,0.023106,F2
+Prediction of Android Malware2,NBC (0.5),0.370389,0.118375,F2
+Prediction of Android Malware2,q*-Classifier,0.4602225,0.0193275,F2
+Prediction of Android Malware2,Cost-Sens. SVM,0.0,0,F2
+Prediction of Android Malware2,Balanced RF,0.502509,0.018863,F2
+Prediction of Android Malware2,PAN,0.420632,0.017749,F2
+Prediction of Android Malware2,GHOST,0.319721,0.013443,F2
+Prediction of Android Malware2,OTLP,0.506545,0.006554,F2
+Prediction of Android Malware2,OECV,0.506459,0.006073,F2
+Prediction of Android Malware2,ABTC,0.507252,0.005938,F2
+Phishing Dataset,NBC (0.5),0.27829,0.015175,F2
+Phishing Dataset,q*-Classifier,0.7690462,0.0100787,F2
+Phishing Dataset,Cost-Sens. SVM,0.487972,0.016915,F2
+Phishing Dataset,Balanced RF,0.839948,0.006161,F2
+Phishing Dataset,PAN,0.645311,0.010034,F2
+Phishing Dataset,GHOST,0.601244,0.007793,F2
+Phishing Dataset,OTLP,0.640359,0.010027,F2
+Phishing Dataset,OECV,0.637366,0.008692,F2
+Phishing Dataset,ABTC,0.652133,0.008147,F2
+Cybersecurity Anomaly Detection,NBC (0.5),0.817931,0.027434,F2
+Cybersecurity Anomaly Detection,q*-Classifier,0.999264,0.0022058,F2
+Cybersecurity Anomaly Detection,Cost-Sens. SVM,0.96308,0.024346,F2
+Cybersecurity Anomaly Detection,Balanced RF,0.994213,0.010099,F2
+Cybersecurity Anomaly Detection,PAN,0.856301,0.022417,F2
+Cybersecurity Anomaly Detection,GHOST,0.980147,0.020375,F2
+Cybersecurity Anomaly Detection,OTLP,0.980147,0.020375,F2
+Cybersecurity Anomaly Detection,OECV,0.980147,0.020375,F2
+Cybersecurity Anomaly Detection,ABTC,0.981524,0.019227,F2
+Dataset for Link Phishing Detection,NBC (0.5),0.493175,0.047403,F2
+Dataset for Link Phishing Detection,q*-Classifier,0.832414,0.0226586,F2
+Dataset for Link Phishing Detection,Cost-Sens. SVM,0.886744,0.029546,F2
+Dataset for Link Phishing Detection,Balanced RF,0.898937,0.03,F2
+Dataset for Link Phishing Detection,PAN,0.867749,0.020221,F2
+Dataset for Link Phishing Detection,GHOST,0.852882,0.031335,F2
+Dataset for Link Phishing Detection,OTLP,0.863649,0.024897,F2
+Dataset for Link Phishing Detection,OECV,0.865798,0.024554,F2
+Dataset for Link Phishing Detection,ABTC,0.878845,0.023865,F2
+Prediction of Android Malware,NBC (0.5),0.433104,0.008429,F2
+Prediction of Android Malware,q*-Classifier,0.460222,0.0193275,F2
+Prediction of Android Malware,Cost-Sens. SVM,0.750287,0.028812,F2
+Prediction of Android Malware,Balanced RF,0.821809,0.02654,F2
+Prediction of Android Malware,PAN,0.81551,0.029182,F2
+Prediction of Android Malware,GHOST,0.766754,0.028786,F2
+Prediction of Android Malware,OTLP,0.813379,0.024168,F2
+Prediction of Android Malware,OECV,0.816369,0.024558,F2
+Prediction of Android Malware,ABTC,0.823486,0.02825,F2
+Predicting between malicious and benign software samples,NBC (0.5),0.497304,0.014533,F2
+Predicting between malicious and benign software samples,q*-Classifier,0.99996,0.000119,F2
+Predicting between malicious and benign software samples,Cost-Sens. SVM,0.992069,0.004506,F2
+Predicting between malicious and benign software samples,Balanced RF,1.0,0,F2
+Predicting between malicious and benign software samples,PAN,0.825263,0.008691,F2
+Predicting between malicious and benign software samples,GHOST,0.828782,0.014567,F2
+Predicting between malicious and benign software samples,OTLP,0.846341,0.006805,F2
+Predicting between malicious and benign software samples,OECV,0.847858,0.00692,F2
+Predicting between malicious and benign software samples,ABTC,0.851605,0.010709,F2
+Predicting Suspicious Traffic Activity,NBC (0.5),0.13931,0.023223,F2
+Predicting Suspicious Traffic Activity,q*-Classifier,0.5587453,0.1477796,F2
+Predicting Suspicious Traffic Activity,Cost-Sens. SVM,0.038462,0.115385,F2
+Predicting Suspicious Traffic Activity,Balanced RF,0.375067,0.069662,F2
+Predicting Suspicious Traffic Activity,PAN,0.349182,0.054521,F2
+Predicting Suspicious Traffic Activity,GHOST,0.782512,0.176902,F2
+Predicting Suspicious Traffic Activity,OTLP,0.742909,0.179777,F2
+Predicting Suspicious Traffic Activity,OECV,0.750556,0.175324,F2
+Predicting Suspicious Traffic Activity,ABTC,0.758187,0.191333,F2
+Teenage Online Behavior and Cybersecurity Risks,NBC (0.5),0.076181,0.018233,F2
+Teenage Online Behavior and Cybersecurity Risks,q*-Classifier,0.082695,0.017293,F2
+Teenage Online Behavior and Cybersecurity Risks,Cost-Sens. SVM,0.0,0,F2
+Teenage Online Behavior and Cybersecurity Risks,Balanced RF,0.116869,0.022226,F2
+Teenage Online Behavior and Cybersecurity Risks,PAN,0.263966,0.016205,F2
+Teenage Online Behavior and Cybersecurity Risks,GHOST,0.203533,0.032252,F2
+Teenage Online Behavior and Cybersecurity Risks,OTLP,0.332661,0.00156,F2
+Teenage Online Behavior and Cybersecurity Risks,OECV,0.332508,0.001901,F2
+Teenage Online Behavior and Cybersecurity Risks,ABTC,0.333443,0.002325,F2
+Predicting Phishing URLs,NBC (0.5),0.999002,0.000748,F2
+Predicting Phishing URLs,q*-Classifier,0.99995,0.0001499,F2
+Predicting Phishing URLs,Cost-Sens. SVM,0.996764,0.002302,F2
+Predicting Phishing URLs,Balanced RF,0.999376,0.000624,F2
+Predicting Phishing URLs,PAN,0.994165,0.002412,F2
+Predicting Phishing URLs,GHOST,0.999126,0.0008,F2
+Predicting Phishing URLs,OTLP,0.999126,0.0008,F2
+Predicting Phishing URLs,OECV,0.998751,0.000791,F2
+Predicting Phishing URLs,ABTC,0.999126,0.0008,F2
+Predicting Phishing,NBC (0.5),0.407302,0.03326,F2
+Predicting Phishing,q*-Classifier,0.670439,0.037676,F2
+Predicting Phishing,Cost-Sens. SVM,0.904813,0.011826,F2
+Predicting Phishing,Balanced RF,0.868431,0.012999,F2
+Predicting Phishing,PAN,0.813286,0.016162,F2
+Predicting Phishing,GHOST,0.886424,0.016755,F2
+Predicting Phishing,OTLP,0.945093,0.005217,F2
+Predicting Phishing,OECV,0.946934,0.005713,F2
+Predicting Phishing,ABTC,0.946968,0.004863,F2
+Cybersecurity Attacked,NBC (0.5),0.0,0 0.00000,F2
+Cybersecurity Attacked,q*-Classifier,0.222504,0.019512,F2
+Cybersecurity Attacked,Cost-Sens. SVM,0.0,0,F2
+Cybersecurity Attacked,Balanced RF,0.263367,0.021822,F2
+Cybersecurity Attacked,PAN,0.408423,0.017169,F2
+Cybersecurity Attacked,GHOST,0.281754,0.030499,F2
+Cybersecurity Attacked,OTLP,0.603009,0.001005,F2
+Cybersecurity Attacked,OECV,0.602597,0.001529,F2
+Cybersecurity Attacked,ABTC,0.602726,0.00152,F2
+Prediction of High Stay Drug addiction of American Indian School Students,NBC (0.5),0.686995,0.020233,F2
+Prediction of High Stay Drug addiction of American Indian School Students,q*-Classifier,0.678072,0.0223781,F2
+Prediction of High Stay Drug addiction of American Indian School Students,Cost-Sens. SVM,0.653532,0.020098,F2
+Prediction of High Stay Drug addiction of American Indian School Students,Balanced RF,0.768904,0.013552,F2
+Prediction of High Stay Drug addiction of American Indian School Students,PAN,0.772393,0.012099,F2
+Prediction of High Stay Drug addiction of American Indian School Students,GHOST,0.695648,0.033255,F2
+Prediction of High Stay Drug addiction of American Indian School Students,OTLP,0.778454,0.009703,F2
+Prediction of High Stay Drug addiction of American Indian School Students,OECV,0.779409,0.008601,F2
+Prediction of High Stay Drug addiction of American Indian School Students,ABTC,0.780848,0.011504,F2
+Air Quality dataset predicting Death due to air quality,NBC (0.5),0.505621,0.057997,F2
+Air Quality dataset predicting Death due to air quality,q*-Classifier,0.5497572,0.0224632,F2
+Air Quality dataset predicting Death due to air quality,Cost-Sens. SVM,0.000416,0.001249,F2
+Air Quality dataset predicting Death due to air quality,Balanced RF,0.546359,0.014688,F2
+Air Quality dataset predicting Death due to air quality,PAN,0.478959,0.017936,F2
+Air Quality dataset predicting Death due to air quality,GHOST,0.413443,0.022084,F2
+Air Quality dataset predicting Death due to air quality,OTLP,0.587769,0.00391,F2
+Air Quality dataset predicting Death due to air quality,OECV,0.583859,0.010684,F2
+Air Quality dataset predicting Death due to air quality,ABTC,0.588057,0.004486,F2
+Prediction of Significance of Earthquake,NBC (0.5),0.796087,0.036772,F2
+Prediction of Significance of Earthquake,q*-Classifier,1.0,0,F2
+Prediction of Significance of Earthquake,Cost-Sens. SVM,0.977162,0.010238,F2
+Prediction of Significance of Earthquake,Balanced RF,1.0,0,F2
+Prediction of Significance of Earthquake,PAN,0.945919,0.008096,F2
+Prediction of Significance of Earthquake,GHOST,0.999103,0.001287,F2
+Prediction of Significance of Earthquake,OTLP,0.999103,0.001287,F2
+Prediction of Significance of Earthquake,OECV,1.0,0,F2
+Prediction of Significance of Earthquake,ABTC,0.998973,0.001884,F2
+Prediction of Drug Overdose,NBC (0.5),0.911427,0.011626,F2
+Prediction of Drug Overdose,q*-Classifier,0.999489,0.0015306,F2
+Prediction of Drug Overdose,Cost-Sens. SVM,0.990177,0.008231,F2
+Prediction of Drug Overdose,Balanced RF,0.990809,0.005896,F2
+Prediction of Drug Overdose,PAN,0.896443,0.013227,F2
+Prediction of Drug Overdose,GHOST,0.989636,0.013711,F2
+Prediction of Drug Overdose,OTLP,0.990685,0.012878,F2
+Prediction of Drug Overdose,OECV,0.988535,0.015729,F2
+Prediction of Drug Overdose,ABTC,0.996956,0.00604,F2
+Prediction of Canabis Addiction,NBC (0.5),0.485687,0.08884,F2
+Prediction of Canabis Addiction,q*-Classifier,0.376,0.08884,F2
+Prediction of Canabis Addiction,Cost-Sens. SVM,0.012122,0.024244,F2
+Prediction of Canabis Addiction,Balanced RF,0.511675,0.073258,F2
+Prediction of Canabis Addiction,PAN,0.560099,0.054717,F2
+Prediction of Canabis Addiction,GHOST,0.484268,0.103042,F2
+Prediction of Canabis Addiction,OTLP,0.565193,0.104504,F2
+Prediction of Canabis Addiction,OECV,0.586776,0.054411,F2
+Prediction of Canabis Addiction,ABTC,0.572275,0.103412,F2
+Prediction of Mental Health,NBC (0.5),0.72904,0.081408,F2
+Prediction of Mental Health,q*-Classifier,0.9708609,0.039988,F2
+Prediction of Mental Health,Cost-Sens. SVM,0.963009,0.050287,F2
+Prediction of Mental Health,Balanced RF,0.912746,0.069399,F2
+Prediction of Mental Health,PAN,0.980099,0.018138,F2
+Prediction of Mental Health,GHOST,0.994192,0.009452,F2
+Prediction of Mental Health,OTLP,0.988395,0.018013,F2
+Prediction of Mental Health,OECV,0.981094,0.025956,F2
+Prediction of Mental Health,ABTC,0.989703,0.018496,F2
+Himalaya Expedition dataset prediction death,NBC (0.5),0.062541,0.000301,F2
+Himalaya Expedition dataset prediction death,q*-Classifier,0.9618422,0.000301,F2
+Himalaya Expedition dataset prediction death,Cost-Sens. SVM,0.927252,0.016968,F2
+Himalaya Expedition dataset prediction death,Balanced RF,0.957905,0.010411,F2
+Himalaya Expedition dataset prediction death,PAN,0.935437,0.011403,F2
+Himalaya Expedition dataset prediction death,GHOST,0.97039,0.013405,F2
+Himalaya Expedition dataset prediction death,OTLP,0.968806,0.012696,F2
+Himalaya Expedition dataset prediction death,OECV,0.970364,0.012712,F2
+Himalaya Expedition dataset prediction death,ABTC,0.971431,0.012449,F2
+Prediction of Overstimulation,NBC (0.5),0.82628,0.034281,F2
+Prediction of Overstimulation,q*-Classifier,1.0,0,F2
+Prediction of Overstimulation,Cost-Sens. SVM,0.882942,0.022771,F2
+Prediction of Overstimulation,Balanced RF,1.0,0,F2
+Prediction of Overstimulation,PAN,0.790073,0.037176,F2
+Prediction of Overstimulation,GHOST,0.743781,0.05421,F2
+Prediction of Overstimulation,OTLP,0.821312,0.017887,F2
+Prediction of Overstimulation,OECV,0.822937,0.016558,F2
+Prediction of Overstimulation,ABTC,0.823802,0.021536,F2
+Predicting Cancer Risk from Smoking Dataset,NBC (0.5),0.0,0,F2
+Predicting Cancer Risk from Smoking Dataset,q*-Classifier,0.1357123,0.006891,F2
+Predicting Cancer Risk from Smoking Dataset,Cost-Sens. SVM,0.0,0,F2
+Predicting Cancer Risk from Smoking Dataset,Balanced RF,0.264826,0.039463,F2
+Predicting Cancer Risk from Smoking Dataset,PAN,0.434439,0.034531,F2
+Predicting Cancer Risk from Smoking Dataset,GHOST,0.381014,0.047399,F2
+Predicting Cancer Risk from Smoking Dataset,OTLP,0.688838,0.003915,F2
+Predicting Cancer Risk from Smoking Dataset,OECV,0.689594,0.002807,F2
+Predicting Cancer Risk from Smoking Dataset,ABTC,0.686859,0.010054,F2
+"Predicting the likelihood of a Health Condition (e.g., Lung Cancer)",NBC (0.5),0.0,0,F2
+"Predicting the likelihood of a Health Condition (e.g., Lung Cancer)",q*-Classifier,0.135712,0.037217,F2
+"Predicting the likelihood of a Health Condition (e.g., Lung Cancer)",Cost-Sens. SVM,0.0,0,F2
+"Predicting the likelihood of a Health Condition (e.g., Lung Cancer)",Balanced RF,0.15912,0.042875,F2
+"Predicting the likelihood of a Health Condition (e.g., Lung Cancer)",PAN,0.367404,0.065849,F2
+"Predicting the likelihood of a Health Condition (e.g., Lung Cancer)",GHOST,0.295109,0.078998,F2
+"Predicting the likelihood of a Health Condition (e.g., Lung Cancer)",OTLP,0.549493,0.008467,F2
+"Predicting the likelihood of a Health Condition (e.g., Lung Cancer)",OECV,0.549363,0.009756,F2
+"Predicting the likelihood of a Health Condition (e.g., Lung Cancer)",ABTC,0.547877,0.006466,F2
+Predicting Stress,NBC (0.5),0.408597,0.064661,F2
+Predicting Stress,q*-Classifier,0.66391,0.112957,F2
+Predicting Stress,Cost-Sens. SVM,0.238167,0.115435,F2
+Predicting Stress,Balanced RF,0.63583,0.132173,F2
+Predicting Stress,PAN,0.612845,0.075414,F2
+Predicting Stress,GHOST,0.503854,0.09202,F2
+Predicting Stress,OTLP,0.58307,0.070787,F2
+Predicting Stress,OECV,0.572392,0.095572,F2
+Predicting Stress,ABTC,0.596835,0.046788,F2
+Predicting Health of Tree of Urban Areas,NBC (0.5),0.068268,0.030459,F2
+Predicting Health of Tree of Urban Areas,q*-Classifier,0.2169,0.035399,F2
+Predicting Health of Tree of Urban Areas,Cost-Sens. SVM,0.0,0,F2
+Predicting Health of Tree of Urban Areas,Balanced RF,0.173041,0.03099,F2
+Predicting Health of Tree of Urban Areas,PAN,0.398273,0.041261,F2
+Predicting Health of Tree of Urban Areas,GHOST,0.332494,0.072944,F2
+Predicting Health of Tree of Urban Areas,OTLP,0.622021,0.012491,F2
+Predicting Health of Tree of Urban Areas,OECV,0.622125,0.012519,F2
+Predicting Health of Tree of Urban Areas,ABTC,0.624371,0.004471,F2
+Predicting Traffic Flow,NBC (0.5),0.662302,0.10763,F2
+Predicting Traffic Flow,q*-Classifier,0.6176767,0.365909,F2
+Predicting Traffic Flow,Cost-Sens. SVM,0.266883,0.354196,F2
+Predicting Traffic Flow,Balanced RF,0.380426,0.108895,F2
+Predicting Traffic Flow,PAN,0.289486,0.071,F2
+Predicting Traffic Flow,GHOST,0.573034,0.321169,F2
+Predicting Traffic Flow,OTLP,0.594246,0.319644,F2
+Predicting Traffic Flow,OECV,0.539105,0.38833,F2
+Predicting Traffic Flow,ABTC,0.657341,0.27874,F2
+Predicting Machine Failure (CNC (Computer Numerical Control) industrial machines),NBC (0.5),0.9671,0.015498,F2
+Predicting Machine Failure (CNC (Computer Numerical Control) industrial machines),q*-Classifier,0.9671,0.015498,F2
+Predicting Machine Failure (CNC (Computer Numerical Control) industrial machines),Cost-Sens. SVM,0.97857,0.016668,F2
+Predicting Machine Failure (CNC (Computer Numerical Control) industrial machines),Balanced RF,0.970985,0.01794,F2
+Predicting Machine Failure (CNC (Computer Numerical Control) industrial machines),PAN,0.97857,0.016668,F2
+Predicting Machine Failure (CNC (Computer Numerical Control) industrial machines),GHOST,0.97857,0.016668,F2
+Predicting Machine Failure (CNC (Computer Numerical Control) industrial machines),OTLP,0.97857,0.016668,F2
+Predicting Machine Failure (CNC (Computer Numerical Control) industrial machines),OECV,0.97857,0.016668,F2
+Predicting Machine Failure (CNC (Computer Numerical Control) industrial machines),ABTC,0.97857,0.016668,F2
+Predicting Helicopter Anomaly dataset,NBC (0.5),0.745672,0.139428,F2
+Predicting Helicopter Anomaly dataset,q*-Classifier,0.854146,0.0991932,F2
+Predicting Helicopter Anomaly dataset,Cost-Sens. SVM,0.732137,0.12963,F2
+Predicting Helicopter Anomaly dataset,Balanced RF,0.85679,0.095171,F2
+Predicting Helicopter Anomaly dataset,PAN,0.533892,0.178961,F2
+Predicting Helicopter Anomaly dataset,GHOST,0.572384,0.166092,F2
+Predicting Helicopter Anomaly dataset,OTLP,0.641618,0.127309,F2
+Predicting Helicopter Anomaly dataset,OECV,0.595023,0.151923,F2
+Predicting Helicopter Anomaly dataset,ABTC,0.73983,0.10484,F2
+Prediction of Air Pressure System (APS),NBC (0.5),0.636981,0.030203,F2
+Prediction of Air Pressure System (APS),q*-Classifier,0.569693,0.0565189,F2
+Prediction of Air Pressure System (APS),Cost-Sens. SVM,0.362848,0.073739,F2
+Prediction of Air Pressure System (APS),Balanced RF,0.610356,0.014598,F2
+Prediction of Air Pressure System (APS),PAN,0.670638,0.026004,F2
+Prediction of Air Pressure System (APS),GHOST,0.713543,0.064089,F2
+Prediction of Air Pressure System (APS),OTLP,0.736334,0.050371,F2
+Prediction of Air Pressure System (APS),OECV,0.737003,0.050877,F2
+Prediction of Air Pressure System (APS),ABTC,0.740852,0.060951,F2
+Prediction of Community Climate System Model,NBC (0.5),0.388218,0.146119,F2
+Prediction of Community Climate System Model,q*-Classifier,0.6152944,0.24860736,F2
+Prediction of Community Climate System Model,Cost-Sens. SVM,0.54665,0.247657,F2
+Prediction of Community Climate System Model,Balanced RF,0.703682,0.181567,F2
+Prediction of Community Climate System Model,PAN,0.653572,0.06579,F2
+Prediction of Community Climate System Model,GHOST,0.655507,0.203372,F2
+Prediction of Community Climate System Model,OTLP,0.690965,0.153085,F2
+Prediction of Community Climate System Model,OECV,0.680285,0.151339,F2
+Prediction of Community Climate System Model,ABTC,0.710347,0.156463,F2
+HTRU2 (Pulsar Detection),NBC (0.5),0.800378,0.020009,F2
+HTRU2 (Pulsar Detection),q*-Classifier,0.8819051,0.02192183,F2
+HTRU2 (Pulsar Detection),Cost-Sens. SVM,0.883337,0.020532,F2
+HTRU2 (Pulsar Detection),Balanced RF,0.885458,0.016446,F2
+HTRU2 (Pulsar Detection),PAN,0.881341,0.015611,F2
+HTRU2 (Pulsar Detection),GHOST,0.865767,0.027824,F2
+HTRU2 (Pulsar Detection),OTLP,0.885309,0.017972,F2
+HTRU2 (Pulsar Detection),OECV,0.885166,0.019623,F2
+HTRU2 (Pulsar Detection),ABTC,0.886097,0.016606,F2
+EEG machine dataset prediction of anomaly signals,NBC (0.5),0.471852,0.026594,F2
+EEG machine dataset prediction of anomaly signals,q*-Classifier,0.90970431,0.0097826,F2
+EEG machine dataset prediction of anomaly signals,Cost-Sens. SVM,0.85988,0.017006,F2
+EEG machine dataset prediction of anomaly signals,Balanced RF,0.893862,0.012672,F2
+EEG machine dataset prediction of anomaly signals,PAN,0.678879,0.012755,F2
+EEG machine dataset prediction of anomaly signals,GHOST,0.617503,0.017023,F2
+EEG machine dataset prediction of anomaly signals,OTLP,0.699772,0.013324,F2
+EEG machine dataset prediction of anomaly signals,OECV,0.703517,0.013834,F2
+EEG machine dataset prediction of anomaly signals,ABTC,0.700385,0.009708,F2
+Credit Approval Status,NBC (0.5),0.788772,0.067257,F2
+Credit Approval Status,q*-Classifier,0.7541252,0.10686755,F2
+Credit Approval Status,Cost-Sens. SVM,0.774324,0.092141,F2
+Credit Approval Status,Balanced RF,0.776569,0.104926,F2
+Credit Approval Status,PAN,0.78853,0.104257,F2
+Credit Approval Status,GHOST,0.756565,0.11972,F2
+Credit Approval Status,OTLP,0.786498,0.10058,F2
+Credit Approval Status,OECV,0.783807,0.109644,F2
+Credit Approval Status,ABTC,0.799587,0.102641,F2
+German credit data credit risk assessment,NBC (0.5),0.469482,0.058648,F2
+German credit data credit risk assessment,q*-Classifier,0.3792786,0.138035,F2
+German credit data credit risk assessment,Cost-Sens. SVM,0.058847,0.07799,F2
+German credit data credit risk assessment,Balanced RF,0.471001,0.118326,F2
+German credit data credit risk assessment,PAN,0.515718,0.081525,F2
+German credit data credit risk assessment,GHOST,0.472799,0.145572,F2
+German credit data credit risk assessment,OTLP,0.504814,0.05662,F2
+German credit data credit risk assessment,OECV,0.536196,0.081162,F2
+German credit data credit risk assessment,ABTC,0.527085,0.059018,F2
+Prediction of Credit Card High and Low Transactions,NBC (0.5),0.268571,0.030674,F2
+Prediction of Credit Card High and Low Transactions,q*-Classifier,0.99961668,0.0005717,F2
+Prediction of Credit Card High and Low Transactions,Cost-Sens. SVM,0.981033,0.007595,F2
+Prediction of Credit Card High and Low Transactions,Balanced RF,0.999463,0.000492,F2
+Prediction of Credit Card High and Low Transactions,PAN,0.914617,0.006006,F2
+Prediction of Credit Card High and Low Transactions,GHOST,0.991163,0.004374,F2
+Prediction of Credit Card High and Low Transactions,OTLP,0.992735,0.002762,F2
+Prediction of Credit Card High and Low Transactions,OECV,0.993272,0.002499,F2
+Prediction of Credit Card High and Low Transactions,ABTC,0.993117,0.002559,F2
+Loan Aproval Prediction,NBC (0.5),0.919379,0.020299,F2
+Loan Aproval Prediction,q*-Classifier,0.8118525,0.0617263,F2
+Loan Aproval Prediction,Cost-Sens. SVM,0.899601,0.031145,F2
+Loan Aproval Prediction,Balanced RF,0.850542,0.056691,F2
+Loan Aproval Prediction,PAN,0.865849,0.048484,F2
+Loan Aproval Prediction,GHOST,0.8941,0.052106,F2
+Loan Aproval Prediction,OTLP,0.935009,0.015822,F2
+Loan Aproval Prediction,OECV,0.9345,0.019727,F2
+Loan Aproval Prediction,ABTC,0.935081,0.017773,F2
+Loan Default Prediction,NBC (0.5),0.041583,0.022777,F2
+Loan Default Prediction,q*-Classifier,0.271989,0.0622717,F2
+Loan Default Prediction,Cost-Sens. SVM,0.0,0,F2
+Loan Default Prediction,Balanced RF,0.393895,0.057969,F2
+Loan Default Prediction,PAN,0.502797,0.048399,F2
+Loan Default Prediction,GHOST,0.386139,0.066096,F2
+Loan Default Prediction,OTLP,0.584137,0.007827,F2
+Loan Default Prediction,OECV,0.584228,0.007251,F2
+Loan Default Prediction,ABTC,0.585534,0.011094,F2
+Predicting Insurance Claim,NBC (0.5),0.54148,0.096348,F2
+Predicting Insurance Claim,q*-Classifier,0.8096442,0.12213,F2
+Predicting Insurance Claim,Cost-Sens. SVM,0.575537,0.127091,F2
+Predicting Insurance Claim,Balanced RF,0.796059,0.150492,F2
+Predicting Insurance Claim,PAN,0.700397,0.063342,F2
+Predicting Insurance Claim,GHOST,0.623957,0.105703,F2
+Predicting Insurance Claim,OTLP,0.687902,0.083183,F2
+Predicting Insurance Claim,OECV,0.688526,0.083451,F2
+Predicting Insurance Claim,ABTC,0.710205,0.066489,F2
+Predicting Insurance Claim  Dataset2,NBC (0.5),0.461952,0.224154,F2
+Predicting Insurance Claim  Dataset2,q*-Classifier,0.73660714,0.1367587,F2
+Predicting Insurance Claim  Dataset2,Cost-Sens. SVM,0.659524,0.227639,F2
+Predicting Insurance Claim  Dataset2,Balanced RF,0.726576,0.234178,F2
+Predicting Insurance Claim  Dataset2,PAN,0.606137,0.1079,F2
+Predicting Insurance Claim  Dataset2,GHOST,0.778322,0.190451,F2
+Predicting Insurance Claim  Dataset2,OTLP,0.719807,0.194401,F2
+Predicting Insurance Claim  Dataset2,OECV,0.716855,0.209974,F2
+Predicting Insurance Claim  Dataset2,ABTC,0.732862,0.152741,F2
+Whether the client subscribed to a term deposit,NBC (0.5),0.979193,0.005401,F2
+Whether the client subscribed to a term deposit,q*-Classifier,0.9593755,0.01117035,F2
+Whether the client subscribed to a term deposit,Cost-Sens. SVM,0.970988,0.008002,F2
+Whether the client subscribed to a term deposit,Balanced RF,0.979765,0.005161,F2
+Whether the client subscribed to a term deposit,PAN,0.979765,0.005161,F2
+Whether the client subscribed to a term deposit,GHOST,0.979331,0.005566,F2
+Whether the client subscribed to a term deposit,OTLP,0.979765,0.005161,F2
+Whether the client subscribed to a term deposit,OECV,0.976461,0.011097,F2
+Whether the client subscribed to a term deposit,ABTC,0.979782,0.004896,F2
+Click on product prediction,NBC (0.5),0.0,0,F2
+Click on product prediction,q*-Classifier,0.162,0,F2
+Click on product prediction,Cost-Sens. SVM,0.0,0,F2
+Click on product prediction,Balanced RF,0.305634,0.02128031,F2
+Click on product prediction,PAN,0.411619,0.02192655,F2
+Click on product prediction,GHOST,0.453827,0.04316508,F2
+Click on product prediction,OTLP,0.6,1.110223e-16,F2
+Click on product prediction,OECV,0.6,1.110223e-16,F2
+Click on product prediction,ABTC,0.599401,0.002629349,F2
+Telco Chrun Prediction,NBC (0.5),0.726318,0.012935,F2
+Telco Chrun Prediction,q*-Classifier,0.585122,0.01312802,F2
+Telco Chrun Prediction,Cost-Sens. SVM,0.614655,0.023723,F2
+Telco Chrun Prediction,Balanced RF,0.680533,0.017201,F2
+Telco Chrun Prediction,PAN,0.723728,0.019574,F2
+Telco Chrun Prediction,GHOST,0.62025,0.032212,F2
+Telco Chrun Prediction,OTLP,0.741719,0.012598,F2
+Telco Chrun Prediction,OECV,0.741431,0.012826,F2
+Telco Chrun Prediction,ABTC,0.742926,0.01144,F2
+Audit risk Prediction,NBC (0.5),0.972956,0.024337,F2
+Audit risk Prediction,q*-Classifier,1.0,0,F2
+Audit risk Prediction,Cost-Sens. SVM,0.962788,0.029118,F2
+Audit risk Prediction,Balanced RF,1.0,0,F2
+Audit risk Prediction,PAN,0.976204,0.016291,F2
+Audit risk Prediction,GHOST,0.972515,0.02088,F2
+Audit risk Prediction,OTLP,0.969522,0.023505,F2
+Audit risk Prediction,OECV,0.964156,0.025893,F2
+Audit risk Prediction,ABTC,0.961915,0.016051,F2
+Which on is Ad Prediction,NBC (0.5),0.715929,0.029759,F2
+Which on is Ad Prediction,q*-Classifier,0.9223487,0.0344929,F2
+Which on is Ad Prediction,Cost-Sens. SVM,0.873029,0.059014,F2
+Which on is Ad Prediction,Balanced RF,0.911997,0.04062,F2
+Which on is Ad Prediction,PAN,0.886077,0.038379,F2
+Which on is Ad Prediction,GHOST,0.866539,0.050628,F2
+Which on is Ad Prediction,OTLP,0.878234,0.037466,F2
+Which on is Ad Prediction,OECV,0.882285,0.033614,F2
+Which on is Ad Prediction,ABTC,0.887308,0.032126,F2
+Nifty 500 Closing Value Prediction,NBC (0.5),0.012085,0.015986,F2
+Nifty 500 Closing Value Prediction,q*-Classifier,0.1935789,0.0658304,F2
+Nifty 500 Closing Value Prediction,Cost-Sens. SVM,0.0,0,F2
+Nifty 500 Closing Value Prediction,Balanced RF,0.306333,0.052398,F2
+Nifty 500 Closing Value Prediction,PAN,0.374591,0.043777,F2
+Nifty 500 Closing Value Prediction,GHOST,0.305263,0.067266,F2
+Nifty 500 Closing Value Prediction,OTLP,0.555546,0.00734,F2
+Nifty 500 Closing Value Prediction,OECV,0.550062,0.009688,F2
+Nifty 500 Closing Value Prediction,ABTC,0.554698,0.00943,F2
+Bitcoin dataset predicting high and low return,NBC (0.5),0.139373,0.061662,F2
+Bitcoin dataset predicting high and low return,q*-Classifier,0.6848434,0.05225,F2
+Bitcoin dataset predicting high and low return,Cost-Sens. SVM,0.034261,0.060384,F2
+Bitcoin dataset predicting high and low return,Balanced RF,0.676234,0.056681,F2
+Bitcoin dataset predicting high and low return,PAN,0.502004,0.09762,F2
+Bitcoin dataset predicting high and low return,GHOST,0.544926,0.089909,F2
+Bitcoin dataset predicting high and low return,OTLP,0.741862,0.013163,F2
+Bitcoin dataset predicting high and low return,OECV,0.744774,0.019772,F2
+Bitcoin dataset predicting high and low return,ABTC,0.740462,0.022911,F2
+Predicting Crowd Funding of Turkey,NBC (0.5),0.601036,0.016695,F2
+Predicting Crowd Funding of Turkey,q*-Classifier,0.8882945,0.04352761,F2
+Predicting Crowd Funding of Turkey,Cost-Sens. SVM,0.665734,0.061827,F2
+Predicting Crowd Funding of Turkey,Balanced RF,0.915858,0.034379,F2
+Predicting Crowd Funding of Turkey,PAN,0.87758,0.042361,F2
+Predicting Crowd Funding of Turkey,GHOST,0.864167,0.04412,F2
+Predicting Crowd Funding of Turkey,OTLP,0.867295,0.045444,F2
+Predicting Crowd Funding of Turkey,OECV,0.871204,0.043682,F2
+Predicting Crowd Funding of Turkey,ABTC,0.853917,0.038377,F2
+Predicting Drug Review,NBC (0.5),0.425913,0.099995,F2
+Predicting Drug Review,q*-Classifier,0.4139964,0.0777894,F2
+Predicting Drug Review,Cost-Sens. SVM,0.239015,0.107467,F2
+Predicting Drug Review,Balanced RF,0.364323,0.100406,F2
+Predicting Drug Review,PAN,0.433036,0.105087,F2
+Predicting Drug Review,GHOST,0.427844,0.120042,F2
+Predicting Drug Review,OTLP,0.480414,0.109277,F2
+Predicting Drug Review,OECV,0.473012,0.123871,F2
+Predicting Drug Review,ABTC,0.55311,0.039232,F2
+Prediction of Negative Travel Agency review,NBC (0.5),0.764871,0.072768,F2
+Prediction of Negative Travel Agency review,q*-Classifier,0.7841932,0.1189802,F2
+Prediction of Negative Travel Agency review,Cost-Sens. SVM,0.908558,0.055753,F2
+Prediction of Negative Travel Agency review,Balanced RF,0.832221,0.103795,F2
+Prediction of Negative Travel Agency review,PAN,0.796522,0.04788,F2
+Prediction of Negative Travel Agency review,GHOST,0.926022,0.079689,F2
+Prediction of Negative Travel Agency review,OTLP,0.926022,0.079689,F2
+Prediction of Negative Travel Agency review,OECV,0.91876,0.089658,F2
+Prediction of Negative Travel Agency review,ABTC,0.93228,0.037937,F2
+Amazon Electronic Items reviews,NBC (0.5),0.624692,0.011935,F2
+Amazon Electronic Items reviews,q*-Classifier,0.902458,0.00395422,F2
+Amazon Electronic Items reviews,Cost-Sens. SVM,0.98162,3.1e-05,F2
+Amazon Electronic Items reviews,Balanced RF,0.851868,0.062509,F2
+Amazon Electronic Items reviews,PAN,0.603146,0.011711,F2
+Amazon Electronic Items reviews,GHOST,0.903505,0.008826,F2
+Amazon Electronic Items reviews,OTLP,0.981402,0.000444,F2
+Amazon Electronic Items reviews,OECV,0.981382,0.000527,F2
+Amazon Electronic Items reviews,ABTC,0.981414,0.000444,F2
+Netflix Movie Recommendation,NBC (0.5),0.856494,0.012891,F2
+Netflix Movie Recommendation,q*-Classifier,1.0,0,F2
+Netflix Movie Recommendation,Cost-Sens. SVM,0.994804,0.004295,F2
+Netflix Movie Recommendation,Balanced RF,1.0,0,F2
+Netflix Movie Recommendation,PAN,0.973181,0.003847,F2
+Netflix Movie Recommendation,GHOST,1.0,0,F2
+Netflix Movie Recommendation,OTLP,1.0,0,F2
+Netflix Movie Recommendation,OECV,1.0,0,F2
+Netflix Movie Recommendation,ABTC,1.0,0,F2
+Spotify Songs Recommendation,NBC (0.5),0.670269,0.064657,F2
+Spotify Songs Recommendation,q*-Classifier,0.65916908,0.13432845,F2
+Spotify Songs Recommendation,Cost-Sens. SVM,0.532258,0.169073,F2
+Spotify Songs Recommendation,Balanced RF,0.638817,0.141252,F2
+Spotify Songs Recommendation,PAN,0.668418,0.086049,F2
+Spotify Songs Recommendation,GHOST,0.587351,0.088381,F2
+Spotify Songs Recommendation,OTLP,0.676897,0.130484,F2
+Spotify Songs Recommendation,OECV,0.625569,0.098164,F2
+Spotify Songs Recommendation,ABTC,0.685668,0.128404,F2
+Womens Clothing E-Commerce Reviews,NBC (0.5),0.061293,0.04739,F2
+Womens Clothing E-Commerce Reviews,q*-Classifier,0.957702,0.00387,F2
+Womens Clothing E-Commerce Reviews,Cost-Sens. SVM,0.945586,0.005005,F2
+Womens Clothing E-Commerce Reviews,Balanced RF,0.941117,0.006263,F2
+Womens Clothing E-Commerce Reviews,PAN,0.943457,0.005618,F2
+Womens Clothing E-Commerce Reviews,GHOST,0.94485,0.005829,F2
+Womens Clothing E-Commerce Reviews,OTLP,0.976314,0.001661,F2
+Womens Clothing E-Commerce Reviews,OECV,0.976312,0.001608,F2
+Womens Clothing E-Commerce Reviews,ABTC,0.976243,0.00156,F2
+Google Play Store Reviews,NBC (0.5),0.996944,0.003559,F2
+Google Play Store Reviews,q*-Classifier,1.0,0,F2
+Google Play Store Reviews,Cost-Sens. SVM,1.0,0,F2
+Google Play Store Reviews,Balanced RF,1.0,0,F2
+Google Play Store Reviews,PAN,0.999796,0.000611,F2
+Google Play Store Reviews,GHOST,0.999394,0.001291,F2
+Google Play Store Reviews,OTLP,0.999394,0.001291,F2
+Google Play Store Reviews,OECV,0.999796,0.000611,F2
+Google Play Store Reviews,ABTC,0.999796,0.000611,F2
+Letterbox Movie Classification Dataset,NBC (0.5),0.596546,0.011311,F2
+Letterbox Movie Classification Dataset,q*-Classifier,1.0,0,F2
+Letterbox Movie Classification Dataset,Cost-Sens. SVM,0.985715,0.006876,F2
+Letterbox Movie Classification Dataset,Balanced RF,1.0,0,F2
+Letterbox Movie Classification Dataset,PAN,0.970835,0.009685,F2
+Letterbox Movie Classification Dataset,GHOST,0.998222,0.001696,F2
+Letterbox Movie Classification Dataset,OTLP,0.998222,0.001696,F2
+Letterbox Movie Classification Dataset,OECV,0.997266,0.003017,F2
+Letterbox Movie Classification Dataset,ABTC,0.997149,0.002729,F2
+Screengaurd Recommendation Dataset,NBC (0.5),0.0,0,F2
+Screengaurd Recommendation Dataset,q*-Classifier,0.375541,0.0160676,F2
+Screengaurd Recommendation Dataset,Cost-Sens. SVM,0.0,0,F2
+Screengaurd Recommendation Dataset,Balanced RF,0.384573,0.100783,F2
+Screengaurd Recommendation Dataset,PAN,0.384573,0.100783,F2
+Screengaurd Recommendation Dataset,GHOST,0.384573,0.100783,F2
+Screengaurd Recommendation Dataset,OTLP,0.489419,0.010171,F2
+Screengaurd Recommendation Dataset,OECV,0.489419,0.010171,F2
+Screengaurd Recommendation Dataset,ABTC,0.489419,0.010171,F2
+Predicting fraudulent transactions,NBC (0.5),0.100788,0.014475,F1
+Predicting fraudulent transactions,q*-Classifier,0.799734,0.059001,F1
+Predicting fraudulent transactions,Cost-Sens. SVM,0.779613,0.090093,F1
+Predicting fraudulent transactions,Balanced RF,0.769079,0.081897,F1
+Predicting fraudulent transactions,PAN,0.609154,0.04799,F1
+Predicting fraudulent transactions,GHOST,0.777018,0.120016,F1
+Predicting fraudulent transactions,OTLP,0.765113,0.124388,F1
+Predicting fraudulent transactions,OECV,0.801137,0.10584,F1
+Predicting fraudulent transactions,ABTC,0.806947,0.123633,F1
+Predicting fraudulent Insurance application,NBC (0.5),0.396129,0.005913,F1
+Predicting fraudulent Insurance application,q*-Classifier,0.54167,0.08072,F1
+Predicting fraudulent Insurance application,Cost-Sens. SVM,0.497306,0.077201,F1
+Predicting fraudulent Insurance application,Balanced RF,0.498737,0.081491,F1
+Predicting fraudulent Insurance application,PAN,0.447097,0.018368,F1
+Predicting fraudulent Insurance application,GHOST,0.605241,0.052259,F1
+Predicting fraudulent Insurance application,OTLP,0.600583,0.056881,F1
+Predicting fraudulent Insurance application,OECV,0.566589,0.05424,F1
+Predicting fraudulent Insurance application,ABTC,0.591077,0.07248,F1
+Predicting fraudulent transactions dataset2,NBC (0.5),0.118543,0.040979,F1
+Predicting fraudulent transactions dataset2,q*-Classifier,0.50739,0.20124,F1
+Predicting fraudulent transactions dataset2,Cost-Sens. SVM,0.451238,0.180665,F1
+Predicting fraudulent transactions dataset2,Balanced RF,0.466804,0.103106,F1
+Predicting fraudulent transactions dataset2,PAN,0.116956,0.030139,F1
+Predicting fraudulent transactions dataset2,GHOST,0.11067,0.040815,F1
+Predicting fraudulent transactions dataset2,OTLP,0.121213,0.040503,F1
+Predicting fraudulent transactions dataset2,OECV,0.123973,0.043299,F1
+Predicting fraudulent transactions dataset2,ABTC,0.367772,0.200422,F1
+Ecommerce Fraud Biding,NBC (0.5),0.877212,0.028415,F1
+Ecommerce Fraud Biding,q*-Classifier,0.965901,0.008996,F1
+Ecommerce Fraud Biding,Cost-Sens. SVM,0.910097,0.018501,F1
+Ecommerce Fraud Biding,Balanced RF,0.920191,0.020199,F1
+Ecommerce Fraud Biding,PAN,0.913495,0.021029,F1
+Ecommerce Fraud Biding,GHOST,0.912304,0.024149,F1
+Ecommerce Fraud Biding,OTLP,0.912879,0.022812,F1
+Ecommerce Fraud Biding,OECV,0.913853,0.022608,F1
+Ecommerce Fraud Biding,ABTC,0.914139,0.020282,F1
+Predicting fraudulent Loan application,NBC (0.5),1.0,0,F1
+Predicting fraudulent Loan application,q*-Classifier,0.997938,0.004123,F1
+Predicting fraudulent Loan application,Cost-Sens. SVM,0.998969,0.003093,F1
+Predicting fraudulent Loan application,Balanced RF,0.642669,0.028042,F1
+Predicting fraudulent Loan application,PAN,1.0,0,F1
+Predicting fraudulent Loan application,GHOST,1.0,0,F1
+Predicting fraudulent Loan application,OTLP,1.0,0,F1
+Predicting fraudulent Loan application,OECV,1.0,0,F1
+Predicting fraudulent Loan application,ABTC,1.0,0,F1
+Credit Card Farud Detection,NBC (0.5),0.204762,0.225425,F1
+Credit Card Farud Detection,q*-Classifier,0.6028066,0.102983,F1
+Credit Card Farud Detection,Cost-Sens. SVM,0.593571,0.172132,F1
+Credit Card Farud Detection,Balanced RF,0.542882,0.112339,F1
+Credit Card Farud Detection,PAN,0.173092,0.026204,F1
+Credit Card Farud Detection,GHOST,0.626235,0.136893,F1
+Credit Card Farud Detection,OTLP,0.622166,0.139228,F1
+Credit Card Farud Detection,OECV,0.620591,0.129708,F1
+Credit Card Farud Detection,ABTC,0.624004,0.185186,F1
+Predicting Malicious URL,NBC (0.5),0.446375,0.024359,F1
+Predicting Malicious URL,q*-Classifier,0.626375,0.024359,F1
+Predicting Malicious URL,Cost-Sens. SVM,0.739157,0.017517,F1
+Predicting Malicious URL,Balanced RF,0.78648,0.010582,F1
+Predicting Malicious URL,PAN,0.665457,0.013265,F1
+Predicting Malicious URL,GHOST,0.665394,0.015183,F1
+Predicting Malicious URL,OTLP,0.669508,0.013108,F1
+Predicting Malicious URL,OECV,0.529862,0.020574,F1
+Predicting Malicious URL,ABTC,0.672638,0.012114,F1
+Predicting Android malware detection Tezpur University Android Malware Dataset,NBC (0.5),0.11764,0.023053,F1
+Predicting Android malware detection Tezpur University Android Malware Dataset,q*-Classifier,0.996914,0.0017527,F1
+Predicting Android malware detection Tezpur University Android Malware Dataset,Cost-Sens. SVM,0.989582,0.002127,F1
+Predicting Android malware detection Tezpur University Android Malware Dataset,Balanced RF,0.993233,0.002526,F1
+Predicting Android malware detection Tezpur University Android Malware Dataset,PAN,0.988414,0.003044,F1
+Predicting Android malware detection Tezpur University Android Malware Dataset,GHOST,0.990905,0.003223,F1
+Predicting Android malware detection Tezpur University Android Malware Dataset,OTLP,0.990765,0.002901,F1
+Predicting Android malware detection Tezpur University Android Malware Dataset,OECV,0.991474,0.003023,F1
+Predicting Android malware detection Tezpur University Android Malware Dataset,ABTC,0.991457,0.002899,F1
+Predicting Normal Traffic Activity,NBC (0.5),0.061465,0.01031,F1
+Predicting Normal Traffic Activity,q*-Classifier,0.570158,0.103741,F1
+Predicting Normal Traffic Activity,Cost-Sens. SVM,0.05,0.15,F1
+Predicting Normal Traffic Activity,Balanced RF,0.201451,0.051129,F1
+Predicting Normal Traffic Activity,PAN,0.179285,0.033898,F1
+Predicting Normal Traffic Activity,GHOST,0.783838,0.150422,F1
+Predicting Normal Traffic Activity,OTLP,0.738999,0.200648,F1
+Predicting Normal Traffic Activity,OECV,0.796111,0.149568,F1
+Predicting Normal Traffic Activity,ABTC,0.787778,0.154156,F1
+Cybersecurity Anomaly Detection,NBC (0.5),0.657645,0.036861,F1
+Cybersecurity Anomaly Detection,q*-Classifier,0.9981818,0.0054545,F1
+Cybersecurity Anomaly Detection,Cost-Sens. SVM,0.911967,0.111277,F1
+Cybersecurity Anomaly Detection,Balanced RF,0.986022,0.024296,F1
+Cybersecurity Anomaly Detection,PAN,0.723341,0.039406,F1
+Cybersecurity Anomaly Detection,GHOST,0.983481,0.017011,F1
+Cybersecurity Anomaly Detection,OTLP,0.983481,0.017011,F1
+Cybersecurity Anomaly Detection,OECV,0.985039,0.011405,F1
+Cybersecurity Anomaly Detection,ABTC,0.986926,0.012139,F1
+Prediction of Android Malware,NBC (0.5),0.234564,0.005593,F1
+Prediction of Android Malware,q*-Classifier,0.800215,0.033798,F1
+Prediction of Android Malware,Cost-Sens. SVM,0.759818,0.027974,F1
+Prediction of Android Malware,Balanced RF,0.716313,0.037071,F1
+Prediction of Android Malware,PAN,0.686638,0.039138,F1
+Prediction of Android Malware,GHOST,0.781324,0.022078,F1
+Prediction of Android Malware,OTLP,0.775553,0.022988,F1
+Prediction of Android Malware,OECV,0.767058,0.030003,F1
+Prediction of Android Malware,ABTC,0.784317,0.016123,F1
+Predicting Low and high Startup Funding,NBC (0.5),0.93107,0.021789,F1
+Predicting Low and high Startup Funding,q*-Classifier,0.9952931,0.0078477,F1
+Predicting Low and high Startup Funding,Cost-Sens. SVM,0.777623,0.060371,F1
+Predicting Low and high Startup Funding,Balanced RF,0.997619,0.007143,F1
+Predicting Low and high Startup Funding,PAN,0.868783,0.031487,F1
+Predicting Low and high Startup Funding,GHOST,0.962307,0.017876,F1
+Predicting Low and high Startup Funding,OTLP,0.962307,0.017876,F1
+Predicting Low and high Startup Funding,OECV,0.958214,0.02567,F1
+Predicting Low and high Startup Funding,ABTC,0.941758,0.022994,F1
+LifeSpan Calorie Burn dataset predicting Short_Talk or Not,NBC (0.5),0.005308,0.007057,F1
+LifeSpan Calorie Burn dataset predicting Short_Talk or Not,q*-Classifier,0.4651853,0.02499457,F1
+LifeSpan Calorie Burn dataset predicting Short_Talk or Not,Cost-Sens. SVM,0.250359,0.021915,F1
+LifeSpan Calorie Burn dataset predicting Short_Talk or Not,Balanced RF,0.539345,0.016857,F1
+LifeSpan Calorie Burn dataset predicting Short_Talk or Not,PAN,0.434115,0.011872,F1
+LifeSpan Calorie Burn dataset predicting Short_Talk or Not,GHOST,0.40638,0.023634,F1
+LifeSpan Calorie Burn dataset predicting Short_Talk or Not,OTLP,0.413864,0.011213,F1
+LifeSpan Calorie Burn dataset predicting Short_Talk or Not,OECV,0.417675,0.011651,F1
+LifeSpan Calorie Burn dataset predicting Short_Talk or Not,ABTC,0.437019,0.010793,F1
+Student information dataset predicting pass and failed,NBC (0.5),0.247528,0.026647,F1
+Student information dataset predicting pass and failed,q*-Classifier,0.1936653,0.0189908,F1
+Student information dataset predicting pass and failed,Cost-Sens. SVM,0.0,0,F1
+Student information dataset predicting pass and failed,Balanced RF,0.266995,0.012066,F1
+Student information dataset predicting pass and failed,PAN,0.313391,0.011405,F1
+Student information dataset predicting pass and failed,GHOST,0.299239,0.019983,F1
+Student information dataset predicting pass and failed,OTLP,0.30126,0.012667,F1
+Student information dataset predicting pass and failed,OECV,0.292117,0.007161,F1
+Student information dataset predicting pass and failed,ABTC,0.314547,0.013089,F1
+Predicting Higher Income and lower income group,NBC (0.5),0.454023,0.016719,F1
+Predicting Higher Income and lower income group,q*-Classifier,0.6990236,0.013616,F1
+Predicting Higher Income and lower income group,Cost-Sens. SVM,0.671158,0.008068,F1
+Predicting Higher Income and lower income group,Balanced RF,0.694647,0.011313,F1
+Predicting Higher Income and lower income group,PAN,0.61811,0.011031,F1
+Predicting Higher Income and lower income group,GHOST,0.624255,0.010293,F1
+Predicting Higher Income and lower income group,OTLP,0.606113,0.008403,F1
+Predicting Higher Income and lower income group,OECV,0.583206,0.008551,F1
+Predicting Higher Income and lower income group,ABTC,0.626172,0.009043,F1
+Predicting Text Block or Non-Text Block,NBC (0.5),0.488932,0.068445,F1
+Predicting Text Block or Non-Text Block,q*-Classifier,0.788932,0.028445,F1
+Predicting Text Block or Non-Text Block,Cost-Sens. SVM,0.808369,0.033792,F1
+Predicting Text Block or Non-Text Block,Balanced RF,0.833203,0.025924,F1
+Predicting Text Block or Non-Text Block,PAN,0.645576,0.031249,F1
+Predicting Text Block or Non-Text Block,GHOST,0.725997,0.034387,F1
+Predicting Text Block or Non-Text Block,OTLP,0.723327,0.03124,F1
+Predicting Text Block or Non-Text Block,OECV,0.703855,0.045837,F1
+Predicting Text Block or Non-Text Block,ABTC,0.732471,0.030619,F1
+Healthcare Workforce Mental Health dataset predicting employee’s intention to leave their job,NBC (0.5),0.498127,0.044133,F1
+Healthcare Workforce Mental Health dataset predicting employee’s intention to leave their job,q*-Classifier,0.498127,0.0524129,F1
+Healthcare Workforce Mental Health dataset predicting employee’s intention to leave their job,Cost-Sens. SVM,0.28125,0.054297,F1
+Healthcare Workforce Mental Health dataset predicting employee’s intention to leave their job,Balanced RF,0.471932,0.044014,F1
+Healthcare Workforce Mental Health dataset predicting employee’s intention to leave their job,PAN,0.568495,0.02892,F1
+Healthcare Workforce Mental Health dataset predicting employee’s intention to leave their job,GHOST,0.525975,0.039766,F1
+Healthcare Workforce Mental Health dataset predicting employee’s intention to leave their job,OTLP,0.582732,0.032453,F1
+Healthcare Workforce Mental Health dataset predicting employee’s intention to leave their job,OECV,0.567588,0.033594,F1
+Healthcare Workforce Mental Health dataset predicting employee’s intention to leave their job,ABTC,0.574148,0.028013,F1
+Prediction of social media engagement,NBC (0.5),0.892175,0.008574,F1
+Prediction of social media engagement,q*-Classifier,0.9695775,0.0046714,F1
+Prediction of social media engagement,Cost-Sens. SVM,0.974669,0.005022,F1
+Prediction of social media engagement,Balanced RF,0.96534,0.005051,F1
+Prediction of social media engagement,PAN,0.990138,0.003587,F1
+Prediction of social media engagement,GHOST,0.994909,0.001508,F1
+Prediction of social media engagement,OTLP,0.995014,0.001534,F1
+Prediction of social media engagement,OECV,0.995137,0.001958,F1
+Prediction of social media engagement,ABTC,0.995124,0.001677,F1
+News aggregator dataset predicting business or other,NBC (0.5),0.530596,0.020798,F1
+News aggregator dataset predicting business or other,q*-Classifier,0.589181,0.005562,F1
+News aggregator dataset predicting business or other,Cost-Sens. SVM,0.556051,0.025901,F1
+News aggregator dataset predicting business or other,Balanced RF,0.593888,0.01365,F1
+News aggregator dataset predicting business or other,PAN,0.613665,0.017726,F1
+News aggregator dataset predicting business or other,GHOST,0.608017,0.018623,F1
+News aggregator dataset predicting business or other,OTLP,0.603082,0.017513,F1
+News aggregator dataset predicting business or other,OECV,0.581039,0.022263,F1
+News aggregator dataset predicting business or other,ABTC,0.613614,0.027734,F1
+Predicting Income on census dataset,NBC (0.5),0.76288,0.007557,F1
+Predicting Income on census dataset,q*-Classifier,1.0,0,F1
+Predicting Income on census dataset,Cost-Sens. SVM,0.968868,0.005618,F1
+Predicting Income on census dataset,Balanced RF,1.0,0,F1
+Predicting Income on census dataset,PAN,0.981396,0.002538,F1
+Predicting Income on census dataset,GHOST,0.994188,0.001334,F1
+Predicting Income on census dataset,OTLP,0.994188,0.001334,F1
+Predicting Income on census dataset,OECV,0.993081,0.00364,F1
+Predicting Income on census dataset,ABTC,0.993289,0.001837,F1
+"Predicting genuine users and automated bots on VK.com, Russia's largest social network",NBC (0.5),0.447505,0.080126,F1
+"Predicting genuine users and automated bots on VK.com, Russia's largest social network",q*-Classifier,0.878166,0.15174,F1
+"Predicting genuine users and automated bots on VK.com, Russia's largest social network",Cost-Sens. SVM,0.782612,0.129933,F1
+"Predicting genuine users and automated bots on VK.com, Russia's largest social network",Balanced RF,0.788964,0.152871,F1
+"Predicting genuine users and automated bots on VK.com, Russia's largest social network",PAN,0.485527,0.064736,F1
+"Predicting genuine users and automated bots on VK.com, Russia's largest social network",GHOST,0.732831,0.133322,F1
+"Predicting genuine users and automated bots on VK.com, Russia's largest social network",OTLP,0.732831,0.133322,F1
+"Predicting genuine users and automated bots on VK.com, Russia's largest social network",OECV,0.692666,0.121348,F1
+"Predicting genuine users and automated bots on VK.com, Russia's largest social network",ABTC,0.745115,0.126973,F1
+Flood Prediction Dataset,NBC (0.5),0.456666,0.037466,F1
+Flood Prediction Dataset,q*-Classifier,0.717899,0.022517,F1
+Flood Prediction Dataset,Cost-Sens. SVM,0.948215,0.008298,F1
+Flood Prediction Dataset,Balanced RF,0.74475,0.012949,F1
+Flood Prediction Dataset,PAN,0.95468,0.017352,F1
+Flood Prediction Dataset,GHOST,0.999009,0.001421,F1
+Flood Prediction Dataset,OTLP,0.999009,0.001421,F1
+Flood Prediction Dataset,OECV,0.999009,0.001421,F1
+Flood Prediction Dataset,ABTC,0.998584,0.001266,F1
+Reproductive Child-Healthcare Classification,NBC (0.5),0.735202,0.134798,F1
+Reproductive Child-Healthcare Classification,q*-Classifier,0.834117,0.056838,F1
+Reproductive Child-Healthcare Classification,Cost-Sens. SVM,0.916245,0.08274,F1
+Reproductive Child-Healthcare Classification,Balanced RF,0.864216,0.045609,F1
+Reproductive Child-Healthcare Classification,PAN,0.772914,0.058097,F1
+Reproductive Child-Healthcare Classification,GHOST,0.881632,0.050824,F1
+Reproductive Child-Healthcare Classification,OTLP,0.881632,0.050824,F1
+Reproductive Child-Healthcare Classification,OECV,0.887423,0.050456,F1
+Reproductive Child-Healthcare Classification,ABTC,0.886848,0.053224,F1
+Introvert and Extrovert Classification from Personality Dataset,NBC (0.5),0.988199,0.00253,F1
+Introvert and Extrovert Classification from Personality Dataset,q*-Classifier,0.9963153,0.001155,F1
+Introvert and Extrovert Classification from Personality Dataset,Cost-Sens. SVM,0.998249,0.000966,F1
+Introvert and Extrovert Classification from Personality Dataset,Balanced RF,0.995295,0.00161,F1
+Introvert and Extrovert Classification from Personality Dataset,PAN,0.997569,0.001115,F1
+Introvert and Extrovert Classification from Personality Dataset,GHOST,0.998023,0.000696,F1
+Introvert and Extrovert Classification from Personality Dataset,OTLP,0.997871,0.000744,F1
+Introvert and Extrovert Classification from Personality Dataset,OECV,0.997721,0.001173,F1
+Introvert and Extrovert Classification from Personality Dataset,ABTC,0.998326,0.000747,F1
+Prediction of Flood Risk,NBC (0.5),0.0,0,F1
+Prediction of Flood Risk,q*-Classifier,0.189974,0.037697,F1
+Prediction of Flood Risk,Cost-Sens. SVM,0.0,0,F1
+Prediction of Flood Risk,Balanced RF,0.180319,0.022941,F1
+Prediction of Flood Risk,PAN,0.287039,0.03093,F1
+Prediction of Flood Risk,GHOST,0.258284,0.036512,F1
+Prediction of Flood Risk,OTLP,0.332258,0.006514,F1
+Prediction of Flood Risk,OECV,0.332087,0.001803,F1
+Prediction of Flood Risk,ABTC,0.335178,0.001015,F1
+Hotel Booking Prediction,NBC (0.5),0.968465,0.004967,F1
+Hotel Booking Prediction,q*-Classifier,1.0,0,F1
+Hotel Booking Prediction,Cost-Sens. SVM,0.998839,0.000698,F1
+Hotel Booking Prediction,Balanced RF,0.999284,0.000877,F1
+Hotel Booking Prediction,PAN,0.985611,0.003137,F1
+Hotel Booking Prediction,GHOST,0.985967,0.003053,F1
+Hotel Booking Prediction,OTLP,0.985967,0.003053,F1
+Hotel Booking Prediction,OECV,0.986033,0.003014,F1
+Hotel Booking Prediction,ABTC,0.986144,0.003285,F1
+Extrovert vs. Introvert Behavior Data Prediction,NBC (0.5),0.859364,0.035964,F1
+Extrovert vs. Introvert Behavior Data Prediction,q*-Classifier,0.789164,0.039948,F1
+Extrovert vs. Introvert Behavior Data Prediction,Cost-Sens. SVM,0.859364,0.035964,F1
+Extrovert vs. Introvert Behavior Data Prediction,Balanced RF,0.851312,0.035062,F1
+Extrovert vs. Introvert Behavior Data Prediction,PAN,0.84541,0.032678,F1
+Extrovert vs. Introvert Behavior Data Prediction,GHOST,0.857367,0.0366,F1
+Extrovert vs. Introvert Behavior Data Prediction,OTLP,0.853767,0.0366,F1
+Extrovert vs. Introvert Behavior Data Prediction,OECV,0.853754,0.038518,F1
+Extrovert vs. Introvert Behavior Data Prediction,ABTC,0.857384,0.037925,F1
+Company Bankruptcy Prediction,NBC (0.5),0.121985,0.043709,F1
+Company Bankruptcy Prediction,q*-Classifier,0.321985,0.043709,F1
+Company Bankruptcy Prediction,Cost-Sens. SVM,0.150712,0.104595,F1
+Company Bankruptcy Prediction,Balanced RF,0.321472,0.03601,F1
+Company Bankruptcy Prediction,PAN,0.247704,0.030085,F1
+Company Bankruptcy Prediction,GHOST,0.38924,0.069555,F1
+Company Bankruptcy Prediction,OTLP,0.386988,0.070903,F1
+Company Bankruptcy Prediction,OECV,0.383156,0.056066,F1
+Company Bankruptcy Prediction,ABTC,0.389158,0.059481,F1
+Ionosphere Radar predicting good or bad,NBC (0.5),0.819164,0.029608,F1
+Ionosphere Radar predicting good or bad,q*-Classifier,0.907454,0.055545,F1
+Ionosphere Radar predicting good or bad,Cost-Sens. SVM,0.934512,0.043054,F1
+Ionosphere Radar predicting good or bad,Balanced RF,0.908892,0.054366,F1
+Ionosphere Radar predicting good or bad,PAN,0.782279,0.08665,F1
+Ionosphere Radar predicting good or bad,GHOST,0.773025,0.081719,F1
+Ionosphere Radar predicting good or bad,OTLP,0.768333,0.082856,F1
+Ionosphere Radar predicting good or bad,OECV,0.760951,0.094775,F1
+Ionosphere Radar predicting good or bad,ABTC,0.817854,0.085485,F1
+Predicting Annealing dataset,NBC (0.5),0.623663,0.095038,F1
+Predicting Annealing dataset,q*-Classifier,0.9666135,0.0182752,F1
+Predicting Annealing dataset,Cost-Sens. SVM,0.944222,0.036059,F1
+Predicting Annealing dataset,Balanced RF,0.966058,0.045065,F1
+Predicting Annealing dataset,PAN,0.932373,0.053251,F1
+Predicting Annealing dataset,GHOST,0.937084,0.044142,F1
+Predicting Annealing dataset,OTLP,0.937084,0.044142,F1
+Predicting Annealing dataset,OECV,0.952278,0.041685,F1
+Predicting Annealing dataset,ABTC,0.945954,0.051446,F1
+Prediction of Climate System Model,NBC (0.5),0.237015,0.190081,F1
+Prediction of Climate System Model,q*-Classifier,0.623492,0.231818,F1
+Prediction of Climate System Model,Cost-Sens. SVM,0.57881,0.249654,F1
+Prediction of Climate System Model,Balanced RF,0.612403,0.176342,F1
+Prediction of Climate System Model,PAN,0.468959,0.066374,F1
+Prediction of Climate System Model,GHOST,0.65051,0.203986,F1
+Prediction of Climate System Model,OTLP,0.633844,0.221646,F1
+Prediction of Climate System Model,OECV,0.643157,0.160037,F1
+Prediction of Climate System Model,ABTC,0.653268,0.190136,F1
+Electrical Grid Stability dataset predicting Stable or Unstable,NBC (0.5),0.9671,0.00831,F1
+Electrical Grid Stability dataset predicting Stable or Unstable,q*-Classifier,1.0,0,F1
+Electrical Grid Stability dataset predicting Stable or Unstable,Cost-Sens. SVM,0.977943,0.004861,F1
+Electrical Grid Stability dataset predicting Stable or Unstable,Balanced RF,1.0,0,F1
+Electrical Grid Stability dataset predicting Stable or Unstable,PAN,0.995985,0.003405,F1
+Electrical Grid Stability dataset predicting Stable or Unstable,GHOST,0.995489,0.002709,F1
+Electrical Grid Stability dataset predicting Stable or Unstable,OTLP,0.995489,0.002709,F1
+Electrical Grid Stability dataset predicting Stable or Unstable,OECV,0.995004,0.002735,F1
+Electrical Grid Stability dataset predicting Stable or Unstable,ABTC,0.99599,0.003011,F1
+Anomaly detection of Pulser System,NBC (0.5),0.739145,0.016885,F1
+Anomaly detection of Pulser System,q*-Classifier,0.880773,0.0195739,F1
+Anomaly detection of Pulser System,Cost-Sens. SVM,0.88514,0.01591,F1
+Anomaly detection of Pulser System,Balanced RF,0.853182,0.016991,F1
+Anomaly detection of Pulser System,PAN,0.837474,0.018693,F1
+Anomaly detection of Pulser System,GHOST,0.881247,0.016289,F1
+Anomaly detection of Pulser System,OTLP,0.882294,0.015798,F1
+Anomaly detection of Pulser System,OECV,0.869161,0.024891,F1
+Anomaly detection of Pulser System,ABTC,0.88422,0.019718,F1
+Predicting Machine Failure,NBC (0.5),0.962415,0.020812,F1
+Predicting Machine Failure,q*-Classifier,0.9734141,0.020812,F1
+Predicting Machine Failure,Cost-Sens. SVM,0.986431,0.010597,F1
+Predicting Machine Failure,Balanced RF,0.972102,0.01982,F1
+Predicting Machine Failure,PAN,0.986431,0.010597,F1
+Predicting Machine Failure,GHOST,0.986431,0.010597,F1
+Predicting Machine Failure,OTLP,0.986431,0.010597,F1
+Predicting Machine Failure,OECV,0.986431,0.010597,F1
+Predicting Machine Failure,ABTC,0.986431,0.010597,F1
+Prediction Anomaly of Air Pressure System,NBC (0.5),0.450505,0.032015,F1
+Prediction Anomaly of Air Pressure System,q*-Classifier,0.570267,0.0549058,F1
+Prediction Anomaly of Air Pressure System,Cost-Sens. SVM,0.43204,0.082665,F1
+Prediction Anomaly of Air Pressure System,Balanced RF,0.399094,0.01411,F1
+Prediction Anomaly of Air Pressure System,PAN,0.495917,0.023563,F1
+Prediction Anomaly of Air Pressure System,GHOST,0.705462,0.055892,F1
+Prediction Anomaly of Air Pressure System,OTLP,0.703064,0.055417,F1
+Prediction Anomaly of Air Pressure System,OECV,0.678772,0.06208,F1
+Prediction Anomaly of Air Pressure System,ABTC,0.699256,0.065216,F1
+Predicting Credit Risk,NBC (0.5),0.483417,0.104599,F1
+Predicting Credit Risk,q*-Classifier,0.8221465,0.0757519,F1
+Predicting Credit Risk,Cost-Sens. SVM,0.755284,0.05609,F1
+Predicting Credit Risk,Balanced RF,0.818724,0.057763,F1
+Predicting Credit Risk,PAN,0.752814,0.047502,F1
+Predicting Credit Risk,GHOST,0.753129,0.086938,F1
+Predicting Credit Risk,OTLP,0.745529,0.08173,F1
+Predicting Credit Risk,OECV,0.729504,0.075864,F1
+Predicting Credit Risk,ABTC,0.763471,0.090965,F1
+Prediction of Credit Card High and Low Transactions,NBC (0.5),0.368241,0.0367,F1
+Prediction of Credit Card High and Low Transactions,q*-Classifier,0.9996168,0.0007662,F1
+Prediction of Credit Card High and Low Transactions,Cost-Sens. SVM,0.979124,0.004035,F1
+Prediction of Credit Card High and Low Transactions,Balanced RF,0.998659,0.001227,F1
+Prediction of Credit Card High and Low Transactions,PAN,0.810871,0.011798,F1
+Prediction of Credit Card High and Low Transactions,GHOST,0.991735,0.003118,F1
+Prediction of Credit Card High and Low Transactions,OTLP,0.991735,0.003118,F1
+Prediction of Credit Card High and Low Transactions,OECV,0.988252,0.006451,F1
+Prediction of Credit Card High and Low Transactions,ABTC,0.991949,0.002829,F1
+Prediction of loan approval,NBC (0.5),0.62314,0.003478,F1
+Prediction of loan approval,q*-Classifier,0.8339468,0.008137,F1
+Prediction of loan approval,Cost-Sens. SVM,0.787939,0.008132,F1
+Prediction of loan approval,Balanced RF,0.810727,0.008773,F1
+Prediction of loan approval,PAN,0.731938,0.007506,F1
+Prediction of loan approval,GHOST,0.753323,0.006526,F1
+Prediction of loan approval,OTLP,0.75554,0.005417,F1
+Prediction of loan approval,OECV,0.714755,0.015661,F1
+Prediction of loan approval,ABTC,0.755962,0.004563,F1
+Loan approval prediction,NBC (0.5),0.869593,0.021743,F1
+Loan approval prediction,q*-Classifier,0.808795,0.0383325,F1
+Loan approval prediction,Cost-Sens. SVM,0.85573,0.024591,F1
+Loan approval prediction,Balanced RF,0.832361,0.039151,F1
+Loan approval prediction,PAN,0.838849,0.033878,F1
+Loan approval prediction,GHOST,0.853006,0.036868,F1
+Loan approval prediction,OTLP,0.872717,0.018771,F1
+Loan approval prediction,OECV,0.868398,0.030704,F1
+Loan approval prediction,ABTC,0.870949,0.019021,F1
+Fraud detection in insurance claims,NBC (0.5),0.483752,0.063602,F1
+Fraud detection in insurance claims,q*-Classifier,0.5789412,0.0417788,F1
+Fraud detection in insurance claims,Cost-Sens. SVM,0.329405,0.134131,F1
+Fraud detection in insurance claims,Balanced RF,0.634564,0.051884,F1
+Fraud detection in insurance claims,PAN,0.560855,0.066372,F1
+Fraud detection in insurance claims,GHOST,0.567177,0.061407,F1
+Fraud detection in insurance claims,OTLP,0.558068,0.054011,F1
+Fraud detection in insurance claims,OECV,0.523627,0.041405,F1
+Fraud detection in insurance claims,ABTC,0.569677,0.064582,F1
+Predicting Insurance Claim,NBC (0.5),0.432143,0.200666,F1
+Predicting Insurance Claim,q*-Classifier,0.712547,0.09071453,F1
+Predicting Insurance Claim,Cost-Sens. SVM,0.706667,0.22151,F1
+Predicting Insurance Claim,Balanced RF,0.684762,0.221324,F1
+Predicting Insurance Claim,PAN,0.40471,0.098099,F1
+Predicting Insurance Claim,GHOST,0.740418,0.192936,F1
+Predicting Insurance Claim,OTLP,0.724762,0.216264,F1
+Predicting Insurance Claim,OECV,0.706825,0.169011,F1
+Predicting Insurance Claim,ABTC,0.740649,0.163186,F1
+Online shopping purchase prediction,NBC (0.5),0.5085,0.015485,F1
+Online shopping purchase prediction,q*-Classifier,0.6774151,0.0182467,F1
+Online shopping purchase prediction,Cost-Sens. SVM,0.564877,0.034793,F1
+Online shopping purchase prediction,Balanced RF,0.658345,0.017903,F1
+Online shopping purchase prediction,PAN,0.609832,0.024469,F1
+Online shopping purchase prediction,GHOST,0.635452,0.026331,F1
+Online shopping purchase prediction,OTLP,0.635553,0.026251,F1
+Online shopping purchase prediction,OECV,0.58473,0.038782,F1
+Online shopping purchase prediction,ABTC,0.636688,0.029487,F1
+Customer churn prediction,NBC (0.5),0.524542,0.041792,F1
+Customer churn prediction,q*-Classifier,0.773127,0.0496722,F1
+Customer churn prediction,Cost-Sens. SVM,0.740258,0.049089,F1
+Customer churn prediction,Balanced RF,0.763542,0.0357,F1
+Customer churn prediction,PAN,0.636482,0.03424,F1
+Customer churn prediction,GHOST,0.673926,0.031721,F1
+Customer churn prediction,OTLP,0.663162,0.032571,F1
+Customer churn prediction,OECV,0.658371,0.037419,F1
+Customer churn prediction,ABTC,0.675321,0.03954,F1
+Bitcoin dataset predicting high and low return,NBC (0.5),0.182998,0.077825,F1
+Bitcoin dataset predicting high and low return,q*-Classifier,0.683271,0.0470691,F1
+Bitcoin dataset predicting high and low return,Cost-Sens. SVM,0.046675,0.079527,F1
+Bitcoin dataset predicting high and low return,Balanced RF,0.665323,0.050945,F1
+Bitcoin dataset predicting high and low return,PAN,0.546438,0.085632,F1
+Bitcoin dataset predicting high and low return,GHOST,0.557631,0.068287,F1
+Bitcoin dataset predicting high and low return,OTLP,0.567342,0.027085,F1
+Bitcoin dataset predicting high and low return,OECV,0.5655,0.031087,F1
+Bitcoin dataset predicting high and low return,ABTC,0.611019,0.038264,F1
+Predicting High value customer in ecommerce,NBC (0.5),0.260638,0.095513,F1
+Predicting High value customer in ecommerce,q*-Classifier,1.0,0,F1
+Predicting High value customer in ecommerce,Cost-Sens. SVM,0.776795,0.076429,F1
+Predicting High value customer in ecommerce,Balanced RF,0.986437,0.022323,F1
+Predicting High value customer in ecommerce,PAN,0.835674,0.043759,F1
+Predicting High value customer in ecommerce,GHOST,0.886536,0.061123,F1
+Predicting High value customer in ecommerce,OTLP,0.886536,0.061123,F1
+Predicting High value customer in ecommerce,OECV,0.917733,0.066846,F1
+Predicting High value customer in ecommerce,ABTC,0.895579,0.070615,F1
+Student Highly Overspending Habit Prediction,NBC (0.5),0.971392,0.017583,F1
+Student Highly Overspending Habit Prediction,q*-Classifier,0.979106,0.0091932,F1
+Student Highly Overspending Habit Prediction,Cost-Sens. SVM,0.978079,0.010569,F1
+Student Highly Overspending Habit Prediction,Balanced RF,0.971294,0.013191,F1
+Student Highly Overspending Habit Prediction,PAN,0.946246,0.015447,F1
+Student Highly Overspending Habit Prediction,GHOST,0.987254,0.009994,F1
+Student Highly Overspending Habit Prediction,OTLP,0.985254,0.009994,F1
+Student Highly Overspending Habit Prediction,OECV,0.983084,0.013103,F1
+Student Highly Overspending Habit Prediction,ABTC,0.98546,0.010224,F1
+Financial Distress Prediction,NBC (0.5),0.304397,0.05818,F1
+Financial Distress Prediction,q*-Classifier,0.610188,0.03353374,F1
+Financial Distress Prediction,Cost-Sens. SVM,0.553594,0.063467,F1
+Financial Distress Prediction,Balanced RF,0.60364,0.03506,F1
+Financial Distress Prediction,PAN,0.540997,0.035758,F1
+Financial Distress Prediction,GHOST,0.649986,0.033391,F1
+Financial Distress Prediction,OTLP,0.646381,0.032654,F1
+Financial Distress Prediction,OECV,0.594506,0.061745,F1
+Financial Distress Prediction,ABTC,0.645184,0.033883,F1
+Financial Condition prediction,NBC (0.5),0.459916,0.013609,F1
+Financial Condition prediction,q*-Classifier,0.8952656,0.0161179,F1
+Financial Condition prediction,Cost-Sens. SVM,0.864567,0.012852,F1
+Financial Condition prediction,Balanced RF,0.854557,0.016827,F1
+Financial Condition prediction,PAN,0.740602,0.014966,F1
+Financial Condition prediction,GHOST,0.894312,0.011756,F1
+Financial Condition prediction,OTLP,0.894515,0.011654,F1
+Financial Condition prediction,OECV,0.874859,0.018918,F1
+Financial Condition prediction,ABTC,0.895598,0.009908,F1
+Company Market Value Prediction,NBC (0.5),0.783704,0.072998,F1
+Company Market Value Prediction,q*-Classifier,0.9969696,0.0090909,F1
+Company Market Value Prediction,Cost-Sens. SVM,0.918272,0.060539,F1
+Company Market Value Prediction,Balanced RF,0.967683,0.015094,F1
+Company Market Value Prediction,PAN,0.740287,0.042967,F1
+Company Market Value Prediction,GHOST,0.95123,0.040669,F1
+Company Market Value Prediction,OTLP,0.95123,0.040669,F1
+Company Market Value Prediction,OECV,0.9596,0.038511,F1
+Company Market Value Prediction,ABTC,0.94096,0.058137,F1
+Prediction of Financial Budget,NBC (0.5),0.818537,0.001918,F1
+Prediction of Financial Budget,q*-Classifier,0.7049277,0.04050719,F1
+Prediction of Financial Budget,Cost-Sens. SVM,0.818537,0.001918,F1
+Prediction of Financial Budget,Balanced RF,0.691275,0.043979,F1
+Prediction of Financial Budget,PAN,0.56791,0.047853,F1
+Prediction of Financial Budget,GHOST,0.660465,0.05219,F1
+Prediction of Financial Budget,OTLP,0.818537,0.001918,F1
+Prediction of Financial Budget,OECV,0.819,0.002679,F1
+Prediction of Financial Budget,ABTC,0.819057,0.001084,F1
+Prediction of Loan Default,NBC (0.5),0.379621,0.078687,F1
+Prediction of Loan Default,q*-Classifier,0.4596665,0.087584,F1
+Prediction of Loan Default,Cost-Sens. SVM,0.0,0,F1
+Prediction of Loan Default,Balanced RF,0.32072,0.029942,F1
+Prediction of Loan Default,PAN,0.296752,0.030683,F1
+Prediction of Loan Default,GHOST,0.504343,0.081059,F1
+Prediction of Loan Default,OTLP,0.514714,0.089266,F1
+Prediction of Loan Default,OECV,0.437602,0.052489,F1
+Prediction of Loan Default,ABTC,0.521013,0.101848,F1
+Movie Recommendarion,NBC (0.5),0.852143,0.12046,F1
+Movie Recommendarion,q*-Classifier,0.9603174,0.06116777,F1
+Movie Recommendarion,Cost-Sens. SVM,0.740714,0.131037,F1
+Movie Recommendarion,Balanced RF,0.960714,0.082143,F1
+Movie Recommendarion,PAN,0.696488,0.083075,F1
+Movie Recommendarion,GHOST,0.87127,0.119645,F1
+Movie Recommendarion,OTLP,0.87127,0.119645,F1
+Movie Recommendarion,OECV,0.89127,0.122736,F1
+Movie Recommendarion,ABTC,0.878571,0.142141,F1
+Travelling  Tripadvisor Review,NBC (0.5),0.639295,0.0893,F1
+Travelling  Tripadvisor Review,q*-Classifier,0.7638753,0.1097039,F1
+Travelling  Tripadvisor Review,Cost-Sens. SVM,0.906202,0.04982,F1
+Travelling  Tripadvisor Review,Balanced RF,0.718438,0.111449,F1
+Travelling  Tripadvisor Review,PAN,0.614177,0.07131,F1
+Travelling  Tripadvisor Review,GHOST,0.903943,0.060007,F1
+Travelling  Tripadvisor Review,OTLP,0.903943,0.060007,F1
+Travelling  Tripadvisor Review,OECV,0.897407,0.064669,F1
+Travelling  Tripadvisor Review,ABTC,0.911294,0.045103,F1
+Airline Review,NBC (0.5),0.882513,0.018879,F1
+Airline Review,q*-Classifier,0.8936444,0.01658767,F1
+Airline Review,Cost-Sens. SVM,0.882311,0.024762,F1
+Airline Review,Balanced RF,0.885672,0.018947,F1
+Airline Review,PAN,0.878782,0.019327,F1
+Airline Review,GHOST,0.891189,0.021097,F1
+Airline Review,OTLP,0.892418,0.021634,F1
+Airline Review,OECV,0.863652,0.018557,F1
+Airline Review,ABTC,0.893753,0.018969,F1
+British Airways Review Dataset (2012-2023),NBC (0.5),0.815572,0.070612,F1
+British Airways Review Dataset (2012-2023),q*-Classifier,0.79808923,0.05605233,F1
+British Airways Review Dataset (2012-2023),Cost-Sens. SVM,0.824542,0.050224,F1
+British Airways Review Dataset (2012-2023),Balanced RF,0.784967,0.075199,F1
+British Airways Review Dataset (2012-2023),PAN,0.785805,0.070955,F1
+British Airways Review Dataset (2012-2023),GHOST,0.828964,0.085863,F1
+British Airways Review Dataset (2012-2023),OTLP,0.828964,0.085863,F1
+British Airways Review Dataset (2012-2023),OECV,0.800935,0.062743,F1
+British Airways Review Dataset (2012-2023),ABTC,0.823217,0.07591,F1
+Adult Income Prediction,NBC (0.5),0.645142,0.008093,BalancedAcc
+Adult Income Prediction,q*-Classifier,0.801768,0.0101393,BalancedAcc
+Adult Income Prediction,Cost-Sens. SVM,0.786424,0.004885,BalancedAcc
+Adult Income Prediction,Balanced RF,0.819723,0.008323,BalancedAcc
+Adult Income Prediction,PAN,0.770249,0.008775,BalancedAcc
+Adult Income Prediction,GHOST,0.757949,0.007947,BalancedAcc
+Adult Income Prediction,OTLP,0.769828,0.008307,BalancedAcc
+Adult Income Prediction,OECV,0.758906,0.006777,BalancedAcc
+Adult Income Prediction,ABTC,0.770799,0.008042,BalancedAcc
+Community Crime,NBC (0.5),0.874242,0.107642,BalancedAcc
+Community Crime,q*-Classifier,0.9037878,0.0930493,BalancedAcc
+Community Crime,Cost-Sens. SVM,0.807955,0.128073,BalancedAcc
+Community Crime,Balanced RF,0.891288,0.107726,BalancedAcc
+Community Crime,PAN,0.852727,0.113386,BalancedAcc
+Community Crime,GHOST,0.840909,0.089782,BalancedAcc
+Community Crime,OTLP,0.874242,0.109545,BalancedAcc
+Community Crime,OECV,0.873485,0.084142,BalancedAcc
+Community Crime,ABTC,0.867803,0.084232,BalancedAcc
+High use of Contraceptive Pill Prediction,NBC (0.5),0.639856,0.037904,BalancedAcc
+High use of Contraceptive Pill Prediction,q*-Classifier,0.6263884,0.0376781,BalancedAcc
+High use of Contraceptive Pill Prediction,Cost-Sens. SVM,0.508763,0.015544,BalancedAcc
+High use of Contraceptive Pill Prediction,Balanced RF,0.645989,0.040797,BalancedAcc
+High use of Contraceptive Pill Prediction,PAN,0.660693,0.049823,BalancedAcc
+High use of Contraceptive Pill Prediction,GHOST,0.631441,0.054191,BalancedAcc
+High use of Contraceptive Pill Prediction,OTLP,0.645315,0.046835,BalancedAcc
+High use of Contraceptive Pill Prediction,OECV,0.645178,0.038041,BalancedAcc
+High use of Contraceptive Pill Prediction,ABTC,0.649083,0.039596,BalancedAcc
+Community Crime1 Prediction,NBC (0.5),0.647959,0.124047,BalancedAcc
+Community Crime1 Prediction,q*-Classifier,0.836324,0.0193676,BalancedAcc
+Community Crime1 Prediction,Cost-Sens. SVM,0.794505,0.033892,BalancedAcc
+Community Crime1 Prediction,Balanced RF,0.839351,0.014673,BalancedAcc
+Community Crime1 Prediction,PAN,0.822595,0.014132,BalancedAcc
+Community Crime1 Prediction,GHOST,0.816809,0.01901,BalancedAcc
+Community Crime1 Prediction,OTLP,0.832432,0.015511,BalancedAcc
+Community Crime1 Prediction,OECV,0.819334,0.021653,BalancedAcc
+Community Crime1 Prediction,ABTC,0.83544,0.010718,BalancedAcc
+Cannabis Prediction,NBC (0.5),0.677758,0.053643,BalancedAcc
+Cannabis Prediction,q*-Classifier,0.677758,0.053643,BalancedAcc
+Cannabis Prediction,Cost-Sens. SVM,0.502559,0.007876,BalancedAcc
+Cannabis Prediction,Balanced RF,0.680875,0.048433,BalancedAcc
+Cannabis Prediction,PAN,0.701982,0.038585,BalancedAcc
+Cannabis Prediction,GHOST,0.677307,0.056996,BalancedAcc
+Cannabis Prediction,OTLP,0.704972,0.057061,BalancedAcc
+Cannabis Prediction,OECV,0.704923,0.047217,BalancedAcc
+Cannabis Prediction,ABTC,0.70081,0.06344,BalancedAcc
+Ozone Level Detection,NBC (0.5),0.748872,0.041667,BalancedAcc
+Ozone Level Detection,q*-Classifier,0.7462898,0.0606641,BalancedAcc
+Ozone Level Detection,Cost-Sens. SVM,0.656814,0.051471,BalancedAcc
+Ozone Level Detection,Balanced RF,0.820032,0.033042,BalancedAcc
+Ozone Level Detection,PAN,0.821286,0.045474,BalancedAcc
+Ozone Level Detection,GHOST,0.734946,0.055668,BalancedAcc
+Ozone Level Detection,OTLP,0.82106,0.029059,BalancedAcc
+Ozone Level Detection,OECV,0.793871,0.036087,BalancedAcc
+Ozone Level Detection,ABTC,0.81792,0.032253,BalancedAcc
+Buzz in Social Media dataset,NBC (0.5),0.846301,0.006049,BalancedAcc
+Buzz in Social Media dataset,q*-Classifier,0.96386749,0.0049965,BalancedAcc
+Buzz in Social Media dataset,Cost-Sens. SVM,0.885099,0.008542,BalancedAcc
+Buzz in Social Media dataset,Balanced RF,0.966118,0.00448,BalancedAcc
+Buzz in Social Media dataset,PAN,0.952751,0.00506,BalancedAcc
+Buzz in Social Media dataset,GHOST,0.950736,0.003865,BalancedAcc
+Buzz in Social Media dataset,OTLP,0.954082,0.005733,BalancedAcc
+Buzz in Social Media dataset,OECV,0.95168,0.005569,BalancedAcc
+Buzz in Social Media dataset,ABTC,0.953631,0.005299,BalancedAcc
+Rice grain Prediction,NBC (0.5),0.925073,0.033747,BalancedAcc
+Rice grain Prediction,q*-Classifier,0.9012228,0.04784939,BalancedAcc
+Rice grain Prediction,Cost-Sens. SVM,0.913169,0.045769,BalancedAcc
+Rice grain Prediction,Balanced RF,0.920901,0.037705,BalancedAcc
+Rice grain Prediction,PAN,0.925782,0.034024,BalancedAcc
+Rice grain Prediction,GHOST,0.915503,0.038876,BalancedAcc
+Rice grain Prediction,OTLP,0.929075,0.036963,BalancedAcc
+Rice grain Prediction,OECV,0.927003,0.039815,BalancedAcc
+Rice grain Prediction,ABTC,0.931048,0.038867,BalancedAcc
+Credit Risk Prediction,NBC (0.5),0.963324,0.019446,BalancedAcc
+Credit Risk Prediction,q*-Classifier,1.0,0,BalancedAcc
+Credit Risk Prediction,Cost-Sens. SVM,0.913462,0.052655,BalancedAcc
+Credit Risk Prediction,Balanced RF,1.0,0,BalancedAcc
+Credit Risk Prediction,PAN,0.844231,0.030346,BalancedAcc
+Credit Risk Prediction,GHOST,0.955357,0.041787,BalancedAcc
+Credit Risk Prediction,OTLP,0.973352,0.027652,BalancedAcc
+Credit Risk Prediction,OECV,0.976236,0.027197,BalancedAcc
+Credit Risk Prediction,ABTC,0.968791,0.033909,BalancedAcc
+Credit Card Approval,NBC (0.5),0.801708,0.055308,BalancedAcc
+Credit Card Approval,q*-Classifier,0.8346896,0.06224819,BalancedAcc
+Credit Card Approval,Cost-Sens. SVM,0.843812,0.05275,BalancedAcc
+Credit Card Approval,Balanced RF,0.833678,0.066876,BalancedAcc
+Credit Card Approval,PAN,0.852578,0.061831,BalancedAcc
+Credit Card Approval,GHOST,0.839475,0.063413,BalancedAcc
+Credit Card Approval,OTLP,0.843766,0.067196,BalancedAcc
+Credit Card Approval,OECV,0.833927,0.068751,BalancedAcc
+Credit Card Approval,ABTC,0.849892,0.071678,BalancedAcc
+Predicting Credit risk,NBC (0.5),0.503354,0.010471,BalancedAcc
+Predicting Credit risk,q*-Classifier,0.6535595,0.0248117,BalancedAcc
+Predicting Credit risk,Cost-Sens. SVM,0.5,0,BalancedAcc
+Predicting Credit risk,Balanced RF,0.691437,0.024237,BalancedAcc
+Predicting Credit risk,PAN,0.61363,0.030203,BalancedAcc
+Predicting Credit risk,GHOST,0.562083,0.027591,BalancedAcc
+Predicting Credit risk,OTLP,0.597525,0.024701,BalancedAcc
+Predicting Credit risk,OECV,0.565316,0.034031,BalancedAcc
+Predicting Credit risk,ABTC,0.604888,0.029674,BalancedAcc
+Prediction of loan approval,NBC (0.5),0.930488,0.016699,BalancedAcc
+Prediction of loan approval,q*-Classifier,0.9811195,0.006872,BalancedAcc
+Prediction of loan approval,Cost-Sens. SVM,0.936976,0.008363,BalancedAcc
+Prediction of loan approval,Balanced RF,0.975841,0.006426,BalancedAcc
+Prediction of loan approval,PAN,0.919683,0.007288,BalancedAcc
+Prediction of loan approval,GHOST,0.918438,0.010327,BalancedAcc
+Prediction of loan approval,OTLP,0.919711,0.007357,BalancedAcc
+Prediction of loan approval,OECV,0.915262,0.010003,BalancedAcc
+Prediction of loan approval,ABTC,0.930617,0.009269,BalancedAcc
+Prediction of who acquire the Caravan Insurance,NBC (0.5),0.515606,0.012017,BalancedAcc
+Prediction of who acquire the Caravan Insurance,q*-Classifier,0.552031,0.02300614,BalancedAcc
+Prediction of who acquire the Caravan Insurance,Cost-Sens. SVM,0.5,0,BalancedAcc
+Prediction of who acquire the Caravan Insurance,Balanced RF,0.650062,0.027531,BalancedAcc
+Prediction of who acquire the Caravan Insurance,PAN,0.674402,0.024938,BalancedAcc
+Prediction of who acquire the Caravan Insurance,GHOST,0.623499,0.027149,BalancedAcc
+Prediction of who acquire the Caravan Insurance,OTLP,0.673891,0.020921,BalancedAcc
+Prediction of who acquire the Caravan Insurance,OECV,0.668609,0.024601,BalancedAcc
+Prediction of who acquire the Caravan Insurance,ABTC,0.667421,0.014388,BalancedAcc
+Telco Churn Prediction,NBC (0.5),0.729672,0.012698,BalancedAcc
+Telco Churn Prediction,q*-Classifier,0.719252,0.0076903,BalancedAcc
+Telco Churn Prediction,Cost-Sens. SVM,0.736518,0.012572,BalancedAcc
+Telco Churn Prediction,Balanced RF,0.753325,0.011426,BalancedAcc
+Telco Churn Prediction,PAN,0.765901,0.012456,BalancedAcc
+Telco Churn Prediction,GHOST,0.73216,0.014415,BalancedAcc
+Telco Churn Prediction,OTLP,0.763709,0.016573,BalancedAcc
+Telco Churn Prediction,OECV,0.733833,0.022563,BalancedAcc
+Telco Churn Prediction,ABTC,0.761617,0.013568,BalancedAcc
+Prediction of high value trade,NBC (0.5),0.837619,0.036759,BalancedAcc
+Prediction of high value trade,q*-Classifier,0.9992857,0.00214285,BalancedAcc
+Prediction of high value trade,Cost-Sens. SVM,0.958333,0.020238,BalancedAcc
+Prediction of high value trade,Balanced RF,0.997619,0.005216,BalancedAcc
+Prediction of high value trade,PAN,0.97881,0.0145,BalancedAcc
+Prediction of high value trade,GHOST,0.976667,0.015678,BalancedAcc
+Prediction of high value trade,OTLP,0.975238,0.019755,BalancedAcc
+Prediction of high value trade,OECV,0.979524,0.016537,BalancedAcc
+Prediction of high value trade,ABTC,0.973571,0.014578,BalancedAcc
+Predicting Annealing dataset,NBC (0.5),0.59665,0.093149,MCC
+Predicting Annealing dataset,q*-Classifier,0.96292853,0.0230867,MCC
+Predicting Annealing dataset,Cost-Sens. SVM,0.927753,0.046781,MCC
+Predicting Annealing dataset,Balanced RF,0.956906,0.056686,MCC
+Predicting Annealing dataset,PAN,0.912625,0.068699,MCC
+Predicting Annealing dataset,GHOST,0.918904,0.057549,MCC
+Predicting Annealing dataset,OTLP,0.918904,0.057549,MCC
+Predicting Annealing dataset,OECV,0.93823,0.053994,MCC
+Predicting Annealing dataset,ABTC,0.930191,0.066924,MCC
+Electrical Grid Stability dataset predicting Stable or Unstable,NBC (0.5),0.950556,0.012171,MCC
+Electrical Grid Stability dataset predicting Stable or Unstable,q*-Classifier,1.0,0,MCC
+Electrical Grid Stability dataset predicting Stable or Unstable,Cost-Sens. SVM,0.965838,0.007524,MCC
+Electrical Grid Stability dataset predicting Stable or Unstable,Balanced RF,1.0,0,MCC
+Electrical Grid Stability dataset predicting Stable or Unstable,PAN,0.993798,0.00526,MCC
+Electrical Grid Stability dataset predicting Stable or Unstable,GHOST,0.99303,0.004177,MCC
+Electrical Grid Stability dataset predicting Stable or Unstable,OTLP,0.993035,0.004166,MCC
+Electrical Grid Stability dataset predicting Stable or Unstable,OECV,0.992261,0.004244,MCC
+Electrical Grid Stability dataset predicting Stable or Unstable,ABTC,0.993798,0.004656,MCC
+Machine Failure Prediction using Sensor data,NBC (0.5),0.71158,0.091147,MCC
+Machine Failure Prediction using Sensor data,q*-Classifier,0.713277,0.0725959,MCC
+Machine Failure Prediction using Sensor data,Cost-Sens. SVM,0.715886,0.128151,MCC
+Machine Failure Prediction using Sensor data,Balanced RF,0.690741,0.0792,MCC
+Machine Failure Prediction using Sensor data,PAN,0.694311,0.093542,MCC
+Machine Failure Prediction using Sensor data,GHOST,0.701694,0.11009,MCC
+Machine Failure Prediction using Sensor data,OTLP,0.672727,0.103782,MCC
+Machine Failure Prediction using Sensor data,OECV,0.664984,0.119395,MCC
+Machine Failure Prediction using Sensor data,ABTC,0.684769,0.086951,MCC
+Maintenance Predictive For Industrial Machines,NBC (0.5),0.89219,0.035985,MCC
+Maintenance Predictive For Industrial Machines,q*-Classifier,0.998904,0.0032859,MCC
+Maintenance Predictive For Industrial Machines,Cost-Sens. SVM,0.926553,0.035447,MCC
+Maintenance Predictive For Industrial Machines,Balanced RF,0.998905,0.003286,MCC
+Maintenance Predictive For Industrial Machines,PAN,0.810381,0.027581,MCC
+Maintenance Predictive For Industrial Machines,GHOST,0.983704,0.013978,MCC
+Maintenance Predictive For Industrial Machines,OTLP,0.983704,0.013978,MCC
+Maintenance Predictive For Industrial Machines,OECV,0.980744,0.014051,MCC
+Maintenance Predictive For Industrial Machines,ABTC,0.982713,0.012004,MCC
+Prediction of Air Pressure Machine,NBC (0.5),0.504596,0.028277,MCC
+Prediction of Air Pressure Machine,q*-Classifier,0.507263,0.055948,MCC
+Prediction of Air Pressure Machine,Cost-Sens. SVM,0.450568,0.084669,MCC
+Prediction of Air Pressure Machine,Balanced RF,0.47539,0.012511,MCC
+Prediction of Air Pressure Machine,PAN,0.540299,0.023042,MCC
+Prediction of Air Pressure Machine,GHOST,0.701799,0.055555,MCC
+Prediction of Air Pressure Machine,OTLP,0.69927,0.054967,MCC
+Prediction of Air Pressure Machine,OECV,0.680865,0.059954,MCC
+Prediction of Air Pressure Machine,ABTC,0.697785,0.062555,MCC
+High-Speed Train Bogie Vibration & Fault Diagnosis,NBC (0.5),1.0,0,MCC
+High-Speed Train Bogie Vibration & Fault Diagnosis,q*-Classifier,1.0,0,MCC
+High-Speed Train Bogie Vibration & Fault Diagnosis,Cost-Sens. SVM,1.0,0,MCC
+High-Speed Train Bogie Vibration & Fault Diagnosis,Balanced RF,0.915146,0.074878,MCC
+High-Speed Train Bogie Vibration & Fault Diagnosis,PAN,1.0,0,MCC
+High-Speed Train Bogie Vibration & Fault Diagnosis,GHOST,1.0,0,MCC
+High-Speed Train Bogie Vibration & Fault Diagnosis,OTLP,1.0,0,MCC
+High-Speed Train Bogie Vibration & Fault Diagnosis,OECV,1.0,0,MCC
+High-Speed Train Bogie Vibration & Fault Diagnosis,ABTC,1.0,0,MCC
+Operational Conveyor Fault Dataset,NBC (0.5),0.888455,0.052277,MCC
+Operational Conveyor Fault Dataset,q*-Classifier,0.96539587,0.0335629,MCC
+Operational Conveyor Fault Dataset,Cost-Sens. SVM,0.929425,0.057134,MCC
+Operational Conveyor Fault Dataset,Balanced RF,0.961691,0.033808,MCC
+Operational Conveyor Fault Dataset,PAN,0.840861,0.062014,MCC
+Operational Conveyor Fault Dataset,GHOST,0.9078,0.052619,MCC
+Operational Conveyor Fault Dataset,OTLP,0.9078,0.052619,MCC
+Operational Conveyor Fault Dataset,OECV,0.89122,0.057209,MCC
+Operational Conveyor Fault Dataset,ABTC,0.912645,0.069354,MCC
+Credit Card Approval Prediction (Australia),NBC (0.5),0.419396,0.204406,MCC
+Credit Card Approval Prediction (Australia),q*-Classifier,0.5758633,0.166186,MCC
+Credit Card Approval Prediction (Australia),Cost-Sens. SVM,0.398027,0.232029,MCC
+Credit Card Approval Prediction (Australia),Balanced RF,0.568204,0.1606,MCC
+Credit Card Approval Prediction (Australia),PAN,0.484396,0.124537,MCC
+Credit Card Approval Prediction (Australia),GHOST,0.508563,0.145625,MCC
+Credit Card Approval Prediction (Australia),OTLP,0.471093,0.153192,MCC
+Credit Card Approval Prediction (Australia),OECV,0.521186,0.115804,MCC
+Credit Card Approval Prediction (Australia),ABTC,0.529217,0.152598,MCC
+Credit Approval Status,NBC (0.5),0.542325,0.096889,MCC
+Credit Approval Status,q*-Classifier,0.6528608,0.1176688,MCC
+Credit Approval Status,Cost-Sens. SVM,0.685926,0.089542,MCC
+Credit Approval Status,Balanced RF,0.647816,0.126395,MCC
+Credit Approval Status,PAN,0.702878,0.109249,MCC
+Credit Approval Status,GHOST,0.692929,0.091676,MCC
+Credit Approval Status,OTLP,0.671125,0.110827,MCC
+Credit Approval Status,OECV,0.640825,0.132435,MCC
+Credit Approval Status,ABTC,0.670022,0.130368,MCC
+Prediction of Credit Card High and Low Transactions,NBC (0.5),0.450135,0.030848,MCC
+Prediction of Credit Card High and Low Transactions,q*-Classifier,0.9995746,0.00085068,MCC
+Prediction of Credit Card High and Low Transactions,Cost-Sens. SVM,0.97685,0.004484,MCC
+Prediction of Credit Card High and Low Transactions,Balanced RF,0.998511,0.001361,MCC
+Prediction of Credit Card High and Low Transactions,PAN,0.804113,0.011525,MCC
+Prediction of Credit Card High and Low Transactions,GHOST,0.990826,0.003457,MCC
+Prediction of Credit Card High and Low Transactions,OTLP,0.990826,0.003457,MCC
+Prediction of Credit Card High and Low Transactions,OECV,0.987008,0.007075,MCC
+Prediction of Credit Card High and Low Transactions,ABTC,0.991066,0.003138,MCC
+Prediction of loan approval,NBC (0.5),0.48132,0.095148,MCC
+Prediction of loan approval,q*-Classifier,0.415944,0.0602013,MCC
+Prediction of loan approval,Cost-Sens. SVM,0.470925,0.092679,MCC
+Prediction of loan approval,Balanced RF,0.398054,0.097479,MCC
+Prediction of loan approval,PAN,0.426301,0.080959,MCC
+Prediction of loan approval,GHOST,0.451005,0.103238,MCC
+Prediction of loan approval,OTLP,0.517883,0.090707,MCC
+Prediction of loan approval,OECV,0.132208,0.11669,MCC
+Prediction of loan approval,ABTC,0.508486,0.107118,MCC
+Loan approval prediction,NBC (0.5),0.51407,0.093971,MCC
+Loan approval prediction,q*-Classifier,0.3947439,0.108961,MCC
+Loan approval prediction,Cost-Sens. SVM,0.468813,0.094031,MCC
+Loan approval prediction,Balanced RF,0.436102,0.12153,MCC
+Loan approval prediction,PAN,0.436451,0.103221,MCC
+Loan approval prediction,GHOST,0.471189,0.117428,MCC
+Loan approval prediction,OTLP,0.523618,0.079111,MCC
+Loan approval prediction,OECV,0.471597,0.207949,MCC
+Loan approval prediction,ABTC,0.517498,0.078503,MCC
+Ausi Churn Prediction,NBC (0.5),0.297828,0.056944,MCC
+Ausi Churn Prediction,q*-Classifier,0.7571172,0.0585322,MCC
+Ausi Churn Prediction,Cost-Sens. SVM,0.470264,0.065252,MCC
+Ausi Churn Prediction,Balanced RF,0.709469,0.04165,MCC
+Ausi Churn Prediction,PAN,0.525345,0.039874,MCC
+Ausi Churn Prediction,GHOST,0.550342,0.039481,MCC
+Ausi Churn Prediction,OTLP,0.525805,0.033024,MCC
+Ausi Churn Prediction,OECV,0.523206,0.041666,MCC
+Ausi Churn Prediction,ABTC,0.55079,0.022634,MCC
+Predicting Insurance Claim,NBC (0.5),0.419434,0.219013,MCC
+Predicting Insurance Claim,q*-Classifier,0.6843856,0.1330576,MCC
+Predicting Insurance Claim,Cost-Sens. SVM,0.70339,0.230668,MCC
+Predicting Insurance Claim,Balanced RF,0.677398,0.237138,MCC
+Predicting Insurance Claim,PAN,0.446198,0.101792,MCC
+Predicting Insurance Claim,GHOST,0.754932,0.182032,MCC
+Predicting Insurance Claim,OTLP,0.742997,0.214441,MCC
+Predicting Insurance Claim,OECV,0.706336,0.19406,MCC
+Predicting Insurance Claim,ABTC,0.743782,0.225108,MCC
+Whether the client subscribed to a term deposit,NBC (0.5),0.950117,0.012165,MCC
+Whether the client subscribed to a term deposit,q*-Classifier,0.9572002,0.0115629,MCC
+Whether the client subscribed to a term deposit,Cost-Sens. SVM,0.945157,0.012891,MCC
+Whether the client subscribed to a term deposit,Balanced RF,0.950509,0.012129,MCC
+Whether the client subscribed to a term deposit,PAN,0.950509,0.012129,MCC
+Whether the client subscribed to a term deposit,GHOST,0.950453,0.012511,MCC
+Whether the client subscribed to a term deposit,OTLP,0.950847,0.012454,MCC
+Whether the client subscribed to a term deposit,OECV,0.948839,0.014582,MCC
+Whether the client subscribed to a term deposit,ABTC,0.950958,0.011463,MCC
+Churn prediction Telco,NBC (0.5),0.407087,0.021771,MCC
+Churn prediction Telco,q*-Classifier,0.441483,0.0182712,MCC
+Churn prediction Telco,Cost-Sens. SVM,0.471462,0.021954,MCC
+Churn prediction Telco,Balanced RF,0.468244,0.02064,MCC
+Churn prediction Telco,PAN,0.47704,0.021332,MCC
+Churn prediction Telco,GHOST,0.471639,0.021203,MCC
+Churn prediction Telco,OTLP,0.474102,0.018974,MCC
+Churn prediction Telco,OECV,0.418663,0.032197,MCC
+Churn prediction Telco,ABTC,0.474892,0.025592,MCC
