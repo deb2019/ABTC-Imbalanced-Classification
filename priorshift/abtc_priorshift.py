@@ -258,7 +258,7 @@ ALPHA_LIST = np.linspace(*ALPHA_RANGE, N_ALPHA)
 RULES = ['R0', 'R1', 'R2', 'R3', 'R4']
 NAMES = {'R0': 'Bayes rule, shift ignored (alpha = 0)', 'R1': 'ABTC with known prior (alpha from pi\')',
          'R2': 'Threshold tuned on validation', 'R3': 'ABTC Path B (alpha tuned on validation)',
-         'R4': 'Re-tuned on labelled shifted data (reference)'}
+         'R4': 'Re-tuned on source validation data resampled to the known prior'}
 
 _seen, DS = set(), []
 for item in DATASETS:
