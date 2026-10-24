@@ -1,9 +1,0 @@
-Medical:
-  primary_metric: F2
-  beta: 2
-Fraud Detection: {}
-Cybersecurity: {}
-Socio: {}
-Predictive Maintenance: {}
-Finance and Marketing: {}
-Recommendation: {}
