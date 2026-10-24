@@ -4,7 +4,7 @@ ABTC - Adaptive Bayesian Thresholding Classifier
 Core library for metric- or cost-optimal threshold selection with 
 isotonic calibration and Bayesian posterior adjustment.
 
-Version: 1.2.0
+Version: 1.2.1
 
 Search Configuration:
 - Path A (Metric-Driven): 27α × 20τ = 540 evaluations
@@ -29,7 +29,7 @@ Quick Start
 ... )
 """
 
-__version__ = "1.2.0"
+__version__ = "1.2.1"
 __author__ = "Debashis Roy, Anandarup Roy, Bibhuprasad Sahu, Utpal Roy"
 
 # Calibration
