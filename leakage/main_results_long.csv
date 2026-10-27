@@ -62,15 +62,6 @@ Bon Marrow,ABTC,0.852181,0.113157,F2
 (CTG) dataset : Fetal Health Monitoring During Pregnancy,OTLP,0.977246,0.01484,F2
 (CTG) dataset : Fetal Health Monitoring During Pregnancy,OECV,0.977222,0.01576,F2
 (CTG) dataset : Fetal Health Monitoring During Pregnancy,ABTC,0.975411,0.015735,F2
-Hypothyroid Prediction,NBC (0.5),0.227985,0.018131,F2
-Hypothyroid Prediction,q*-Classifier,0.7865,0.03672,F2
-Hypothyroid Prediction,Cost-Sens. SVM,0.698366,0.071677,F2
-Hypothyroid Prediction,Balanced RF,0.8896,0.054746,F2
-Hypothyroid Prediction,PAN,0.732806,0.048002,F2
-Hypothyroid Prediction,GHOST,0.826493,0.068372,F2
-Hypothyroid Prediction,OTLP,0.82243,0.081275,F2
-Hypothyroid Prediction,OECV,0.812442,0.089579,F2
-Hypothyroid Prediction,ABTC,0.825057,0.074168,F2
 Blood Transfusion Blood Donor Prediction,NBC (0.5),0.207218,0.122328,F2
 Blood Transfusion Blood Donor Prediction,q*-Classifier,0.391347,0.114626,F2
 Blood Transfusion Blood Donor Prediction,Cost-Sens. SVM,0.265316,0.098048,F2
