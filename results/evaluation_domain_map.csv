@@ -1,0 +1,200 @@
+ds,metric,domain
+PIMA Indian,F2,Medical
+Parkinson,F2,Medical
+Cervical Cancer,F2,Medical
+Cirosis of Liver,F2,Medical
+Chronic Kidney Disease,F2,Medical
+Bon Marrow,F2,Medical
+(CTG) dataset : Fetal Health Monitoring During Pregnancy,F2,Medical
+Blood Transfusion Blood Donor Prediction,F2,Medical
+Adult Autism Prediction,F2,Medical
+Thyroid prediction,F2,Medical
+Predict patient survival status after breast cancer surgery,F2,Medical
+Hepatitis Prediction,F2,Medical
+HCV Prediction,F2,Medical
+Appendicitis Complicacy Prediction,F2,Medical
+Death Prediction from Support dataset,F2,Medical
+Depression Prediction,F2,Medical
+Breast Cancer Prediction,F2,Medical
+Chronic Kedney Disease2 Prediction,F2,Medical
+Diagnostic Pathology dataset Prediction of Has Disease,F2,Medical
+The Drug-Induced Autoimmunity Prediction dataset,F2,Medical
+Healthcare dataset Prediction of Adherence,F2,Medical
+Lifestyle dataset Prediction of Healthy or Not,F2,Medical
+Heart Disease dataset2 Prediction,F2,Medical
+Prediction of Length Of  Stay at Hospital,F2,Medical
+ICU Patients Death Prediction,F2,Medical
+Malaria Disease Prediction,F2,Medical
+Infrared Temperature Prediction of Fever,F2,Medical
+Prediction of High Admission,F2,Medical
+Prediction the Risk of Ovarian Cancer,F2,Medical
+Prediction of Lung Tumer,F2,Medical
+EEG dataset prediction of Parkinsons Disease,F2,Medical
+Prediction of Depression dataset2,F2,Medical
+Prediction of Schizophrenia,F2,Medical
+Predicting Stunding (Malnutrition),F2,Medical
+Predicting whether the patient died within one year after Thoracic Surgery,F2,Medical
+Predicting Type 2 Diabetes,F2,Medical
+Predicting Hospitalized or Not from Typhoid disease dataset,F2,Medical
+Predicting Polycystic Ovary Syndrome (PCOS) of women,F2,Medical
+Cancer Prediction,F2,Medical
+Ovarian Cancer Risk and Progression Data,F2,Medical
+Disease Symptoms and Patient Profile Dataset,F2,Medical
+Lung Cancer,F2,Medical
+Stroke Risk,F2,Medical
+Alzheimers Disease,F2,Medical
+Stress Prediction,F2,Medical
+Fraudulent credit card transaction prediction,F2,Fraud
+Fraudulent Healthcare provider,F2,Fraud
+Loan Fraud Prediction,F2,Fraud
+Insurance Fraud Claim Prediction,F2,Fraud
+Airbnb Fraud Prediction,F2,Fraud
+Fraudulent Claim on Cars Physical Damage,F2,Fraud
+Fraudulent Insurance Claim,F2,Fraud
+Classifying Transactions as Genuine or Fake,F2,Fraud
+Prediction Bank Transaction Fraud,F2,Fraud
+Cybersecurity WebAttack,F2,Cyber
+Predicting Network Anomaly,F2,Cyber
+Healthcare Ransomware Dataset,F2,Cyber
+Phishing Website Dataset,F2,Cyber
+Distinguishing between malicious and benign Windows Portable Executable (PE) files,F2,Cyber
+Prediction of Android Malware2,F2,Cyber
+Phishing Dataset,F2,Cyber
+Cybersecurity Anomaly Detection,F2,Cyber
+Dataset for Link Phishing Detection,F2,Cyber
+Prediction of Android Malware,F2,Cyber
+Predicting between malicious and benign software samples,F2,Cyber
+Predicting Suspicious Traffic Activity,F2,Cyber
+Teenage Online Behavior and Cybersecurity Risks,F2,Cyber
+Predicting Phishing URLs,F2,Cyber
+Predicting Phishing,F2,Cyber
+Cybersecurity Attacked,F2,Cyber
+Prediction of High Stay Drug addiction of American Indian School Students,F2,Socio
+Air Quality dataset predicting Death due to air quality,F2,Socio
+Prediction of Significance of Earthquake,F2,Socio
+Prediction of Drug Overdose,F2,Socio
+Prediction of Canabis Addiction,F2,Socio
+Prediction of Mental Health,F2,Socio
+Himalaya Expedition dataset prediction death,F2,Socio
+Prediction of Overstimulation,F2,Socio
+Predicting Cancer Risk from Smoking Dataset,F2,Socio
+"Predicting the likelihood of a Health Condition (e.g., Lung Cancer)",F2,Socio
+Predicting Stress,F2,Socio
+Predicting Health of Tree of Urban Areas,F2,Socio
+Predicting Traffic Flow,F2,Socio
+Predicting Machine Failure (CNC (Computer Numerical Control) industrial machines),F2,PM
+Predicting Helicopter Anomaly dataset,F2,PM
+Prediction of Air Pressure System (APS),F2,PM
+Prediction of Community Climate System Model,F2,PM
+HTRU2 (Pulsar Detection),F2,PM
+EEG machine dataset prediction of anomaly signals,F2,PM
+Credit Approval Status,F2,Finance
+German credit data credit risk assessment,F2,Finance
+Prediction of Credit Card High and Low Transactions,F2,Finance
+Loan Aproval Prediction,F2,Finance
+Loan Default Prediction,F2,Finance
+Predicting Insurance Claim,F2,Finance
+Predicting Insurance Claim  Dataset2,F2,Finance
+Whether the client subscribed to a term deposit,F2,Finance
+Click on product prediction,F2,Finance
+Telco Chrun Prediction,F2,Finance
+Audit risk Prediction,F2,Finance
+Which on is Ad Prediction,F2,Finance
+Nifty 500 Closing Value Prediction,F2,Finance
+Bitcoin dataset predicting high and low return,F2,Finance
+Predicting Crowd Funding of Turkey,F2,Finance
+Predicting Drug Review,F2,Rec
+Prediction of Negative Travel Agency review,F2,Rec
+Amazon Electronic Items reviews,F2,Rec
+Netflix Movie Recommendation,F2,Rec
+Spotify Songs Recommendation,F2,Rec
+Womens Clothing E-Commerce Reviews,F2,Rec
+Google Play Store Reviews,F2,Rec
+Letterbox Movie Classification Dataset,F2,Rec
+Screengaurd Recommendation Dataset,F2,Rec
+Predicting fraudulent transactions,F1,Fraud
+Predicting fraudulent Insurance application,F1,Fraud
+Predicting fraudulent transactions dataset2,F1,Fraud
+Ecommerce Fraud Biding,F1,Fraud
+Predicting fraudulent Loan application,F1,Fraud
+Credit Card Farud Detection,F1,Fraud
+Predicting Malicious URL,F1,Cyber
+Predicting Android malware detection Tezpur University Android Malware Dataset,F1,Cyber
+Predicting Normal Traffic Activity,F1,Cyber
+Cybersecurity Anomaly Detection,F1,Cyber
+Prediction of Android Malware,F1,Cyber
+Predicting Low and high Startup Funding,F1,Socio
+LifeSpan Calorie Burn dataset predicting Short_Talk or Not,F1,Socio
+Student information dataset predicting pass and failed,F1,Socio
+Predicting Higher Income and lower income group,F1,Socio
+Predicting Text Block or Non-Text Block,F1,Socio
+Healthcare Workforce Mental Health dataset predicting employee’s intention to leave their job,F1,Socio
+Prediction of social media engagement,F1,Socio
+News aggregator dataset predicting business or other,F1,Socio
+Predicting Income on census dataset,F1,Socio
+"Predicting genuine users and automated bots on VK.com, Russia's largest social network",F1,Socio
+Flood Prediction Dataset,F1,Socio
+Reproductive Child-Healthcare Classification,F1,Socio
+Introvert and Extrovert Classification from Personality Dataset,F1,Socio
+Prediction of Flood Risk,F1,Socio
+Hotel Booking Prediction,F1,Socio
+Extrovert vs. Introvert Behavior Data Prediction,F1,Socio
+Company Bankruptcy Prediction,F1,Socio
+Ionosphere Radar predicting good or bad,F1,PM
+Predicting Annealing dataset,F1,PM
+Prediction of Climate System Model,F1,PM
+Electrical Grid Stability dataset predicting Stable or Unstable,F1,PM
+Anomaly detection of Pulser System,F1,PM
+Predicting Machine Failure,F1,PM
+Prediction Anomaly of Air Pressure System,F1,PM
+Predicting Credit Risk,F1,Finance
+Prediction of Credit Card High and Low Transactions,F1,Finance
+Prediction of loan approval,F1,Finance
+Loan approval prediction,F1,Finance
+Fraud detection in insurance claims,F1,Finance
+Predicting Insurance Claim,F1,Finance
+Online shopping purchase prediction,F1,Finance
+Customer churn prediction,F1,Finance
+Bitcoin dataset predicting high and low return,F1,Finance
+Predicting High value customer in ecommerce,F1,Finance
+Student Highly Overspending Habit Prediction,F1,Finance
+Financial Distress Prediction,F1,Finance
+Financial Condition prediction,F1,Finance
+Company Market Value Prediction,F1,Finance
+Prediction of Financial Budget,F1,Finance
+Prediction of Loan Default,F1,Finance
+Movie Recommendarion,F1,Rec
+Travelling  Tripadvisor Review,F1,Rec
+Airline Review,F1,Rec
+British Airways Review Dataset (2012-2023),F1,Rec
+Predicting Annealing dataset,MCC,PM
+Electrical Grid Stability dataset predicting Stable or Unstable,MCC,PM
+Machine Failure Prediction using Sensor data,MCC,PM
+Maintenance Predictive For Industrial Machines,MCC,PM
+Prediction of Air Pressure Machine,MCC,PM
+High-Speed Train Bogie Vibration & Fault Diagnosis,MCC,PM
+Operational Conveyor Fault Dataset,MCC,PM
+Credit Card Approval Prediction (Australia),MCC,Finance
+Credit Approval Status,MCC,Finance
+Prediction of Credit Card High and Low Transactions,MCC,Finance
+Prediction of loan approval,MCC,Finance
+Loan approval prediction,MCC,Finance
+Ausi Churn Prediction,MCC,Finance
+Predicting Insurance Claim,MCC,Finance
+Whether the client subscribed to a term deposit,MCC,Finance
+Churn prediction Telco,MCC,Finance
+Adult Income Prediction,BalancedAcc,Socio
+Community Crime,BalancedAcc,Socio
+High use of Contraceptive Pill Prediction,BalancedAcc,Socio
+Community Crime1 Prediction,BalancedAcc,Socio
+Cannabis Prediction,BalancedAcc,Socio
+Ozone Level Detection,BalancedAcc,Socio
+Buzz in Social Media dataset,BalancedAcc,Socio
+Rice grain Prediction,BalancedAcc,Socio
+Credit Risk Prediction,BalancedAcc,Finance
+Credit Card Approval,BalancedAcc,Finance
+Predicting Credit risk,BalancedAcc,Finance
+Prediction of loan approval,BalancedAcc,Finance
+Prediction of who acquire the Caravan Insurance,BalancedAcc,Finance
+Telco Churn Prediction,BalancedAcc,Finance
+Prediction of high value trade,BalancedAcc,Finance
