@@ -3,8 +3,7 @@
 Code, configuration and results for the paper *Adaptive Bayesian Thresholding for Metric and Cost Driven Decisions in Imbalanced Binary Classification* (Roy D., Roy A., Sahu B., Roy U.).
 
 - Repository: https://github.com/deb2019/ABTC-Imbalanced-Classification
-- Archived release v1.2.1 (this version): https://doi.org/10.5281/zenodo.23624491
-- Earlier release v1.2.0: https://doi.org/10.5281/zenodo.23610933
+- Zenodo archive: the DOI of this release (v1.2.1) is listed under "Versions" on the Zenodo record. Previous release v1.2.0: https://doi.org/10.5281/zenodo.23610933
 - Earlier release v1.1.0: https://doi.org/10.5281/zenodo.20728733
 
 ABTC selects a decision threshold for a binary classifier in three steps: isotonic calibration of the predicted probabilities, a prior adjustment of the calibrated probability controlled by an exponent α, and a threshold τ chosen for a target metric (Path A) or set from misclassification costs (Path B).
@@ -131,7 +130,7 @@ alpha, tau_star, neg_cost, n_eval = alpha_search_analytical_tau(
 
 ## Data
 
-`data/dataset_catalogue.csv` lists every dataset with its source, licence and the data file used in the experiments. N, d, target and class counts are those of the files used, after preprocessing. For 19 datasets (`resampled_from_source = True`) the files are resampled versions of the source data with a different class ratio. The columns `single_feature_auc_1`, `wider_leakage_set` and `duplicate_pair` mark the datasets discussed in Supplementary S8. Three catalogue entries were not among the 175 data files of the ablation runs (`in_ablation_runs = False`).
+`data/dataset_catalogue.csv` lists every data file used in the experiments (176 files) with its source, licence, N, d, target and class counts after preprocessing. `in_main_benchmark` marks the 173 files of the main experiment and `in_ablation_runs` the 175 files of the ablation runs. For 20 datasets (`resampled_from_source = True`) the files are resampled versions of the source data with a different class ratio. The columns `single_feature_auc_1`, `wider_leakage_set` and `duplicate_pair` mark the datasets discussed in Supplementary S8. `results/evaluation_domain_map.csv` gives the domain and primary metric of each of the 199 dataset–metric evaluations of the main experiment.
 
 The source datasets are available from the repositories listed in the catalogue (UCI, Kaggle, Zenodo, Mendeley Data, GitHub, Zindi, GeeksforGeeks, ICPSR). Data obtained under a restricted-use agreement (ICPSR/NAHDAP) cannot be redistributed.
 
